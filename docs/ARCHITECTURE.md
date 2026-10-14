@@ -1,51 +1,63 @@
-# AvLü™ | Public architecture overview
+# Technical architecture | Public abstraction
 
-**Version v1.0.0 | Owner: Nathaniel Schroeder**
+**v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
 
-I want AvLü to convert fragmented acquisition evidence into a reviewable decision record. The conceptual flow is:
+This is a non-confidential conceptual architecture. It describes the product's functional boundaries and review lifecycle, **not a source-code blueprint**.
 
-```text
-Authorized sources / user-entered records
-                |
-                v
-Collection and source provenance
-                |
-                v
-Asset identity and evidence normalization
-                |
-                v
-Missing data, conflicts, and freshness checks
-                |
-                v
-Economic scenario review (when supported)
-                |
-                v
-Bounded policy evaluation and evidence status
-                |
-                v
-Human review / hold / reject / investigate
-                |
-                v
-Verified disposition outcomes and audit history
+## System concept
+
+```mermaid
+flowchart TD
+  A[Permitted listing and market observations] --> B[Identity and provenance normalization]
+  U[User supplied listing and cost evidence] --> B
+  B --> C{Evidence complete and consistent?}
+  C -->|No| H[HOLD: gaps and next required proof]
+  C -->|Partially| D[Conditional screening and uncertainty labels]
+  C -->|Yes| E[Verified or bounded cost and market review]
+  D --> G[Non executable review recommendation]
+  E --> G
+  G --> I[Human decision and dated audit record]
+  I --> J[Verified disposition or completed sale when obtained]
+  J --> K[Calibrate only supported categories]
+  K --> C
 ```
 
-## Architectural principles
+## Major components and state
 
-1. **Provenance before inference.** A claimed fact should retain its observation source and verification state.
-2. **Unknown does not mean zero.** Missing expenses or resale comparables should not silently become favorable inputs.
-3. **Separate estimates from outcomes.** Asking prices, observed sold results, projections, and actual realized net outcomes are different data classes.
-4. **Keep AI inside an evidence boundary.** Automated extraction may propose information, but it cannot promote unverified assumptions into authoritative records.
-5. **Use explicit human controls.** A screening status does not constitute legal ownership verification, inspection, funding authority, or permission to purchase.
-6. **Log decision context.** A future review should be able to identify which evidence and approved policy version informed the result.
+| Concern | Architecture-level description | Evidence status |
+| --- | --- | --- |
+| Public user experience | Responsive information, guided intake, research-oriented pages and documented sample flows | Published working prototype |
+| Restricted workspace | Private review, saved observations, owner Watchlist and controlled exports | Server-side boundaries implemented; real owner acceptance remains incomplete |
+| Source/provenance | Capture observation type, date, identity, conflicts and supporting evidence | Existing research controls; continuous permissioned sync is not verified live |
+| Calculation and review | Separate assumptions from supported costs and resale; fail closed on material gaps | Prototype logic plus tested non-executable reference engine |
+| Durable state | Node HTTP application and storage abstraction backed by PostgreSQL | Published database mode recorded; source-level restore rehearsal passed in disposable PostgreSQL |
+| Authentication | Protected owner access with durable server-side sessions and restricted routes | Source and anonymous-denial tests; deployment-specific owner workflows need acceptance |
+| Reference autonomy | Frozen case input, scoped policy, shadow-only decision, auditable intent | Tested in source; no live transaction capability or release |
+| Outcome learning | Maintain a connection between a decision snapshot and a completed disposition | Designed and partially researched; insufficient actual full-economics outcome matches |
 
-## Planned direction versus demonstrated capability
+## Trust boundaries
 
-A working prototype exists privately. Broader automated collection, continuous source synchronization, validated realized-profit calibration, and fully controlled autonomous acquisition are development goals. This document does not assert that those capabilities have been deployed, connected, or commercially proven.
+**Public visitors must not receive private data.** Content such as marketing pages and synthetic examples are distinct from authenticated owner APIs and stored records. A hidden navigation element is not access control.
 
-## Deliberate omissions
+**A model suggestion must not become a verified identity, cost or compatible part.** Verification requires evidence from a suitably authoritative source or appropriately qualified reviewer.
 
-I do not publish engine source, heuristics, pricing weights, model thresholds, confidential data contracts, source-access methods, authentication internals, private endpoints, internal release workflow, vendor credentials, or operational acquisition policies here.
+**The calculation layer must not silently approve transactions.** The reference engine can classify a decision for analysis while still returning a non-executable disposition. Approval to spend money requires distinct human, legal, financial, source and execution controls.
 
-The public demo contains only fixed synthetic presentation states and **must not** be used as a real acquisition calculator.
+**A file export is not a raw PostgreSQL recovery backup.** The private project contains a disposable restore test and a raw-state attestor that has not been executed on the live owner database.
+
+## Technical stack at a safe disclosure level
+
+The working application is a web-based product using a Node runtime, browser interfaces, server-side routes and PostgreSQL-backed persistence. Repository-controlled tests cover route protection, storage, user journeys and synthetic decision scenarios. The recorded production publication path is Replit. This public repository is a stand-alone GitHub documentation and demo surface.
+
+I am deliberately **not** publishing infrastructure endpoints, table definitions, auth implementation, private API contracts, database credentials, algorithm weights, policy thresholds, integration account settings or deal records.
+
+## Areas I want reviewed
+
+- How to make permitted-source observation ingestion robust and maintainable.
+- How to preserve identity and condition certainty across revisions and source conflicts.
+- How to prevent historical price leakage and look-ahead bias in replay.
+- How to link observed listings to actual completed-sale outcomes at scale.
+- How to roll out shadow-only decisions with audited human overrides before live execution.
+- Whether the architecture should become a maintained workflow integrated with existing dealer software rather than a full replacement.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

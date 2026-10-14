@@ -1,28 +1,38 @@
-# Public disclosure boundary
+# Public information and disclosure boundary
 
-**v1.0.0 | Owner: Nathaniel Schroeder**
+**v2.0.0 | Owner: Nathaniel Schroeder**
 
-This repository was created from new, independently written presentation files. It is not a fork, clone, or filtered commit history of the private application.
+This public repository is **independently authored** and does not contain a fork, submodule, copied commit history, filtered directory or mirror of the private AvLü application.
 
-## Included
+## Publicly shareable
 
-- Founder-level product explanation and positioning.
-- High-level architecture principles.
-- Historical validation summary with explicit limitations.
-- Self-contained synthetic UI demonstration with fixed responses.
-- Public development priorities and technical-review questions.
+- Product problem, founder hypothesis and transparent release status.
+- Conceptual workflow and module responsibilities.
+- Sanitized descriptions of source-verified tests and historical audit counts.
+- Non-sensitive technical decisions and engineering questions.
+- Invented static UI examples.
+- Proposed pilot scope and commercial validation criteria.
+- Links to the existing public application.
 
-## Excluded
+## Not for this repository
 
-- Private application source, scoring logic, pricing weights, policy thresholds, or model tuning.
-- Historical Git commits or branches copied from the private repository.
-- Raw market records, individual VIN/serial datasets, quotes, transaction or seller records.
-- Dealer, customer, mentor, or supplier-specific correspondence or contacts.
-- Credentials, tokens, internal endpoints, auth implementation, infrastructure details or private security controls.
-- Unreleased business assumptions, financing details, product economics, pricing strategy, or contractual documents.
+- Private application implementation, formulas, algorithm parameters or weights.
+- Confidential acquisition policies, operational thresholds or source-access mechanisms.
+- Raw VIN/serial datasets, seller-specific evidence, customer records, invoices, contracts, private correspondence or exact deal economics.
+- Credentials, authentication keys, internal production API contracts, infrastructure secrets, environment settings or protected route implementation.
+- Vendor license terms, restricted integration contracts, financial reserve details or undisclosed pricing.
+- Private commit logs, internal task links, restricted development plans or personal contact data.
+- Names of confidential sources, private interlocutors, or third-party interviewees unless independently cleared for public publication.
 
-## Publication rule
+## What must be checked before every public update
 
-Every file entering the showcase must be reviewed against these boundaries **before** it is committed. No automated synchronization, submodule, public fork, or CI workflow should pull from the private repository. A public repository can be copied and forked, even without an open-source license.
+1. Does the claim match a dated source, with the correct publication versus development status?
+2. Is any example fully fictional, public domain with adequate rights, or authorized for disclosure?
+3. Are predicted resale, sale outcome and realized margin identified correctly?
+4. Could the file expose a secret, private identifier, sensitive endpoint or source-access technique?
+5. Does the release preserve Nathaniel Schroeder ownership notices, SemVer and a dated changelog?
+6. Does a static-demo claim accidentally imply the private product is open-source or publicly reproducible?
+
+GitHub public repositories can be read and forked. Copyright notices do **not** physically prevent copies; keeping proprietary implementation in the separate private repository is an essential part of the disclosure policy.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

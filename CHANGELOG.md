@@ -1,18 +1,29 @@
-# Changelog
+# AvLü™ public showcase changelog
 
-All showcase releases use Semantic Versioning.
+**Owner: Nathaniel Schroeder**  
+All public showcase releases follow Semantic Versioning.
+
+## [2.0.0] - 2026-10-14
+
+### Changed
+- Replaced the generic 19-file story with an implementation-aware, dated technical and venture narrative.
+- Put the real working application before the fictional demo.
+- Distinguished private source v2.14.0 from last verified published application v2.13.0.
+- Added accurate autonomy, data, security, architecture and owner Watchlist boundaries.
+- Expanded mentor, accelerator and pilot material with concrete product questions.
+- Added source-backed historical test and market-evidence numbers without exporting raw records.
+- Distinguished 31 founder-reported dealer meetings from the earlier 23 completed course-log conversations.
+
+### Added
+- Detailed product modules, release status, architecture, autonomy, testing and market-data pages.
+- Customer-discovery, differentiation, commercialization, pilot, service-R&D and FAQ pages.
+- More detailed live-versus-synthetic demo guidance and public disclosure rules.
+
+### Still intentionally excluded
+- Private source and algorithms, raw pricing and identity records, full-cost transaction data, production credentials, confidential source history and contact information.
 
 ## [1.0.0] - 2026-10-14
 
-### Added
-- Original standalone public README and architecture overview.
-- Explicit validation boundaries and roadmap.
-- Synthetic, offline interactive demonstration using fixed fictional examples.
-- Information boundary, ownership notice, and security guidance.
-- Built-in Node smoke and publication-boundary checks.
-
-### Notes
-- No private code, data, source control history, or runtime credentials were imported.
-- No production software was deployed or changed.
+Initial standalone public README, static synthetic demo, short architecture overview and CI smoke checks.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

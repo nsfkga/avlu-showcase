@@ -1,0 +1,72 @@
+# Current status snapshot | October 14, 2026
+
+**Document v2.0.0 | Owner: Nathaniel Schroeder**  
+**This is a dated snapshot, not automatically synchronized with the private source.**
+
+## Releases and environment
+
+| Component | Verified state |
+| --- | --- |
+| Public AvLü application | v2.13.0, last verified successful publication at getavlu.com |
+| Current private application source | v2.14.0, merged and source verified, with later recovery and privacy test additions |
+| v2.14.0 production publication | Not completed or verified |
+| Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
+| Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
+| Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
+| Public technical showcase | v2.0.0, published separately from the application |
+
+The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
+
+## Acquisition roadmap
+
+The controlled 28-item register recorded:
+
+| State | Count |
+| --- | ---: |
+| Done | 7 |
+| In progress | 15 |
+| Blocked | 1 |
+| Later | 4 |
+| Later / blocked | 1 |
+
+The first potential autonomous buying policy is restricted to selected **non-powered compact-equipment attachments**, and even that policy is **not enabled for buying**. Vehicles and powered equipment are research/support categories, not covered by a working autonomous purchase permission.
+
+## Frozen evidence window
+
+| Evidence gate | Observed result | Required/meaning |
+| --- | --- | --- |
+| Sealed public shadow cases | 30 | All HOLD/non-executable |
+| Approved inspection captures | 0 of 252 | Field evidence remains missing |
+| Outcome-linked cases | 0 of 15 | Threshold not met |
+| Full-economics cases | 0 of 10 | Threshold not met |
+| Sealed APPROVE/COUNTER cases | 0 of 5 | Threshold not met |
+| Independent human acquisition decisions | 0 of 10 | Threshold not met |
+| Real purchase approvals | 0 | Buying disabled |
+
+**Meeting counts are not shadow cases:** 31 dealer meetings are founder-reported. The earlier final I-Corps course log documented 23 completed discovery conversations. Neither count measures product sales, pilots, or transactions.
+
+## Already demonstrated
+
+- Working public and protected-owner web experience.
+- Published Watchlist release, with stored listing research, conditional assumptions and exports (full owner acceptance pending).
+- Non-executable reference decision engine with four disposition states; 51/51 synthetic reference tests reported passing.
+- 2,000 synthetic QA packets, 48,000 assertions passed.
+- Source tests for security and protected routes, including production anonymous-denial observations.
+- Disposable PostgreSQL raw-restore rehearsal passed.
+- Read-only raw-state attestor source tests passed, with production attestation still pending.
+- Public comparable-source and identity work, while conservative acceptance gates remain strict.
+
+## Still unproven or unavailable
+
+- Browser-closed scheduled sourcing, ongoing automatic market synchronization, and verified bid-to-sale matching across categories.
+- Sufficient matched realized sale proceeds plus all actual selling, holding and repair costs to substantiate predicted profits.
+- Completed approval/legal/capital/reserve arrangements for automated buying or coverage.
+- Owner production sign-in/save/export acceptance of the newer source.
+- Deployed recovery, rollback, kill-switch and production transaction-adapter acceptance.
+- Category-specific calibration adequate to release real-money decisions.
+
+**No demo, shadow status, simulation pass or expected profit should be interpreted as buying authorization, guaranteed return, or an active coverage product.**
+
+The private engineering evidence and release receipts were reviewed when this snapshot was prepared, but are not copied into this public repository.
+
+© 2026 Nathaniel Schroeder. All rights reserved.

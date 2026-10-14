@@ -4,39 +4,116 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101d1e">
-  <meta name="description" content="AvLü technical showcase. Fictional, fixed-state proof-first review demonstration.">
+  <meta name="description" content="AvLü is a working pre-acquisition evidence and risk review prototype. Explore the architecture, research, tests and honest automation status without exposing proprietary code.">
   <meta name="author" content="Nathaniel Schroeder">
-  <title>AvLü™ | Synthetic Review Demo v1.0.0</title>
+  <title>AvLü™ | Technical & Venture Showcase v2.0.0</title>
   <link rel="stylesheet" href="assets/style.css">
   <script defer src="assets/demo.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="header wrap">
-    <a class="brand" href="index.html" aria-label="AvLü home">avlü<span class="tm">™</span></a>
-    <div class="navright"><span class="kicker">PUBLIC TECHNICAL SHOWCASE</span><a href="README.md">Project notes ↗</a></div>
+    <a class="brand" href="#top" aria-label="AvLü showcase home">avlü<span class="tm">™</span></a>
+    <div class="navright">
+      <a class="navlink" href="#product">Product</a>
+      <a class="navlink" href="#proof">Evidence</a>
+      <a class="navlink" href="#technology">Engineering</a>
+      <a class="navlink" href="docs/MENTOR_REVIEW.md">For mentors</a>
+      <a class="appnav" href="https://getavlu.com" target="_blank" rel="noopener noreferrer">Working app ↗</a>
+    </div>
   </header>
-  <main class="wrap">
-    <section class="intro">
-      <div class="eyebrow">EVIDENCE BEFORE CAPITAL</div>
-      <h1>Make the next decision <span>defensible.</span></h1>
-      <p>AvLü is designed to connect messy vehicle and equipment opportunities with evidence, cost context, and disciplined review. This demonstration is synthetic and does not run the private underwriting engine.</p>
-      <div class="statrow"><div><strong>150</strong><span>historical arithmetic checks</span></div><div><strong>0</strong><span>reported math mismatches</span></div><div><strong>0</strong><span>acquisitions approved by that audit</span></div></div>
+  <main class="wrap" id="main">
+    <section class="intro hero" id="top">
+      <div class="eyebrow">AVLU™ / TECHNICAL & VENTURE SHOWCASE / v2.0.0</div>
+      <h1>Proof before price.<br><span>Discipline before buying.</span></h1>
+      <p>I'm building AvLü to help used-vehicle and equipment buyers evaluate messy opportunities using source evidence, condition and configuration, total costs, realistic resale context, and clear reasons to investigate or walk away.</p>
+      <div class="heroactions">
+        <a class="primarylink" href="https://getavlu.com" target="_blank" rel="noopener noreferrer">Explore the real working prototype ↗</a>
+        <a class="secondarylink" href="docs/START_HERE.md">Read the technical overview</a>
+      </div>
+      <p class="reality-note">Working application: published v2.13.0. More recent v2.14.0 code is source-tested but not verified as published. No autonomous purchasing is enabled.</p>
     </section>
+
+    <section class="proof-strip" id="proof" aria-label="Evidence highlights">
+      <div class="proof-item"><strong>150</strong><span>historical screening rows audited</span><small>0 reported arithmetic mismatches</small></div>
+      <div class="proof-item"><strong>48,000</strong><span>synthetic regression assertions</span><small>48,000 passed, not actual trades</small></div>
+      <div class="proof-item"><strong>30</strong><span>sealed research shadow cases</span><small>All HOLD and non-executable</small></div>
+      <div class="proof-item"><strong>0</strong><span>authorized autonomous purchases</span><small>Buying and coverage remain off</small></div>
+    </section>
+
+    <section class="section-spaced" id="product">
+      <div class="section-head"><div><div class="eyebrow">MORE THAN A PRICING CHATBOT</div><h2>What the project actually contains</h2></div><a href="docs/PRODUCT_MODULES.md" class="readmore">Full feature and release matrix ↗</a></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="stage-pill live">PUBLISHED PROTOTYPE</span><h3>Guided listing review</h3><p>A browser workflow for moving from incomplete listing details to a structured review of evidence, assumptions and next actions.</p></article>
+        <article class="feature-card"><span class="stage-pill live">PUBLISHED BASELINE</span><h3>Private Inventory Watchlist</h3><p>Research records, source observations and entered cost assumptions, with export and history. Deployed owner save/export acceptance still needs final testing.</p></article>
+        <article class="feature-card"><span class="stage-pill tested">SOURCE TESTED</span><h3>Bounded decision engine</h3><p>Reference HOLD, REJECT, COUNTER and APPROVE states. Even a reference APPROVE cannot execute an acquisition.</p></article>
+        <article class="feature-card"><span class="stage-pill tested">SOURCE TESTED</span><h3>Evidence and inspection controls</h3><p>Incomplete provenance, condition and inspection submissions cannot be promoted to accepted field evidence without required proof.</p></article>
+        <article class="feature-card"><span class="stage-pill tested">SOURCE TESTED</span><h3>Protected storage and recovery</h3><p>PostgreSQL-backed persistence, owner access boundaries, revision checks and a disposable restore rehearsal. Production recovery acceptance is still pending.</p></article>
+        <article class="feature-card"><span class="stage-pill planned">ACTIVE DEVELOPMENT GOAL</span><h3>Continuous market intelligence</h3><p>Repeatable permitted data observations, verified sold comparisons and outcome-backed calibration, rather than confusing listed prices with realized profit.</p></article>
+      </div>
+    </section>
+
+    <section class="section-spaced architecture-section" id="technology">
+      <div class="section-head"><div><div class="eyebrow">ARCHITECTURE AND ACCOUNTABILITY</div><h2>One decision needs a chain of evidence.</h2></div><a href="docs/ARCHITECTURE.md" class="readmore">Architecture dossier ↗</a></div>
+      <div class="chain-grid">
+        <div><span>01 / INPUT</span><h3>Record the source</h3><p>Capture the asset, timestamp, identity and exact observation type.</p></div>
+        <div><span>02 / PROOF</span><h3>Expose uncertainty</h3><p>Separate verified information, seller claims, conflicts and missing evidence.</p></div>
+        <div><span>03 / ECONOMICS</span><h3>Count the costs</h3><p>Consider acquisition, fees, recon, transport and supported exit scenarios.</p></div>
+        <div><span>04 / CONTROL</span><h3>Defend the next step</h3><p>Show HOLD and bounded review states; prohibit silent real-money actions.</p></div>
+      </div>
+    </section>
+
     <section class="workspace" aria-labelledby="demo-title">
-      <div class="topline"><div><div class="eyebrow">INTERACTIVE CONCEPT</div><h2 id="demo-title">Evidence review desk</h2></div><div class="chip">OFFLINE · FICTIONAL DATA</div></div>
+      <div class="topline"><div><div class="eyebrow">FICTIONAL INTERACTIVE ILLUSTRATION</div><h2 id="demo-title">See the evidence-first idea</h2></div><div class="chip">OFFLINE · 3 SYNTHETIC FIXTURES</div></div>
       <div class="workspacebody">
-        <div class="side" role="group" aria-label="Synthetic case selector"><h3>Example records</h3><div id="case-buttons"></div><p class="hint">These cases are invented. No real listing or dealer data is used.</p></div>
+        <div class="side" role="group" aria-label="Synthetic case selector">
+          <h3>Choose a fictional example</h3>
+          <div id="case-buttons"></div>
+          <p class="hint">This is deliberately not a copy of the real application. The values and decision states are predetermined.</p>
+        </div>
         <div class="maincase" aria-live="polite">
           <div class="casehead"><div><div class="eyebrow">SYNTHETIC CASE</div><h3 id="case-name">Loading example</h3><p id="case-context" class="subtext"></p></div><div id="case-status" class="status">HOLD</div></div>
-          <div class="metrics"><div class="metric"><span>Illustrative asking price</span><b id="case-ask"></b></div><div class="metric"><span>Illustrative resale context</span><b id="case-resale"></b></div><div class="metric"><span>Illustrative gross potential</span><b id="case-gross"></b></div></div>
-          <div class="midcols"><div><h4>Evidence requiring attention</h4><ul id="case-missing"></ul></div><div><h4>Why this state appears</h4><p id="case-explanation"></p></div></div>
-          <div class="notice"><strong>Presentation-only fixture.</strong> These displayed results are predetermined. They do not calculate bids, check ownership, estimate current market values, approve purchases, or contact sellers.</div>
+          <div class="metrics"><div class="metric"><span>Fictional asking price</span><b id="case-ask"></b></div><div class="metric"><span>Fictional resale context</span><b id="case-resale"></b></div><div class="metric"><span>Fictional gross potential</span><b id="case-gross"></b></div></div>
+          <div class="midcols"><div><h4>Evidence requiring attention</h4><ul id="case-missing"></ul></div><div><h4>Why this fictional state appears</h4><p id="case-explanation"></p></div></div>
+          <div class="notice"><strong>Presentation-only fixture.</strong> This sample does not calculate real offers, check title, obtain live prices, inspect equipment, contact sellers or authorize purchases.</div>
         </div>
       </div>
     </section>
-    <section class="lower"><div><div class="eyebrow">CONCEPTUAL FLOW</div><h2>From uncertainty to evidence.</h2></div><div class="steps"><div><span>01</span>Source & provenance</div><div><span>02</span>Evidence validation</div><div><span>03</span>Cost & resale context</div><div><span>04</span>Bounded review</div></div></section>
-    <div class="ctaline"><p>Evaluating the architecture or product thesis?</p><a href="docs/TECHNICAL_REVIEW.md">Read reviewer questions ↗</a></div>
+
+    <section class="section-spaced two-col" id="research">
+      <div class="two-col-copy">
+        <div class="eyebrow">CUSTOMER DISCOVERY</div>
+        <h2>Built with the problem under investigation.</h2>
+        <p>I completed a Great Plains regional I-Corps customer discovery cohort and used operator conversations to challenge the idea that an AI valuation answer alone is enough.</p>
+        <p>My founder-reported count is <strong>31 dealer meetings</strong>. A separate final course log documented <strong>23 completed discovery conversations</strong>. Those numbers are different records, not paying customers.</p>
+        <a class="readmore" href="docs/CUSTOMER_DISCOVERY.md">What I learned and still need to test ↗</a>
+      </div>
+      <div class="research-panel">
+        <div class="eyebrow">THE CORE TEST</div>
+        <blockquote>Will a user make a more defensible acquisition decision, with less duplicated work and fewer missed evidence gaps, than they would using current tools?</blockquote>
+        <p>This is a hypothesis for a bounded user pilot, not a demonstrated revenue or savings claim.</p>
+      </div>
+    </section>
+
+    <section class="section-spaced">
+      <div class="section-head"><div><div class="eyebrow">HONEST RELEASE STATUS</div><h2>Working, tested, and still blocked.</h2></div><a class="readmore" href="docs/STATUS_SNAPSHOT.md">Full operating status ↗</a></div>
+      <div class="status-grid">
+        <div class="state-card"><span class="stage-pill live">LIVE BASELINE</span><h3>Application v2.13.0</h3><p>Last verified public release, including a protected Watchlist baseline. Owner acceptance of private save/export still requires confirmation.</p></div>
+        <div class="state-card"><span class="stage-pill tested">MERGED SOURCE</span><h3>Application v2.14.0</h3><p>Additional historical source and recovery work passed recorded source checks, but this version is not verified as published.</p></div>
+        <div class="state-card"><span class="stage-pill planned">BLOCKED</span><h3>Live autonomous buying</h3><p>Uncalibrated outcome data, incomplete inspection and capital/legal/production control acceptance keep execution disabled.</p></div>
+      </div>
+    </section>
+
+    <section class="mentor-cta">
+      <div class="eyebrow">FOR gBETA, TECHNICAL MENTORS AND PILOT REVIEWERS</div>
+      <h2>Help test the hard assumptions, not another pitch deck.</h2>
+      <p>I would value feedback on authorized data feeds, exact-asset matching, completed-sale outcome linking, reliable controls, a narrow first buyer segment, and the smallest pilot that proves value.</p>
+      <div class="heroactions">
+        <a class="primarylink" href="docs/MENTOR_REVIEW.md">Open the mentor review brief ↗</a>
+        <a class="secondarylink" href="docs/ROADMAP.md">Read the development roadmap</a>
+      </div>
+    </section>
   </main>
-  <footer class="footer wrap"><span>© 2026 Nathaniel Schroeder. All rights reserved.</span><span>AvLü™ · Showcase v1.0.0 · No live purchasing</span></footer>
+  <footer class="footer wrap"><span>© 2026 Nathaniel Schroeder. All rights reserved.</span><span>AvLü™ | Public showcase v2.0.0 | Proprietary application is private | No live buying or profit guarantee</span></footer>
 </body>
 </html>
