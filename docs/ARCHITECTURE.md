@@ -1,6 +1,6 @@
 # Technical architecture | Public abstraction
 
-**v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
 
 This is a non-confidential conceptual architecture. It describes the product's functional boundaries and review lifecycle, **not a source-code blueprint**.
 
@@ -59,5 +59,13 @@ I am deliberately **not** publishing infrastructure endpoints, table definitions
 - How to link observed listings to actual completed-sale outcomes at scale.
 - How to roll out shadow-only decisions with audited human overrides before live execution.
 - Whether the architecture should become a maintained workflow integrated with existing dealer software rather than a full replacement.
+
+## Agricultural auction data boundary
+
+Source discovery, exact auction event/lot matching, asset configuration, fee and cost translation, public price-realized labeling and verified paid transaction outcomes need separate types and dated provenance. A completed bid is not a realized reseller profit, and a matching title is not a matching machine.
+
+A permitted scheduled observer should preserve the decision-time snapshot rather than rewrite history. The existing private Watchlist and tested reference logic are a foundation, not proof of a production auction connector.
+
+[Full data automation research](AUCTION_DATA_AUTOMATION.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

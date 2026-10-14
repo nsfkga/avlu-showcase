@@ -1,4 +1,4 @@
-// v2.0.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.1.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -28,4 +28,28 @@ test('proof figures are identified as synthetic or historical, not real profit',
   assert.match(readme,/synthetic/i);
   assert.match(readme,/realized/i);
   assert.match(readme,/OFF|disabled/i);
+});
+
+test('agrarian equipment and auction intelligence have dedicated public research',()=> {
+ const root=path.resolve(__dirname,'..');
+ const req=['docs/AGRICULTURAL_EQUIPMENT.md','docs/AUCTION_INTELLIGENCE.md',
+ 'docs/AG_AUCTION_CASE_STUDIES.md','docs/AUCTION_DATA_AUTOMATION.md',
+ 'docs/AG_SERVICE_READINESS_RND.md','docs/AG_AUCTION_COMPETITIVE_CONTEXT.md',
+ 'docs/PROJECT_ORIGINS_TIMELINE.md'];
+ for(const p of req){
+   const doc=fs.readFileSync(path.join(root,p),'utf8');
+   assert.ok(doc.length>800,p+' is too short');
+   assert.ok(doc.includes('Nathaniel Schroeder'),p+' lacks credit');
+ }
+});
+test('original equipment evidence and actual sales are not conflated',()=> {
+ const p=fs.readFileSync(path.resolve(__dirname,'../docs/AG_AUCTION_CASE_STUDIES.md'),'utf8');
+ assert.match(p,/79 units/);
+ assert.match(p,/not.*realized profit|cannot be called realized profit|cannot be called.*profit/i);
+});
+test('current agricultural auction scope and public version are visible',()=> {
+ const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
+ assert.match(p,/id="auctions"/);
+ assert.match(p,/id="equipment"/);
+ assert.match(p,/v2\.1\.0/);
 });

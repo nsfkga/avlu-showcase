@@ -1,6 +1,6 @@
 # Customer discovery and how it changed the hypothesis
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.1.0 | Nathaniel Schroeder**
 
 ## Research work
 
@@ -34,5 +34,13 @@ No individual participant endorsement or dealer partnership is claimed in this p
 Use a small set of anonymized historical opportunities that a willing participant is authorized to share. Capture the participant's original review time, sources and next decision *before* revealing any AvLü assessment. Measure differences in missing-proof discovery, duplicate work, decision traceability, total time and whether the participant uses it a second time.
 
 Claims of demand should depend on repeated use, changed behavior and commercial willingness, not compliments during an interview.
+
+## Equipment-dealer research that influenced the product
+
+The September used-ag-equipment appraisal interviews described reliance on multiple valuation tools, real auction history, dealer listings, internal historical sales, expected holding costs, seasonality, condition and machine configuration. One manager's observation that simpler information access could help is a **hypothesis signal**, not a product endorsement or agreed pilot.
+
+The resulting acquisition hypothesis is to make the **actual evidence, costs and unresolved items easier to reconcile**, rather than offer another generic AI-generated valuation. Original compact-attachment inventory research is distinct from the later vehicle QA samples.
+
+The separate equipment Service Readiness and Recovery direction involved configuration, parts, technician preparation and confirmed repair outcomes. It has documented requirements/synthetic tests, not verified commercial deployment. [Read the prior R&D](AG_SERVICE_READINESS_RND.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

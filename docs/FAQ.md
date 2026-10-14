@@ -1,6 +1,6 @@
 # AvLü™ frequently asked questions
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.1.0 | Nathaniel Schroeder**
 
 ### Is AvLü an actual application or an idea?
 
@@ -41,5 +41,21 @@ The founder reports 31 dealer meetings, while a separate course log documented 2
 ### Can I evaluate the live app without access to private records?
 
 Yes, use the public site and documented flow. The showcase is intentionally not a credentialed copy of protected owner functionality.
+
+### Is AvLü rooted in agricultural and auction work?
+
+Yes. Its early 2026 inventory-accounting work tracked **71 acquisition lines and 79 units** across attachments and farm-adjacent equipment, recording actual aggregate costs and planned resale. The sales ledger did not establish completed realized profits.
+
+### Is the auction price the buyer's entire cost?
+
+No. A "Price Realized" figure, hammer, paid invoice, buyer premium, tax, loadout, recon, freight and eventual seller proceeds are separate. Terms vary by auction, lot and method.
+
+### Is agricultural service software already deployed?
+
+No. Equipment Service Readiness and Recovery is a separate earlier design/research track with synthetic tests, not a verified production dealer system.
+
+### Does AvLü already scan and synchronize auction sources continuously?
+
+No confirmed production service does that today. The private published Watchlist and a newer separate, unpublished Replit market-research workspace are precursors, and their versions must be reconciled before claiming a live integrated system.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

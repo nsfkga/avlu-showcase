@@ -1,6 +1,6 @@
 # Product modules and actual state
 
-**v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
 
 The core product is a *proof-first acquisition decision workflow*. These areas are intentionally separated by release state.
 
@@ -44,5 +44,15 @@ I started with a broad inventory problem involving cars and equipment. I am **re
 - **A synthetic test pass** is not a completed real-world pilot.
 
 Read [Status Snapshot](STATUS_SNAPSHOT.md) and [Autonomy](AUTONOMY.md) for the precise boundary.
+
+## Agricultural auctions and equipment: real modules and research
+
+My earliest equipment work tracked actual auction acquisition economics for **71 inventory lines and 79 units**, with planned resale separately labeled. Public results research later examined **22 attachment outcome observations**, including 18 pallet-fork records whose weak comparability and clustering do not justify a live valuation.
+
+The broader project contains auction lot/stock research, fee translation and source provenance, attachment fitment/configuration checks, inspection evidence controls, non-executable acquisition policy and a saved Watchlist. These are not the same as **live recurring sourcing or autonomous buying**. The local, unpublished Replit v2.15.2 worktree adds market-research and inspection features that remain to be reconciled with GitHub v2.14.0.
+
+The initial buying policy is narrower than the research base: **selected non-powered compact attachments** only, and execution remains off. Root rakes, blades and pushers must be classified by their real mechanism, not just title. The September equipment field-service concept is **separate historical R&D**.
+
+[Agriculture detail](AGRICULTURAL_EQUIPMENT.md) · [Auction intelligence](AUCTION_INTELLIGENCE.md) · [Unpublished workspace status](STATUS_SNAPSHOT.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

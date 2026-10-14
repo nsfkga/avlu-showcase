@@ -1,9 +1,19 @@
-# AvLü™ | Evidence-first acquisition intelligence
+# AvLü™ | Agriculture, equipment auctions and acquisition intelligence
 
-**Public technical and venture showcase | v2.0.0 | October 14, 2026**  
+**Public technical and venture showcase | v2.1.0 | October 14, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
 **[Explore the working AvLü prototype](https://getavlu.com)** · [Start here](docs/START_HERE.md) · [Product modules](docs/PRODUCT_MODULES.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md) · [Mentor review brief](docs/MENTOR_REVIEW.md)
+
+## Auction and agricultural equipment are central to this product
+
+AvLü started with **real auction-purchased inventory, equipment attachments, buyer costs and resale analysis**, not just car appraisal screens. My early-2026 work preserved a **71-line, 79-unit inventory** with actual aggregate acquisition costs and a separate projected retail ledger. That is real operational research, **not proof that those units were resold at the proposed prices**. The archived sales log was empty at the relevant summary date.
+
+The equipment categories I have studied include **root rakes, pallet forks, buckets, blades, snow pushers, flail-mowing equipment, pressure washers, compact loaders and other farm-adjacent machinery**. The first possible autonomous buying policy is deliberately narrower than the research portfolio: selected non-powered attachments only, with live execution still OFF.
+
+Public auction research has also tested why an **auction lot title**, **price-realized amount**, **online buyer premium**, **exact powered configuration**, and **verified buyer settlement** must remain separate. The current private auction-evidence ledger includes 22 potential reported-sale observations, but weak comparability means no category is released for real-money decisions.
+
+Start with [Agricultural Equipment](docs/AGRICULTURAL_EQUIPMENT.md), [Auction Intelligence](docs/AUCTION_INTELLIGENCE.md), [Auction Evidence Cases](docs/AG_AUCTION_CASE_STUDIES.md), [Automation Architecture](docs/AUCTION_DATA_AUTOMATION.md) or [Project History](docs/PROJECT_ORIGINS_TIMELINE.md).
 
 ## What I am building
 
@@ -18,8 +28,9 @@ I am extending the existing prototype toward continuous market observation, outc
 | Dimension | Current status |
 | --- | --- |
 | Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
-| Private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
-| Public showcase | **v2.0.0**, a standalone presentation repo, not the private application. |
+| GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
+| Separate unpublished Replit worktree | **v2.15.2** adds inspection and market research workflows; it is not reconciled with GitHub and is not production. |
+| Public showcase | **v2.1.0**, a standalone presentation repo, not the private application. |
 | Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
 | First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
 | Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
@@ -30,6 +41,14 @@ I am extending the existing prototype toward continuous market observation, outc
 | Profit Protection™ | **Inactive**. No guarantee, funded protection program or coverage is being sold. |
 
 [Read the status and limits in full](docs/STATUS_SNAPSHOT.md).
+
+## The research spans two different agricultural problems
+
+**Current priority: equipment acquisition and auctions.** Track exact lot/asset evidence, fees, complete landed costs, defensible comparisons, resale timing and eventually verified realized outcomes. Preserve vehicle functionality.
+
+**Related historical R&D: Equipment Service Readiness and Recovery.** Earlier work specified configuration, fitment, parts/tools/technician preparation and confirmed field-service recovery, with synthetic reference tests. It has not been shown to be a deployed or validated agricultural service product. See [Service R&D](docs/AG_SERVICE_READINESS_RND.md).
+
+This separation matters because a mentor should see both the **history of the research** and the **current product focus**, without mistaking a second set of requirements for an already shipped application.
 
 ## Why I am building it
 
@@ -85,6 +104,18 @@ The public GitHub repo deliberately contains **only architecture-level descripti
 
 [Engineering architecture](docs/ARCHITECTURE.md) · [Autonomy and safety](docs/AUTONOMY.md) · [Verification matrix](docs/TESTING.md).
 
+## Actual auction data problems I am working on
+
+**Pre-bid:** maintain dated listing and lot observations; distinguish catalog claim from verified configuration; derive full cost exposure from the applicable auction's terms, rather than copying a fixed buyer fee between events.
+
+**At close:** distinguish an ended auction, a public "Price Realized" figure, an attributable hammer price and a paid invoice. An archived pre-close bid cannot become a sale result.
+
+**After acquisition:** separate an advertised future retail price from a completed disposition. Only a unit-matched transaction with actual expenses supports a realized-margin record.
+
+**In calibration:** avoid false confidence from geographically clustered, mixed-configuration sold-result samples. A historical median is not automatically a supported resale number.
+
+External sources including [I.R.A.Y. Companies](https://www.iraymn.com/auctions/8443ee3c) and [HiBid](https://hibid.com/www.heretn.com/lot/323004423/wolverine-db-15-84w-skid-steer-snow-pusher) illustrate these problems. Those public sources do **not** establish ownership of any specific lot or commercial reuse permissions. [Read the auction research](docs/AUCTION_INTELLIGENCE.md).
+
 ## Evidence rather than exaggerated claims
 
 I keep **asking price, current bid, completed auction price, projected resale, verified sold result, and realized net profit** as distinct concepts. Synthetic regression passes do not create sold units; a screenshot does not prove clear title; an attractive spread is not profit.
@@ -108,6 +139,13 @@ I completed a Great Plains regional I-Corps customer discovery cohort. The next 
 | Resource | What it covers |
 | --- | --- |
 | [Start here](docs/START_HERE.md) | Five-minute tour for evaluators |
+| [Agricultural equipment](docs/AGRICULTURAL_EQUIPMENT.md) | Actual equipment categories, physical configuration and acquisition scope |
+| [Auction intelligence](docs/AUCTION_INTELLIGENCE.md) | Lot lifecycle, premiums, sale outcomes and reconciliation |
+| [Auction research cases](docs/AG_AUCTION_CASE_STUDIES.md) | Sanitized original inventory, public results and configuration traps |
+| [Auction data automation](docs/AUCTION_DATA_AUTOMATION.md) | Proposed permitted-source ingestion and outcome-linking workflow |
+| [Ag and auction competitive context](docs/AG_AUCTION_COMPETITIVE_CONTEXT.md) | Existing offerings and the differentiator to test |
+| [Project history](docs/PROJECT_ORIGINS_TIMELINE.md) | Chronology from equipment auctions to current source engineering |
+| [Ag service R&D](docs/AG_SERVICE_READINESS_RND.md) | Separate prior dealer service preparation research |
 | [Product modules](docs/PRODUCT_MODULES.md) | Existing features, source-tested features, and planned features |
 | [Current status](docs/STATUS_SNAPSHOT.md) | Exact release, evidence and permission boundaries |
 | [Architecture](docs/ARCHITECTURE.md) | Conceptual data flow, module map, trust boundaries |

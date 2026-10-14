@@ -1,6 +1,6 @@
 # AvLü™ mentor review packet
 
-**v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
 
 ## What I would like your help evaluating
 
@@ -39,5 +39,13 @@ No credentials, confidential dealer data, private contact lists, money-transfer 
 ## Most useful output from our discussion
 
 A prioritized list of the **three highest-risk assumptions**, a smallest-credible pilot, and one measurable milestone worth pursuing before expanding the product.
+
+## Agricultural auction review requests
+
+A particularly useful technical review would scrutinize **exact auction lot-to-unit matching**, access to **licensed or otherwise permitted historical prices**, buyer-premium and tax normalization, hydraulic/non-powered classification, and **linking actual acquisitions to completed resale proceeds**.
+
+I have real historic acquisition-accounting evidence and public auction outcomes, but not enough unit-matched realized profit histories to release a valuation policy. A recent unpublished Replit market-research/inspection code line also needs safe reconciliation with GitHub source. The next mentor discussion should prioritize **one permitted-source integration and one truly attributable, fully costed sale**, not an unbounded data scrape.
+
+[Equipment strategy](AGRICULTURAL_EQUIPMENT.md) · [Auction process](AUCTION_INTELLIGENCE.md) · [Evidence cases](AG_AUCTION_CASE_STUDIES.md) · [Data automation](AUCTION_DATA_AUTOMATION.md) · [Competitor context](AG_AUCTION_COMPETITIVE_CONTEXT.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

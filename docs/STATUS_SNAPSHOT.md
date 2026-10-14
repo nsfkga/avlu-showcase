@@ -1,6 +1,6 @@
 # Current status snapshot | October 14, 2026
 
-**Document v2.0.0 | Owner: Nathaniel Schroeder**  
+**Document v2.1.0 | Owner: Nathaniel Schroeder**  
 **This is a dated snapshot, not automatically synchronized with the private source.**
 
 ## Releases and environment
@@ -8,12 +8,12 @@
 | Component | Verified state |
 | --- | --- |
 | Public AvLü application | v2.13.0, last verified successful publication at getavlu.com |
-| Current private application source | v2.14.0, merged and source verified, with later recovery and privacy test additions |
+| Current private GitHub source | v2.14.0, merged and source verified, with later recovery and privacy test additions |
 | v2.14.0 production publication | Not completed or verified |
 | Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
 | Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
 | Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical showcase | v2.0.0, published separately from the application |
+| Public technical showcase | v2.1.0, published separately from the application |
 
 The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
 
@@ -68,5 +68,17 @@ The first potential autonomous buying policy is restricted to selected **non-pow
 **No demo, shadow status, simulation pass or expected profit should be interpreted as buying authorization, guaranteed return, or an active coverage product.**
 
 The private engineering evidence and release receipts were reviewed when this snapshot was prepared, but are not copied into this public repository.
+
+## Auction and agriculture: overlooked evidence and current code split
+
+**Historical acquisition evidence:** the retained early-2026 inventory has 71 lines and 79 units, actual aggregate acquisition accounting, and projected retail values. Its archived sales log was empty, so completed resale profit cannot be inferred.
+
+**Auction sources:** the January 7, 2026 public regional archive has 523 items; separate public sold-result analysis contains 22 candidate attachment outcomes. Four September auction events were confirmed ended without verified final settlement amounts for those shadow cases.
+
+**Mechanical scope:** selected non-powered compact attachments are the proposed first policy. A catalog title may mask hydraulic actuation, requiring a HOLD/exclusion when configuration is unverified.
+
+**Application versions:** v2.13.0 is the last verified published build. Private GitHub v2.14.0 includes later history/recovery source. A separate **unpublished and unmirrored Replit v2.15.2** contains local market-research/inspection work, with 12 fictional unit tests, 17 inspection assertions and seven expected-error checks reported passing. Integration, full release acceptance and owner production read/write verification are pending.
+
+[Full auction chain](AUCTION_INTELLIGENCE.md) · [Agricultural equipment scope](AGRICULTURAL_EQUIPMENT.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

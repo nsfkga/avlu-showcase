@@ -1,4 +1,4 @@
-// Public-release boundary verifier v2.0.0.
+// Public-release boundary verifier v2.1.0.
 // © 2026 Nathaniel Schroeder. All rights reserved.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -13,7 +13,14 @@ const allowed = new Set([
   'docs/MARKET_DATA.md','docs/AUTONOMY.md','docs/TESTING.md',
   'docs/CUSTOMER_DISCOVERY.md','docs/DIFFERENTIATION.md',
   'docs/COMMERCIALIZATION.md','docs/PILOT_PLAN.md','docs/MENTOR_REVIEW.md',
-  'docs/FAQ.md','docs/SERVICE_RND.md'
+  'docs/FAQ.md','docs/SERVICE_RND.md',
+  'docs/AGRICULTURAL_EQUIPMENT.md',
+  'docs/AUCTION_INTELLIGENCE.md',
+  'docs/AG_AUCTION_CASE_STUDIES.md',
+  'docs/AUCTION_DATA_AUTOMATION.md',
+  'docs/AG_SERVICE_READINESS_RND.md',
+  'docs/AG_AUCTION_COMPETITIVE_CONTEXT.md',
+  'docs/PROJECT_ORIGINS_TIMELINE.md'
 ]);
 const errors=[];
 const checkText=new Set([...allowed].filter(p=>!p.endsWith('.json')&&!p.endsWith('.css')&&!p.endsWith('index.html')&&!p.endsWith('.gitignore')&&!p.endsWith('.yml')));
@@ -35,15 +42,21 @@ walk(root);
 for (const p of allowed) if(!fs.existsSync(path.join(root,p)))errors.push('Required file missing: '+p);
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
 const marker=fs.readFileSync(path.join(root,'VERSION.txt'),'utf8').trim().split(/\s+/)[0];
-if(pkg.version!=='2.0.0'||marker!=='2.0.0')errors.push('SemVer mismatch: showcase must be 2.0.0');
+if(pkg.version!=='2.1.0'||marker!=='2.1.0')errors.push('SemVer mismatch: showcase must be 2.0.0');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const js=fs.readFileSync(path.join(root,'assets/demo.js'),'utf8');
 const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
 if(!html.includes('getavlu.com'))errors.push('Link to working application missing');
-if(!html.includes('v2.0.0'))errors.push('Visible site version outdated');
+if(!html.includes('v2.1.0'))errors.push('Visible site version outdated');
 if(!html.includes('synthetic') && !html.includes('fictional'))errors.push('Synthetic demo not disclosed');
 if(!readme.includes('v2.13.0')||!readme.includes('v2.14.0'))errors.push('Published versus source status omitted');
 if(!readme.includes('48,000')||!readme.includes('30'))errors.push('Required bounded evidence omitted');
+if(!readme.includes('79')||!readme.includes('auction')||!readme.includes('agricultural')) errors.push('Auction/agriculture product story absent');
+if(!html.includes('id="auctions"')||!html.includes('id="equipment"')) errors.push('Agriculture and auctions not visible on homepage');
+for(const p of ["docs/AGRICULTURAL_EQUIPMENT.md","docs/AUCTION_INTELLIGENCE.md","docs/AG_AUCTION_CASE_STUDIES.md","docs/AUCTION_DATA_AUTOMATION.md","docs/AG_SERVICE_READINESS_RND.md","docs/AG_AUCTION_COMPETITIVE_CONTEXT.md","docs/PROJECT_ORIGINS_TIMELINE.md"]) {
+  if(!fs.readFileSync(path.join(root,p),'utf8').includes('Nathaniel Schroeder')) errors.push('Owner notice missing in research file: '+p);
+}
+
 if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(js))errors.push('Sample appears to make network calls');
 if(/<script\b[^>]*src\s*=\s*["']https?:/i.test(html))errors.push('Remote script found');
 if(/<form\b/i.test(html))errors.push('Public demo should not collect user data');

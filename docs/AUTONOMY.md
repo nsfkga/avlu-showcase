@@ -1,6 +1,6 @@
 # Autonomous acquisition | Engineering and release boundaries
 
-**v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
 
 ## What autonomous means in the long-term plan
 
@@ -59,5 +59,13 @@ Profit Protection™ is a **named research and product concept, currently inacti
 3. How should audit evidence be tied to a frozen policy version so history cannot be rewritten?
 4. Which controls must be external to the policy engine before capital can be deployed?
 5. Where would a human-in-the-loop pilot produce decisive evidence before a costly system integration?
+
+## Auction category boundary and permitted observations
+
+The first proposed autonomous category is **selected non-powered compact attachments**, not every vehicle, loader or agricultural machine. Root rakes, snow pushers and blades require physical/configuration proof because similar titles can denote powered hydraulic components.
+
+The development goal is permissioned recurring lot observation, accurate fee/settlement evidence, conservative comparison and matched resale outcomes. The published Watchlist is a research tool, **not proof of an always-updating external market feed**. Neither a reference APPROVE nor a closed auction authorizes any bid or purchase.
+
+[Detailed auction automation research](AUCTION_DATA_AUTOMATION.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

@@ -1,6 +1,6 @@
 # Related research | Equipment Service Readiness and Recovery
 
-**v2.0.0 | Historical R&D only | Nathaniel Schroeder**
+**v2.1.0 | Historical R&D only | Nathaniel Schroeder**
 
 Alongside acquisition screening, I explored a separate equipment-dealer problem: incomplete intake, mismatched machine/implement information, parts/tool uncertainty and service coordination before a field visit.
 
@@ -20,5 +20,9 @@ The proposed workflow would track:
 The current primary roadmap is **autonomous acquisition underwriting with evidence and conservative controls**. Service readiness remains an adjacent research branch, not the publicly offered production product.
 
 I am preserving this research because it provides useful insight into equipment identity, fitment, parts availability and workflow handoffs, but it should not be mistaken for an implemented acquisition feature.
+
+## Expanded agricultural research record
+
+Read [Agricultural Service Readiness R&D](AG_SERVICE_READINESS_RND.md) for the September research direction, machine/implement configuration, job-kit and technician coordination, outcome definitions, and synthetic reference evidence. **Current acquisition and auction intelligence remains the primary roadmap.** The two lanes must not be presented as two released products.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

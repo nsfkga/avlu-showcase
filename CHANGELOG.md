@@ -3,6 +3,25 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.1.0] - 2026-10-14
+
+### Added
+- Full agricultural-equipment origins and initial attachment category scope.
+- Auction-intelligence workflow from lot identity through hammer, fees, settlement, resale, and realized profit.
+- Sanitized evidence case studies covering historical 79-unit inventory, public sold-result observations, and mechanical configuration conflicts.
+- Authorized-market-data automation design, competing auction-data products, and project-history timeline.
+- Expanded service-readiness R&D summary as a separate historical research direction.
+- Explicit description of the unpublished Replit v2.15.2 market-research/inspection worktree and GitHub v2.14.0 reconciliation requirement.
+
+### Changed
+- Public homepage now foregrounds agriculture and auction research, rather than a generic AI appraisal story.
+- Revised product, status, customer-discovery, mentor-review, architecture, testing and roadmap notes.
+- Maintained non-executable purchase controls, inactive Profit Protection™, and the strict difference between asking price and realized profit.
+
+### Publication exclusions
+- No confidential former counterparties, private source histories, raw unit invoices, user-contact records, sensitive implementations or unrelated inspirations have been imported.
+- No live app, private database, hosting or purchasing permissions were changed.
+
 ## [2.0.0] - 2026-10-14
 
 ### Changed

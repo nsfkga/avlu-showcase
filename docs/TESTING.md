@@ -1,6 +1,6 @@
 # Engineering verification | Evidence and limits
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.1.0 | Nathaniel Schroeder**
 
 AvLü has accumulated substantial private CI, browser, runtime and policy testing. I summarize public-safe evidence here without exporting the test fixtures, implementation internals or private deployment routes.
 
@@ -35,5 +35,11 @@ AvLü has accumulated substantial private CI, browser, runtime and policy testin
 5. Bounded pilots measuring time saved, evidence omissions, override rate and actual user return.
 
 I can provide narrower implementation evidence confidentially after reviewer scope and access terms are agreed.
+
+## Newer equipment and market-research source tests
+
+The separate **Replit v2.15.2 unpublished source** has a recorded passing local `npm run check`, 25 changed JavaScript syntax checks, **12 fictional market-research unit tests**, **17 inspection assertions** and **seven expected-error cases**. It is not safely integrated with the private GitHub v2.14.0 line and has not completed full production acceptance.
+
+The auction business records prove source and some acquisition-cost facts, not modeled realized profit. The 18 public pallet-fork result observations are not an accepted fully calibrated comparison cohort. Real adoption, paid deals and purchase execution do not follow from synthetic test passes.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

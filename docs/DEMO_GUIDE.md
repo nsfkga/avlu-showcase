@@ -1,6 +1,6 @@
 # Demonstration guide | Live product versus public fixture
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.1.0 | Nathaniel Schroeder**
 
 ## Two different experiences
 
@@ -24,5 +24,11 @@ Do not show private contacts, proprietary engine source, restricted data exports
 Select one of the three fictional cases. Point out its "HOLD", "INVESTIGATE" or "REJECT" state and missing evidence. There are deliberately no real maximum bid figures or claims of realized profit in this interface.
 
 **Important:** A fixed synthetic case is a communication aid, not a functional test of production calculation accuracy.
+
+## Show the actual agricultural and auction research, not just three fictional cards
+
+For a mentor or gBETA walkthrough, begin with the working public app, then open [Agricultural Equipment](AGRICULTURAL_EQUIPMENT.md), [Auction Intelligence](AUCTION_INTELLIGENCE.md) and [Auction Case Studies](AG_AUCTION_CASE_STUDIES.md). Explain why the 79-unit historical ledger, public realized-result records, source-specific buyer premiums, and powered-versus-non-powered classification are meaningful research.
+
+The static three-card interface is *not* a substitute for the real app or the auction research. Continuous live market sync and autonomous purchasing remain unverified/off.
 
 © 2026 Nathaniel Schroeder. All rights reserved.

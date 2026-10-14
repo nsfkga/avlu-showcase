@@ -1,6 +1,6 @@
 # Market observations, provenance and realized outcomes
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.1.0 | Nathaniel Schroeder**
 
 A central AvLü direction is to let a buyer monitor inventory opportunities over time and see supported resale potential **without confusing an advertised price with a completed profitable sale**.
 
@@ -49,5 +49,13 @@ For each source and category, assess observed coverage, permission and source st
 For each historical decision, compare the information known *at the decision date* with the eventual verified outcome. A replay that can peek at the final outcome is not evidence that the original recommendation was good.
 
 I intend to use real results to calibrate category-specific uncertainty and decline to issue supported bid limits where the outcome data cannot justify them.
+
+## Auction evidence examples already examined
+
+- The [January 7, 2026 I.R.A.Y. heavy-equipment event](https://www.iraymn.com/auctions/8443ee3c) is publicly archived with 523 items and sale terms. The original exact lots for the historical private equipment portfolio are **not fully matched**.
+- A [Wolverine DB-15-84W lot](https://hibid.com/www.heretn.com/lot/323004423/wolverine-db-15-84w-skid-steer-snow-pusher) reported $850 Price Realized and a 10% buyer premium. [Manufacturer specifications](https://usawolverine.com/html/product/205.html) establish its hydraulically powered model family, so it is **not eligible for the non-powered initial policy** solely because the auction called it a snow pusher.
+- A subset of four September auction results was confirmed ended, but final settlement for the traced shadow cases was not available without additional access. Old current bids were deliberately excluded.
+
+[Read the full auction process and variable fee treatment](AUCTION_INTELLIGENCE.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

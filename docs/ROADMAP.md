@@ -1,6 +1,6 @@
 # Development roadmap | What comes next
 
-**Public roadmap v2.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**Public roadmap v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
 
 This page separates work already achieved from work proposed, under test or blocked. It is not a deployment promise.
 
@@ -65,5 +65,17 @@ Earlier research and synthetic requirements work explored machine configuration,
 ## Immediate decision I need help with
 
 I need a **narrow source-and-outcome pilot** that measures improvement against an existing buyer workflow. More screens or more unverified asking-price captures will not establish realized-profit accuracy.
+
+## Auction and agriculture: next controlled work
+
+1. **Preserve the existing code lines:** reconcile the unpublished Replit v2.15.2 inspection/market-research worktree with GitHub v2.14.0 without overwriting owner data, then run release and production-owner acceptance gates before publication.
+2. **Build a traceable lot history:** exact auction event, lot, model/serial/configuration, observed amount, date, sale status and source terms.
+3. **Normalize actual costs:** paid hammer or acquisition amount, buyer premium, applicable taxes, payment fees, loadout, freight, recon and holding where verified. Missing material components must remain unknown.
+4. **Recover matched completed sales:** actual resale proceeds and selling expenses attributable to the exact acquired unit, not retail asking prices.
+5. **Calibrate one non-powered attachment category** using sufficiently representative and independently attributable results.
+6. **Test against a real buyer's workflow** with consent and no autonomous purchase authority. Measure repeated use, time saved, false HOLDs and missed evidence.
+7. **Keep powered equipment, cars and separate field-service R&D** out of the initial live-buying scope until appropriate independent category validation.
+
+See [Agricultural Equipment](AGRICULTURAL_EQUIPMENT.md), [Auction Cases](AG_AUCTION_CASE_STUDIES.md), and [Automation Research](AUCTION_DATA_AUTOMATION.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.
