@@ -1,0 +1,15 @@
+# Standalone public showcase only
+.DS_Store
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.*
+!*.env.example
+*.pem
+*.key
+*.p12
+private/
+backups/
+exports/

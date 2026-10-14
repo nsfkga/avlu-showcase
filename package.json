@@ -1,0 +1,15 @@
+{
+  "name": "avlu-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline, synthetic public technical showcase for AvLü",
+  "author": "Nathaniel Schroeder",
+  "scripts": {
+    "test": "node --test tests/showcase.test.cjs",
+    "verify:public": "node tools/verify-public.cjs",
+    "check": "npm run test && npm run verify:public"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
