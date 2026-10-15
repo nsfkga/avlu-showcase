@@ -88,3 +88,11 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{font-family:system-ui,sans-serif}h1{font-siz
 .marketplace-caveat{background:#243633;border-left:3px solid var(--accent);padding:15px 18px;font-size:12px;line-height:1.7;margin:18px 0 0;color:#c8d4cc;border-radius:4px}
 .marketplace-caveat a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
 @media(max-width:750px){.marketplace-grid{grid-template-columns:1fr}.marketplace-grid article{padding:20px}}
+
+/* Investor entry points v2.4.0, © 2026 Nathaniel Schroeder. */
+.showcase-investor-banner{display:flex;align-items:center;gap:19px;flex-wrap:wrap;background:linear-gradient(115deg,#28493d,#183331);border:1px solid #6b8468;border-radius:12px;padding:21px 24px;margin:28px 0 5px}
+.showcase-investor-banner>div{flex:1 1 360px;min-width:0}.showcase-investor-banner span,.showcase-investor-banner strong{display:block}.showcase-investor-banner span{font-size:10px;letter-spacing:.13em;color:var(--accent);font-weight:850}
+.showcase-investor-banner strong{font-size:17px;line-height:1.5;margin-top:5px}.showcase-investor-banner>a{font-size:12px;font-weight:750;text-decoration:underline;text-underline-offset:4px;color:#e6d4a0}
+.investor-experience-link{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 20px;margin:0 0 26px;border:1px solid #4f6558;background:#1e3430;border-radius:9px}
+.investor-experience-link>div{flex:1 1 380px}.investor-experience-link strong,.investor-experience-link span{display:block}.investor-experience-link strong{font-size:14px}.investor-experience-link span{font-size:11px;line-height:1.6;color:#b5cabd;margin-top:5px}.investor-experience-link a{font-size:12px;color:var(--accent);font-weight:800}
+@media(max-width:650px){.showcase-investor-banner{padding:17px;gap:12px}.showcase-investor-banner strong{font-size:15px}.showcase-investor-banner>a{min-height:38px}}

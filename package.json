@@ -1,11 +1,11 @@
 {
   "name": "avlu-showcase",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "private": true,
   "description": "AvLü public investor showcase for Marketplace, agricultural equipment and auction acquisition intelligence",
   "author": "Nathaniel Schroeder",
   "scripts": {
-    "test": "node --test tests/showcase.test.cjs",
+    "test": "node --test tests/showcase.test.cjs tests/investor-experience.test.cjs",
     "verify:public": "node tools/verify-public.cjs",
     "check": "npm run test && npm run verify:public"
   },

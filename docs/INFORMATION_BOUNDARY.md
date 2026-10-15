@@ -1,6 +1,6 @@
 # Public information and disclosure boundary
 
-**v2.3.0 | Owner: Nathaniel Schroeder**
+**v2.4.0 | Owner: Nathaniel Schroeder**
 
 This public repository is **independently authored** and does not contain a fork, submodule, copied commit history, filtered directory or mirror of the private AvLü application.
 
@@ -25,6 +25,10 @@ This public repository is **independently authored** and does not contain a fork
 - Real cap tables, investor names, private negotiation terms, bank details, credit information or internal fundraising correspondence.
 - Private commit logs, internal task links, restricted development plans or personal contact data.
 - Names of confidential sources, private interlocutors, or third-party interviewees unless independently cleared for public publication.
+
+## Public interactive presentation constraints
+
+The investor calculator is limited to invented input records and general arithmetic. No private algorithms, policies, dealer observations, logged-in owner records, API credentials, bidding controls, seller contact logic or automatic scraping are published. Presentation pages are self-contained and make no remote script calls. Financing and revenue scenarios must remain prominently labeled as unverified.
 
 ## What must be checked before every public update
 

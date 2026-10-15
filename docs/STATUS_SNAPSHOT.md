@@ -1,6 +1,6 @@
 # Current status snapshot | October 15, 2026
 
-**Document v2.3.0 | Owner: Nathaniel Schroeder**  
+**Document v2.4.0 | Owner: Nathaniel Schroeder**  
 **This is a dated snapshot, not automatically synchronized with the private source.**
 
 ## Releases and environment
@@ -13,9 +13,17 @@
 | Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
 | Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
 | Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical and investor showcase | v2.3.0, published separately from the application |
+| Public technical and investor showcase | v2.4.0, public release planned and subject to separate GitHub verification |
 
 The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
+
+## Investor experience release scope
+
+Version v2.4.0 adds a **public three-minute investor walkthrough**, a fictional browser-only auction cost calculator, a hypothetical subscription model, a sourced competitor comparison, an evidence/traction status page and a printable presentation. The new calculators do **not** connect to real inventory, modify costs, use external market feeds or authorize purchases.
+
+No acquisition receipts, paid subscription records, Meta-approved data access, company finances, credentials or private algorithms have been imported into the public repository. The displayed customer prices, SaaS economics, CAC/churn and $100,000 financing plan remain **hypotheses only**.
+
+[Investor walkthrough](../investors.html) · [Presentation](../pitch.html) · [Traction status](TRACTION_SCORECARD.md).
 
 ## Facebook Marketplace status
 

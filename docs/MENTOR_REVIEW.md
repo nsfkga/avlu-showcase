@@ -1,6 +1,6 @@
 # AvLü™ mentor review packet
 
-**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.4.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## What I would like your help evaluating
 
@@ -15,6 +15,12 @@ I have outlined a hypothetical $100,000 milestone-based initial funding plan and
 I especially need help validating the **economic buyer, legal market-data rights, conversion from paid pilots, full founder-time CAC, support burden, retention and what could justify the next round**.
 
 [Investor overview](INVESTOR_OVERVIEW.md) · [Commercialization](COMMERCIALIZATION.md) · [Risks](INVESTOR_DILIGENCE.md).
+
+## Fast review link for mentors and investors
+
+The [three-minute investor experience](../investors.html) starts with the product hypothesis, identifies incumbent overlap, and shows fictional acquisition and subscription math without publishing private source. The [printable investor presentation](../pitch.html) is a shorter meeting aid.
+
+[Competitive matrix](COMPETITIVE_MATRIX.md) · [Evidence scorecard](TRACTION_SCORECARD.md) · [Customer ROI experiment](CUSTOMER_ROI_TEST.md).
 
 ## Questions for a technical mentor
 

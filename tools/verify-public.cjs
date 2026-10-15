@@ -1,4 +1,4 @@
-// Public-release boundary verifier v2.3.0.
+// Public-release boundary verifier v2.4.0.
 // © 2026 Nathaniel Schroeder. All rights reserved.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -27,7 +27,12 @@ const allowed = new Set([
   'docs/SAAS_UNIT_ECONOMICS.md',
   'docs/GO_TO_MARKET.md',
   'docs/INVESTOR_DILIGENCE.md',
-  'docs/FACEBOOK_MARKETPLACE_STRATEGY.md'
+  'docs/FACEBOOK_MARKETPLACE_STRATEGY.md',
+  'investors.html','pitch.html',
+  'assets/investor.css','assets/investor-experience.js','assets/pitch.css','assets/pitch.js',
+  'tests/investor-experience.test.cjs',
+  'docs/INVESTOR_3_MINUTE_TOUR.md','docs/COMPETITIVE_MATRIX.md',
+  'docs/TRACTION_SCORECARD.md','docs/CUSTOMER_ROI_TEST.md','docs/PITCH_DECK_GUIDE.md'
 ]);
 const errors=[];
 const checkText=new Set([...allowed].filter(p=>!p.endsWith('.json')&&!p.endsWith('.css')&&!p.endsWith('index.html')&&!p.endsWith('.gitignore')&&!p.endsWith('.yml')));
@@ -49,12 +54,12 @@ walk(root);
 for (const p of allowed) if(!fs.existsSync(path.join(root,p)))errors.push('Required file missing: '+p);
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
 const marker=fs.readFileSync(path.join(root,'VERSION.txt'),'utf8').trim().split(/\s+/)[0];
-if(pkg.version!=='2.3.0'||marker!=='2.3.0')errors.push('SemVer mismatch: showcase must be 2.3.0');
+if(pkg.version!=='2.4.0'||marker!=='2.4.0')errors.push('SemVer mismatch: showcase must be 2.4.0');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const js=fs.readFileSync(path.join(root,'assets/demo.js'),'utf8');
 const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
 if(!html.includes('getavlu.com'))errors.push('Link to working application missing');
-if(!html.includes('v2.3.0'))errors.push('Visible site version outdated');
+if(!html.includes('v2.4.0'))errors.push('Visible site version outdated');
 if(!html.includes('synthetic') && !html.includes('fictional'))errors.push('Synthetic demo not disclosed');
 if(!readme.includes('v2.13.0')||!readme.includes('v2.14.0'))errors.push('Published versus source status omitted');
 if(!readme.includes('48,000')||!readme.includes('30'))errors.push('Required bounded evidence omitted');
@@ -83,8 +88,33 @@ if(!html.includes('id="marketplace"') || !html.includes('Facebook Marketplace'))
 if(!marketplace.includes('vehicles and equipment') || !marketplace.includes('asking prices') || !marketplace.includes('Meta')) errors.push('Marketplace strategy lacks category/evidence/access rules');
 if(marketplace.includes('live production Facebook API integration')) errors.push('Unsupported Marketplace API activation language');
 
+
+const investorHTML=fs.readFileSync(path.join(root,'investors.html'),'utf8');
+const pitchHTML=fs.readFileSync(path.join(root,'pitch.html'),'utf8');
+const experience=fs.readFileSync(path.join(root,'assets/investor-experience.js'),'utf8');
+const pitchScript=fs.readFileSync(path.join(root,'assets/pitch.js'),'utf8');
+for(const [name,body] of [['investors.html',investorHTML],['pitch.html',pitchHTML]]){
+  if(!body.includes('v2.4.0')||!body.includes('Nathaniel Schroeder'))errors.push(name+' missing current version or owner');
+  if(/<form\b/i.test(body)||/<script\b[^>]*src\s*=\s*["']https?:/i.test(body))errors.push(name+' includes form or remote script');
+  if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(body))errors.push(name+' appears to make network requests');
+}
+for(const [name,script] of [['investor-experience.js',experience],['pitch.js',pitchScript]]){
+  if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|localStorage|sessionStorage)\s*\(/.test(script))errors.push(name+' uses forbidden network or storage');
+}
+for(const id of ['tour','difference','acquisition','business-model','traction']){
+  if(!investorHTML.includes('id="'+id+'"'))errors.push('Investor tour missing '+id);
+}
+if(!investorHTML.includes('PRICING')&&!investorHTML.includes('hypothetical'))errors.push('Investor risk caveat missing');
+if((pitchHTML.match(/class="pitch-slide/g)||[]).length!==10)errors.push('Pitch should have ten slide sections');
+if(!pitchHTML.includes('Print / Save as PDF'))errors.push('Pitch export instructions missing');
+if(!readme.includes('investors.html')||!readme.includes('pitch.html'))errors.push('Investor links missing in README');
+for(const p of ['docs/INVESTOR_3_MINUTE_TOUR.md','docs/COMPETITIVE_MATRIX.md','docs/TRACTION_SCORECARD.md','docs/CUSTOMER_ROI_TEST.md','docs/PITCH_DECK_GUIDE.md']){
+  const c=fs.readFileSync(path.join(root,p),'utf8');
+  if(c.length<1000||!c.includes('Nathaniel Schroeder'))errors.push(p+' incomplete or missing author credit');
+}
+
 if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(js))errors.push('Sample appears to make network calls');
 if(/<script\b[^>]*src\s*=\s*["']https?:/i.test(html))errors.push('Remote script found');
 if(/<form\b/i.test(html))errors.push('Public demo should not collect user data');
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
-else console.log('Public showcase v2.3.0 boundary passed. '+allowed.size+' explicit files, no external data calls.');
+else console.log('Public showcase v2.4.0 boundary passed. '+allowed.size+' explicit files, no external data calls.');

@@ -1,9 +1,17 @@
 # AvLü™ | Facebook Marketplace, agriculture and auction acquisition intelligence
 
-**Public technical and investor showcase | v2.3.0 | October 15, 2026**  
+**Public technical and investor showcase | v2.4.0 | October 15, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
-**[Explore the working AvLü prototype](https://getavlu.com)** · **[Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md)** · **[Investor overview](docs/INVESTOR_OVERVIEW.md)** · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+**[Three-minute investor tour](investors.html)** · **[Working AvLü prototype](https://getavlu.com)** · **[Printable investor pitch](pitch.html)** · [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) · [Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+
+## Start with the investor experience
+
+**[Open the three-minute interactive investor review](investors.html)**. It shows what the product is meant to solve, what incumbents already offer, a fictional auction cost scenario, adjustable hypothetical subscription economics, and a dated validation scorecard. The examples do not inspect real listings or connect to the private application.
+
+**[Open the printable ten-slide investor presentation](pitch.html)** for a concise discussion. Use the browser's Print / Save as PDF control to export the slide layout.
+
+For detailed review: [Reading guide](docs/INVESTOR_3_MINUTE_TOUR.md) · [Competitor assessment](docs/COMPETITIVE_MATRIX.md) · [Evidence scorecard](docs/TRACTION_SCORECARD.md) · [Customer ROI test](docs/CUSTOMER_ROI_TEST.md).
 
 ## We use Facebook Marketplace, auctions, and dealer/private-sale listings
 
@@ -40,7 +48,7 @@ I am extending the existing prototype toward continuous market observation, outc
 | Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
 | GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
 | Separate Replit-derived source | **v2.15.2** market and inspection research modules have been preserved and staged for isolated private integration review; not merged to main or deployed. |
-| Public showcase | **v2.3.0**, a standalone presentation repo, not the private application. |
+| Public showcase | **v2.4.0**, a standalone presentation repo, not the private application. |
 | Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
 | First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
 | Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
@@ -160,6 +168,13 @@ I completed a Great Plains regional I-Corps customer discovery cohort. The next 
 
 | Resource | What it covers |
 | --- | --- |
+| [Three-minute investor experience](investors.html) | Guided web presentation with two editable fictional models |
+| [Printable ten-slide investor pitch](pitch.html) | Slide-style HTML presentation with Save as PDF |
+| [Investor reading guide](docs/INVESTOR_3_MINUTE_TOUR.md) | Navigation for reviewers with limited time |
+| [Competitive matrix](docs/COMPETITIVE_MATRIX.md) | Official competitor references, overlap, and testable wedge |
+| [Traction scorecard](docs/TRACTION_SCORECARD.md) | Dated actual progress, unverified claims, and upcoming milestones |
+| [Customer ROI experiment](docs/CUSTOMER_ROI_TEST.md) | Fair baseline, cost and productivity measurement for pilots |
+| [Slide presentation guide](docs/PITCH_DECK_GUIDE.md) | Ten-slide narrative and export instructions |
 | [Start here](docs/START_HERE.md) | Five-minute tour for evaluators |
 | [Agricultural equipment](docs/AGRICULTURAL_EQUIPMENT.md) | Actual equipment categories, physical configuration and acquisition scope |
 | [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) | Vehicle, equipment and private-seller opportunity sourcing, verification and access rights |
@@ -194,7 +209,7 @@ I completed a Great Plains regional I-Corps customer discovery cohort. The next 
 
 ## Important boundaries
 
-The **live application is at [getavlu.com](https://getavlu.com)**. The interactive file in this repository is a **fictional fixed-state illustration**. It does not calculate real offers, obtain source data, access production or demonstrate autonomous purchasing.
+The **live application is at [getavlu.com](https://getavlu.com)**. The homepage's three original demo cases remain a **fictional fixed-state illustration**. The new investor page additionally calculates user-editable **hypothetical numbers entirely in the browser**, not live equipment or AvLü revenue. It does not calculate real offers, obtain source data, access production or demonstrate autonomous purchasing.
 
 This repo is public to make the problem, product discipline, and technical work **reviewable without publishing proprietary code, protected records, confidential business details, or private source history**. It is not an open-source release or a dealer implementation package.
 
