@@ -1,6 +1,6 @@
 # Public information and disclosure boundary
 
-**v2.2.0 | Owner: Nathaniel Schroeder**
+**v2.3.0 | Owner: Nathaniel Schroeder**
 
 This public repository is **independently authored** and does not contain a fork, submodule, copied commit history, filtered directory or mirror of the private AvLü application.
 
@@ -11,6 +11,7 @@ This public repository is **independently authored** and does not contain a fork
 - Sanitized descriptions of source-verified tests and historical audit counts.
 - Non-sensitive technical decisions and engineering questions.
 - Invented static UI examples.
+- General descriptions of permitted user-supplied Facebook Marketplace and private-sale opportunity research, without republishing seller identity, screenshots, seller correspondence or restricted source data.
 - Proposed pilot scope, modeled subscription pricing, hypothetical unit economics, funding allocations and commercial validation criteria, always clearly marked as unproven assumptions.
 - Links to the existing public application.
 
@@ -18,7 +19,7 @@ This public repository is **independently authored** and does not contain a fork
 
 - Private application implementation, formulas, algorithm parameters or weights.
 - Confidential acquisition policies, operational thresholds or source-access mechanisms.
-- Raw VIN/serial datasets, seller-specific evidence, customer records, invoices, contracts, private correspondence or exact deal economics.
+- Raw VIN/serial datasets, Marketplace seller-specific evidence, user-posted photographs/screenshots, customer records, invoices, contracts, private correspondence or exact deal economics.
 - Credentials, authentication keys, internal production API contracts, infrastructure secrets, environment settings or protected route implementation.
 - Vendor license terms, restricted integration contracts, financial reserve details or confidential actual customer pricing.
 - Real cap tables, investor names, private negotiation terms, bank details, credit information or internal fundraising correspondence.

@@ -1,6 +1,20 @@
 # AvLü™ frequently asked questions
 
-**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
+
+### Does AvLü use Facebook Marketplace?
+
+**Yes.** Facebook Marketplace is an intended important source of used vehicles, loaders, attachments and private-sale opportunities. AvLü's private source-search code already recognizes it for vehicle and equipment research. The product is meant to evaluate Marketplace listings alongside auction and dealer opportunities, applying the same source, ownership, condition, cost, comparable and review controls.
+
+### Is Facebook Marketplace continuously connected to AvLü?
+
+**Not in the verified published product.** The project has historical QA listing records and source-selection behavior, but does **not** claim a Meta-approved unattended scraper, live API feed, automatic seller messaging or a completed-sale-price database. A Marketplace asking price is not realized resale revenue. [Source workflow and permissions](FACEBOOK_MARKETPLACE_STRATEGY.md).
+
+### Could AvLü help with reselling something through Marketplace?
+
+It could support *separate* owner-led resale research and economics, while a user independently lists or sells items as permitted. Automatic Facebook posting, binding offers or transaction handling are **not** current AvLü capabilities. That resale activity is also separate from subscription revenue.
+
+
 
 ### What will AvLü charge customers?
 

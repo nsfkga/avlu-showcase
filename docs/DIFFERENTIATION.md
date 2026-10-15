@@ -1,6 +1,6 @@
 # Differentiation | Why buy AvLü instead of asking an AI?
 
-**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## The challenge is legitimate
 
@@ -13,6 +13,14 @@ Someone can paste a listing into ChatGPT or another model and ask for a value, p
 **Why not use an incumbent?** Established platforms such as [Tractor Zoom](https://tractorzoom.com/), [Machinery Pete](https://www.machinerypete.com/about-us) and [EquipmentWatch](https://equipmentwatch.com/) already provide significant valuation, auction-market and dealership capabilities. The possible niche is a focused **cross-source evidence gate for messy auction and equipment listings before money is committed**, not an unsupported claim that competitors lack similar functions.
 
 **The commercial proof:** a customer must repeatedly pay for demonstrated value. Proposed rates of $199, $499 or from $999 monthly are not independently validated. [Business model](INVESTOR_OVERVIEW.md).
+
+## Marketplace listings illustrate the differentiation
+
+A generic GPT can read a copied Facebook Marketplace listing and suggest a plausible value. An appraisal guide may help with some vehicles or equipment. **AvLü is testing the workflow between seeing an attractive private-seller listing and deciding whether it is worth pursuing**: attributable source and date, proof of VIN/serial and configuration, missing ownership or condition evidence, recon and transport costs, relevant permitted comparison data, and an auditable HOLD or next action.
+
+That same discipline applies to regional equipment auctions and dealer inventory. Marketplace is an important **source of opportunities**, not a proprietary feed or completed sale database. Its current use is research/source selection and permitted listing input, **not** a deployed autonomous Facebook connection. [Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md).
+
+I must show in controlled paid pilots that combining these checks beats the actual alternative workflow. Calling the product "AI-powered Facebook flipping" would be inaccurate and commercially weak.
 
 ## The workflow hypothesis
 

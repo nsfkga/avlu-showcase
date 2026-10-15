@@ -1,9 +1,19 @@
-# AvLü™ | Agriculture, equipment auctions and acquisition intelligence
+# AvLü™ | Facebook Marketplace, agriculture and auction acquisition intelligence
 
-**Public technical and investor showcase | v2.2.0 | October 15, 2026**  
+**Public technical and investor showcase | v2.3.0 | October 15, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
-**[Explore the working AvLü prototype](https://getavlu.com)** · **[Investor overview](docs/INVESTOR_OVERVIEW.md)** · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+**[Explore the working AvLü prototype](https://getavlu.com)** · **[Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md)** · **[Investor overview](docs/INVESTOR_OVERVIEW.md)** · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+
+## We use Facebook Marketplace, auctions, and dealer/private-sale listings
+
+**Yes, Facebook Marketplace is an intended core AvLü opportunity source**, for used vehicles, pickups, trailers, compact equipment and attachments. The private application already recognizes Facebook Marketplace in **both its vehicle and equipment source selectors**. Its historical QA work includes manually researched Marketplace leads alongside dealer and auction sources.
+
+Facebook Marketplace provides **candidate asking-price listings**, often with incomplete or conflicting information. AvLü's business case is to transform a buyer-supplied or otherwise authorized listing into a **proof-first acquisition decision**: identify VIN/serial and configuration gaps, note condition and seller claims, examine total fees/recon/transport, compare legitimate sale evidence, and decide whether a deal warrants more work or stays **HOLD**.
+
+**Important access boundary:** There is no independently verified live Facebook Marketplace API connection, automated scraping or unattended synchronization in the published application. Meta actively restricts unauthorized scraping. Our future source automation depends on explicit rights, supported access and user-approved workflows, with manual submissions available when feeds are unavailable. Facebook asking prices and "sold" badges are **not verified completed resale proceeds**. [Full Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md).
+
+Facebook Marketplace is **not** replacing equipment auctions or the original January equipment-acquisition evidence. The channels complement one another: Marketplace for private-sale discovery, auctions for attributable lot/result research, and dealer sources for cross-checks. None is a purchase approval.
 
 ## Auction and agricultural equipment are central to this product
 
@@ -30,7 +40,7 @@ I am extending the existing prototype toward continuous market observation, outc
 | Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
 | GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
 | Separate Replit-derived source | **v2.15.2** market and inspection research modules have been preserved and staged for isolated private integration review; not merged to main or deployed. |
-| Public showcase | **v2.2.0**, a standalone presentation repo, not the private application. |
+| Public showcase | **v2.3.0**, a standalone presentation repo, not the private application. |
 | Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
 | First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
 | Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
@@ -152,6 +162,8 @@ I completed a Great Plains regional I-Corps customer discovery cohort. The next 
 | --- | --- |
 | [Start here](docs/START_HERE.md) | Five-minute tour for evaluators |
 | [Agricultural equipment](docs/AGRICULTURAL_EQUIPMENT.md) | Actual equipment categories, physical configuration and acquisition scope |
+| [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) | Vehicle, equipment and private-seller opportunity sourcing, verification and access rights |
+
 | [Auction intelligence](docs/AUCTION_INTELLIGENCE.md) | Lot lifecycle, premiums, sale outcomes and reconciliation |
 | [Auction research cases](docs/AG_AUCTION_CASE_STUDIES.md) | Sanitized original inventory, public results and configuration traps |
 | [Auction data automation](docs/AUCTION_DATA_AUTOMATION.md) | Proposed permitted-source ingestion and outcome-linking workflow |

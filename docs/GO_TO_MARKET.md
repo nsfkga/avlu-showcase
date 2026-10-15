@@ -1,6 +1,6 @@
 # AvLü™ | First-customer and pilot go-to-market plan
 
-**Founder-led commercialization hypothesis | v1.0.0 | October 15, 2026**  
+**Founder-led commercialization hypothesis | v1.1.0 | October 15, 2026**  
 **Owner: Nathaniel Schroeder**
 
 ## Start with one economic buyer
@@ -8,6 +8,16 @@
 My initial outreach will focus on **independent used equipment and attachment resellers** who repeatedly encounter inconsistent auction catalogs, private listings and uncertain buyer costs. The adjacent category is small dealer buying teams. Larger dealer-system integrations are a later stage with longer support and sales cycles.
 
 Customer research and demonstrations are not the same as paid acquisition. My reported 31 dealer meetings and the earlier 23 completed I-Corps records do not establish paid subscriptions, pilots or contracted revenue.
+
+## Discovery channels versus customer-acquisition channels
+
+**Inventory-sourcing channels:** Facebook Marketplace, permitted equipment and farm auctions, Craigslist/private listings and dealer inventories. These supply candidate opportunities *for users to evaluate*, not automatic customers or verified resale prices. The source-search component recognizes Facebook in both vehicle and equipment workflows, but there is **no production Facebook synchronization**.
+
+**Customer-acquisition channels:** direct introductions through dealer/equipment networks, I-Corps discovery follow-ups where appropriate, demos and authorized pilot recruitment. Posting links on Facebook Marketplace or collecting listings does not turn those listing sellers into SaaS subscribers.
+
+A bounded demonstration can compare **one recent Marketplace listing and one auction or dealer listing** against the buyer's existing process, when the buyer has access/rights to use them. Count the number of material gaps found, reviewer minutes, false holds, repeat use and willingness to pay.
+
+The product should support **buyer-submitted source URLs and permitted manual captures first**, followed by approved feeds where available. Do not treat Facebook account sign-in, scraping or seller messaging automation as an approved acquisition channel for AvLü. [Marketplace workflow](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## Hypothetical conversion funnel
 

@@ -1,6 +1,6 @@
 # Current status snapshot | October 15, 2026
 
-**Document v2.2.0 | Owner: Nathaniel Schroeder**  
+**Document v2.3.0 | Owner: Nathaniel Schroeder**  
 **This is a dated snapshot, not automatically synchronized with the private source.**
 
 ## Releases and environment
@@ -13,9 +13,19 @@
 | Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
 | Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
 | Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical and investor showcase | v2.2.0, published separately from the application |
+| Public technical and investor showcase | v2.3.0, published separately from the application |
 
 The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
+
+## Facebook Marketplace status
+
+- **Present in private source-search code:** `facebook.com/marketplace` appears in both vehicle and equipment source lists.
+- **Historical research:** Marketplace candidate observations and QA datasets for vehicles, loaders and attachments exist, with incomplete proof appropriately held for further checks.
+- **Not established:** an authorized Facebook data feed, unattended collection, always-current sync, completed-sale API, seller messaging or resale posting automation.
+- **Required evidence:** user or source permission, exact listing identity, source date, missing VIN/serial/title/condition checks, comparable sale support and actual receipts before realized profit can be calculated.
+- **Business role:** source of buyer-researched opportunities, not subscription revenue or independently verified sold comparables.
+
+[Public Facebook Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## Investor economics status: hypothetical, not traction
 

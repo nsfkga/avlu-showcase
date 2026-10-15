@@ -3,6 +3,22 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.3.0] - 2026-10-15
+
+### Added
+- Dedicated Facebook Marketplace and private-sale sourcing strategy with the actual vehicle and equipment source-selector evidence.
+- Marketplace representation on the homepage, investor overview, README, first-customer pitch and technical/source workflow.
+- Clear process for manually supplied listing research, VIN/serial and title/condition proof, asking-price classification, market comparison and conservative decision gating.
+- New FAQ and source-status descriptions; links to Meta's official discussion of unauthorized scraping and data-use constraints.
+
+### Evidence and safety
+- No claim of a Meta-approved live feed, unattended Marketplace scraper, automated posting or seller messaging.
+- Asking prices and "sold" badges do not establish completed resale proceeds or actual realized profit.
+- No seller contacts, raw captures, customer identities, login credentials, private market records or proprietary implementation published.
+- Historical original auction acquisition accounting remains separate from later Marketplace QA capture records.
+
+## [2.2.0] - 2026-10-15
+
 ## [2.2.0] - 2026-10-15
 
 ### Investor-facing business model

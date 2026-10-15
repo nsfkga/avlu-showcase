@@ -1,8 +1,14 @@
 # Start here | AvLü™ technical and venture review
 
-**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
 
 I created this public repository so an advisor can judge the seriousness of AvLü without being granted my implementation, data, source history or customer records.
+
+## Source coverage matters
+
+AvLü's opportunity sources include **Facebook Marketplace for vehicles and equipment**, regional auctions, dealer sites and private listings. The private source-search workflow already recognizes Marketplace for both main categories. This is not a claim of a licensed live Facebook integration or automated collection.
+
+[Facebook Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md) · [Auction intelligence](AUCTION_INTELLIGENCE.md) · [Product modules](PRODUCT_MODULES.md).
 
 ## Five-minute route
 

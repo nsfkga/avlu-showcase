@@ -1,6 +1,6 @@
 # AvLü™ | Investor overview
 
-**Public business-model research | v2.2.0 | October 15, 2026**  
+**Public business-model research | v2.3.0 | October 15, 2026**  
 **Founder and owner: Nathaniel Schroeder**
 
 ## The investment thesis
@@ -10,6 +10,14 @@ I am building AvLü as **pre-acquisition intelligence for equipment, attachments
 The workflow I am testing joins exact asset and auction-lot identity, source and condition evidence, buyer fees, freight, reconditioning exposure, credible resale context and a reviewable next-action decision. I am developing it to preserve decision-time history and eventually learn from attributable, fully costed completed transactions.
 
 **AvLü is not a chatbot subscription or a standalone resale-price guide.** AI can help organize inconsistent information. The product thesis is a maintained, permissioned, evidence-gated operating workflow with deterministic calculations and recorded decisions. General AI and incumbent dealer tools are real competitors. Commercial value and defensibility remain to be proved with paying customers.
+
+## The actual acquisition channels
+
+My product deliberately spans **Facebook Marketplace, used-equipment auctions, dealer inventories and private listings**. Facebook Marketplace is a meaningful source of used vehicles and attachments with incomplete seller descriptions. Our private source-search configuration already includes `facebook.com/marketplace` for both vehicle and equipment search categories.
+
+The investment thesis is **not** that Facebook or auction platforms lack data or that AvLü has special access to them. Buyers already see asking prices on Marketplace and published auction results elsewhere. The test is whether AvLü can reconcile **source, exact asset identity, condition, total acquisition cost, comparable evidence and the reason to reject or investigate** without burying the buyer in manual research.
+
+Source access is a business risk: the app does not currently have verified unrestricted or automated Facebook ingestion rights. An approved import path, buyer-supplied listing or user-mediated workflow is a more credible initial lane than promising an unauthorized always-on scraper. [Marketplace and access plan](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## The initial commercial wedge
 

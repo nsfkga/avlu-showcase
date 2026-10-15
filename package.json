@@ -1,8 +1,8 @@
 {
   "name": "avlu-showcase",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
-  "description": "AvLü public technical and investor showcase for agricultural equipment and auction acquisition intelligence",
+  "description": "AvLü public investor showcase for Marketplace, agricultural equipment and auction acquisition intelligence",
   "author": "Nathaniel Schroeder",
   "scripts": {
     "test": "node --test tests/showcase.test.cjs",

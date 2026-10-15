@@ -1,6 +1,6 @@
 # Auction and equipment data automation | Future operating model
 
-**Public architectural research v1.0.0 | October 14, 2026 | Nathaniel Schroeder**
+**Public architectural research v1.1.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## What I want AvLü to become
 
@@ -9,6 +9,14 @@ AvLü should eventually monitor **authorized equipment and vehicle sources** rep
 This is the larger idea behind the Inventory Watchlist. The **published Watchlist v1.0.0** is an owner-facing saved research interface; it is **not evidence that recurring external-source ingestion has been installed or is always synchronizing**.
 
 A separate Replit **v2.15.2 local workspace** contains additional unpublished protected inspection and market-research workflow code, including observation, persistence and deduplication work. That line of development must be preserved and reconciled with GitHub v2.14.0 before any publication. It does not prove live source data collection.
+
+## Two source categories with different permissions
+
+**Auctions and dealer records:** some auctioneers publish catalog lots and result labels, while commercial reuse or repeated collection may still require permission or licensing.
+
+**Facebook Marketplace and private-sale listings:** a user can discover candidate vehicles or attachments, then submit links/details via an approved intake workflow. This is **not** proof that AvLü can routinely scrape Facebook, access private sellers' accounts, replay logins or independently verify completed transaction prices. Meta's [data scraping notice](https://www.facebook.com/help/463983701520800) distinguishes authorized collection from unauthorized automated extraction.
+
+A future observer must be source-specific and rights-aware. If a reliable authorized Facebook feed is unavailable, manual user-provided observations remain the valid product path, not an undocumented login automation workaround. [Sourcing policy](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## Proposed observation architecture
 

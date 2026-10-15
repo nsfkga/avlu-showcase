@@ -1,4 +1,4 @@
-// v2.2.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.3.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -51,7 +51,7 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.2\.0/);
+ assert.match(p,/v2\.3\.0/);
 });
 
 test('investor model separates hypothetical recurring revenue from actual traction',()=> {
@@ -93,4 +93,26 @@ test('new investor docs identify planned prices and exclude revenue claims',()=>
  assert.match(pricing,/not publicly purchasable|not.*contracts/i);
  const funds=fs.readFileSync(path.join(root,'docs/FUNDING_PLAN.md'),'utf8');
  assert.ok(funds.includes('$100,000')&&funds.includes('not'));
+});
+
+test('Facebook Marketplace is explained for both vehicle and equipment research', () => {
+ const root=path.resolve(__dirname, '..');
+ const readme=fs.readFileSync(path.join(root, 'README.md'), 'utf8');
+ const home=fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+ const strategy=fs.readFileSync(path.join(root, 'docs/FACEBOOK_MARKETPLACE_STRATEGY.md'), 'utf8');
+ assert.ok(readme.includes('Facebook Marketplace'));
+ assert.ok(readme.includes('docs/FACEBOOK_MARKETPLACE_STRATEGY.md'));
+ assert.ok(home.includes('id="marketplace"'));
+ assert.ok(strategy.includes('vehicles and equipment'));
+ assert.ok(strategy.includes('Nathaniel Schroeder'));
+});
+test('marketplace source is not mislabeled as an automated feed or verified sold-profit', () => {
+ const root=path.resolve(__dirname, '..');
+ const doc=fs.readFileSync(path.join(root, 'docs/FACEBOOK_MARKETPLACE_STRATEGY.md'), 'utf8');
+ const home=fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+ assert.match(doc, /no.*?(?:automated|live)|not.*?live|Not established as live capabilities/is);
+ assert.match(doc, /asking prices.*not|asking price.*not/i);
+ assert.match(doc, /scraping|data rights|permission/i);
+ assert.match(home, /does <strong>not<\/strong> currently claim a live Meta-approved API feed/);
+ assert.match(home, /v2\.3\.0/);
 });

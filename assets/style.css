@@ -76,3 +76,15 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{font-family:system-ui,sans-serif}h1{font-siz
 .investor-disclaimer{font-size:12px;color:#acbdb4;line-height:1.75;margin:17px 0 0}
 @media(max-width:950px){.tier-grid{grid-template-columns:1fr 1fr}.tier-card p{min-height:0}.investor-duo{grid-template-columns:1fr}}
 @media(max-width:650px){.tier-grid{grid-template-columns:1fr}.tier-card{padding:19px}.investor-funnel{grid-template-columns:1fr 1fr}.investor-funnel>div:nth-child(2){border-right:0}.investor-funnel>div:nth-child(-n+2){border-bottom:1px solid #38504e}.finance-metrics strong{font-size:20px}.funding-panel{padding:19px}}
+/* Facebook Marketplace source narrative | v2.3.0 | © 2026 Nathaniel Schroeder. */
+.marketplace-section{scroll-margin-top:24px}
+.marketplace-lead{max-width:970px;color:#bed0c6;font-size:14px;line-height:1.78;margin:-7px 0 24px}
+.marketplace-lead strong{color:var(--text)}
+.marketplace-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.marketplace-grid article{background:linear-gradient(140deg,#1a3230,#152828);padding:23px;border:1px solid #3c5851;border-radius:11px;min-width:0}
+.marketplace-step{font-size:10px;letter-spacing:.1em;color:var(--accent);font-weight:800}
+.marketplace-grid h3{font-size:17px;margin:12px 0;line-height:1.28}
+.marketplace-grid p{font-size:13px;line-height:1.7;color:#adc3b7;margin:0}
+.marketplace-caveat{background:#243633;border-left:3px solid var(--accent);padding:15px 18px;font-size:12px;line-height:1.7;margin:18px 0 0;color:#c8d4cc;border-radius:4px}
+.marketplace-caveat a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+@media(max-width:750px){.marketplace-grid{grid-template-columns:1fr}.marketplace-grid article{padding:20px}}

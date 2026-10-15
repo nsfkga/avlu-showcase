@@ -1,6 +1,6 @@
 # Product modules and actual state
 
-**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
 
 The core product is a *proof-first acquisition decision workflow*. These areas are intentionally separated by release state.
 
@@ -22,6 +22,20 @@ The core product is a *proof-first acquisition decision workflow*. These areas a
 | Automatic bidding, transaction execution | **Off / future only** | Not an active capability; requires explicit release and separate legal, capital, data and control gates. |
 | Profit Protection™ | **Inactive development concept** | Not funded or contractually offered. No coverage or profit guarantee is active. |
 | Agricultural service readiness and recovery | **Separate historical R&D track** | Requirements and synthetic reference checks exist, but it is not the current autonomous-acquisition production module. |
+
+## Facebook Marketplace research capability and limits
+
+The private application's `assets/js/source-search.js` lists **Facebook Marketplace** as a recognized source for vehicles **and** equipment, alongside Craigslist, dealerships and equipment-auction sites. Listing links and descriptions are useful inputs to the existing evidence-first screening concept. The historical Marketplace research sheets are QA/source leads, not proof of completed sales.
+
+| Marketplace-related capability | Actual status |
+| --- | --- |
+| Facebook Marketplace named as vehicle/equipment search source | **Present in private source-search configuration** |
+| Guided listing review and evidence gaps | **Working prototype**; owner-specific workflow capabilities depend on the verified release |
+| Historic Marketplace capture and QA datasets | **Research records**, not live certified collection |
+| Periodic automatic scanning and price-drop alerts for Facebook | **Not verified deployed; source permissions unresolved** |
+| Automated Marketplace seller messages, account credentials, purchase/posting | **Not released or authorized** |
+
+[Marketplace workflow and distinction from auctions](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## The current user journey
 

@@ -1,8 +1,16 @@
 # Market observations, provenance and realized outcomes
 
-**v2.1.0 | Nathaniel Schroeder**
+**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
 
 A central AvLü direction is to let a buyer monitor inventory opportunities over time and see supported resale potential **without confusing an advertised price with a completed profitable sale**.
+
+## Why Facebook Marketplace belongs in the source map
+
+Facebook Marketplace is part of the **vehicle and equipment listing opportunity pipeline**, alongside auctions, dealer listings and private-sale websites. The existing private source selector recognizes it for both categories. Earlier Marketplace candidate/QA research exists, but those rows should not be treated as a legally licensed live feed.
+
+A Marketplace asking price remains **a seller ask**. A removed or "sold" listing without attributable settlement documentation cannot be promoted into completed-sale proceeds. Search links and user-provided screenshot/description observations carry timestamps, usage-rights and missing-proof flags. Seller identities or screenshots should not be republished without permission.
+
+This matters when comparing an inexpensive Marketplace skid steer bucket with an auction lot or retail dealer asking price: attachment mount, condition, location, age of observation and transport may make them incomparable. [Marketplace strategy and legal boundaries](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 ## Distinct evidence types
 
