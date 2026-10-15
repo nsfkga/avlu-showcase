@@ -1,6 +1,6 @@
 # Business model and commercialization hypotheses
 
-**v2.0.0 | Nathaniel Schroeder**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## The problem worth monetizing
 
@@ -15,13 +15,17 @@ Acquisition decisions often require reconciling multiple sources before an opera
 | Equipment/attachment resellers | How transport, condition, configuration and exit timing alter the opportunity | Whether outcome data are obtainable and category-specific |
 | Related software platforms | Whether a pre-acquisition review record is useful before inventory/build management | Integration cost and product overlap |
 
-The project has **a working prototype and discovery activity**. It does **not** have an established pricing model, commercial pilot conversion rate, paid ARR, signed licensing agreement or independently verified savings claim.
+The project has **a working prototype and discovery activity** and now has an explicit **proposed pricing model**. It does **not** have proven price acceptance, contracted ARR, paying pilot conversion rates, measured churn/CAC, a signed source-data licensing agreement or independently verified savings.
 
 ## Product positioning
 
 A narrow pre-acquisition **evidence and decision layer**. Not a replacement for every dealer-management system, market-price guide or human inspection.
 
-Potential commercial models to test later include a fixed-scope review/pilot, subscription to a maintained workflow, and permissioned integration. These are possibilities, not active priced offers.
+The tested commercial hypotheses are a $199/month Independent tier ($1,990/year), $499/month Dealer Team, from $999/month for negotiated integration, and a $750–$1,500 one-time paid pilot. These are **not active rates accepted by paying customers**. The primary model is SaaS subscriptions; customer equipment resale proceeds, unsupported Parts Commerce revenue and separate service/inspection R&D are not existing ARR.
+
+The 25-account model assumes $8,975 MRR, $2,430 in direct monthly costs and $9,000 in fixed monthly costs, meaning **a $2,455 monthly loss** before additional sales costs/tax. A $100,000 first-raise model is under evaluation and has not been funded.
+
+[Pricing](PRICING_REVENUE.md) · [Unit economics](SAAS_UNIT_ECONOMICS.md) · [Funding](FUNDING_PLAN.md).
 
 ## Proof that would justify charging
 

@@ -1,6 +1,6 @@
-# Current status snapshot | October 14, 2026
+# Current status snapshot | October 15, 2026
 
-**Document v2.1.0 | Owner: Nathaniel Schroeder**  
+**Document v2.2.0 | Owner: Nathaniel Schroeder**  
 **This is a dated snapshot, not automatically synchronized with the private source.**
 
 ## Releases and environment
@@ -13,9 +13,19 @@
 | Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
 | Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
 | Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical showcase | v2.1.0, published separately from the application |
+| Public technical and investor showcase | v2.2.0, published separately from the application |
 
 The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
+
+## Investor economics status: hypothetical, not traction
+
+- SaaS subscriber count, contracted ARR, paid pilot conversions, realized churn and CAC: **not established in this public evidence**.
+- Price hypotheses: **$199/month Independent, $499/month Team, from $999/month Integration**; one-time pilots $750–$1,500.
+- Illustrative 25-account mix: **$8,975 MRR, $6,545 gross profit, $2,455 monthly operating loss** after hypothetical costs.
+- Proposed initial financing plan: **$100,000**, allocated to engineering, market data, pilots, security, legal and contingency. Not capital raised.
+- Founder-led sales targets: 50 qualified accounts, 15 demonstrations, five paid pilots and three recurring conversions. These are not actual outcomes.
+
+[Investor overview](INVESTOR_OVERVIEW.md) · [Economics](SAAS_UNIT_ECONOMICS.md) · [Risk register](INVESTOR_DILIGENCE.md).
 
 ## Acquisition roadmap
 
@@ -77,7 +87,7 @@ The private engineering evidence and release receipts were reviewed when this sn
 
 **Mechanical scope:** selected non-powered compact attachments are the proposed first policy. A catalog title may mask hydraulic actuation, requiring a HOLD/exclusion when configuration is unverified.
 
-**Application versions:** v2.13.0 is the last verified published build. Private GitHub v2.14.0 includes later history/recovery source. A separate **unpublished and unmirrored Replit v2.15.2** contains local market-research/inspection work, with 12 fictional unit tests, 17 inspection assertions and seven expected-error checks reported passing. Integration, full release acceptance and owner production read/write verification are pending.
+**Application versions:** v2.13.0 remains the last verified published build. Private GitHub main v2.14.0 includes later historical/recovery source. A separate **unpublished Replit-derived v2.15.2** has been preserved and staged for private integration review, including limited read-only research testing; it is **not merged into application main or verified deployed**. Production owner acceptance remains outstanding.
 
 [Full auction chain](AUCTION_INTELLIGENCE.md) · [Agricultural equipment scope](AGRICULTURAL_EQUIPMENT.md).
 

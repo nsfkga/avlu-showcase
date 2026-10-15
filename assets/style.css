@@ -41,3 +41,38 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{font-family:system-ui,sans-serif}h1{font-siz
 @media(max-width:950px){.navright{gap:11px}.navlink{display:none}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chain-grid{grid-template-columns:repeat(2,1fr)}.chain-grid>div:nth-child(2){border-right:0}.chain-grid>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.proof-strip{grid-template-columns:repeat(2,1fr)}.proof-item:nth-child(2){border-right:0}.proof-item:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:750px){.wrap{padding-left:18px;padding-right:18px}.header{padding-top:17px;padding-bottom:17px}.hero{padding:55px 0}.hero>p:first-of-type{font-size:15px}.proof-item{padding:18px 14px}.proof-item strong{font-size:25px}.feature-grid,.status-grid{grid-template-columns:1fr}.section-spaced{padding-top:58px}.section-head{align-items:flex-start;flex-direction:column}.readmore{white-space:normal}.topline{align-items:flex-start;flex-direction:column}.workspace{margin-top:55px}.workspacebody{grid-template-columns:1fr}.side{border-right:0;border-bottom:1px solid var(--line)}#case-buttons{display:flex;gap:8px;overflow-x:auto}.casebutton{min-width:170px}.hint{margin-top:8px}.maincase{padding:19px}.metrics{grid-template-columns:1fr}.midcols{grid-template-columns:1fr;gap:6px}.two-col{grid-template-columns:1fr;gap:20px}.research-panel blockquote{font-size:18px}.mentor-cta{padding:24px;margin-top:65px}.heroactions{align-items:stretch}.heroactions a{flex-grow:1;text-align:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Investor business-case panels | v2.2.0 | © 2026 Nathaniel Schroeder. */
+.investor-section{scroll-margin-top:20px}.investor-lead{max-width:880px;font-size:14px;line-height:1.75;color:#bdd0c7;margin:-7px 0 25px}
+.investor-block-heading{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:13px}
+.investor-block-heading h3{font-size:17px;margin:0}.investor-qualifier{font-size:10px;letter-spacing:.10em;color:var(--accent);font-weight:800}
+.tier-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.tier-card{background:linear-gradient(135deg,#1a302e,#142526);border:1px solid #3a5552;border-radius:11px;padding:24px;min-width:0}
+.tier-name{font-size:11px;color:var(--mint);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.tier-price{font-size:30px;font-weight:760;line-height:1.3;letter-spacing:-.035em;margin-top:13px;overflow-wrap:anywhere}
+.tier-price span{font-size:12px;font-weight:500;letter-spacing:0;color:var(--muted)}
+.tier-card p{font-size:13px;color:#bcd0c5;min-height:75px;margin:17px 0 12px;line-height:1.65}
+.tier-card small{display:block;font-size:11px;color:#9fb0a9;line-height:1.5}
+.pilot-price{border:1px solid #354e4c;border-radius:9px;background:#142626;margin:16px 0 0;padding:16px 18px;font-size:12px;line-height:1.7;color:#c9d6cd}
+.pilot-price a,.investor-disclaimer a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+.investor-duo{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:24px}
+.funding-panel{background:#162728;border:1px solid #3a514e;padding:25px;border-radius:12px;min-width:0}
+.funding-panel h3{font-size:23px;line-height:1.22;letter-spacing:-.035em;margin:10px 0 8px}
+.investor-panel-copy{font-size:12px;line-height:1.65;color:var(--muted);min-height:38px}
+.finance-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:19px 0}
+.finance-metrics>div{border:1px solid var(--line);background:#1b3131;border-radius:8px;padding:14px;min-width:0}
+.finance-metrics small,.finance-metrics strong{display:block}.finance-metrics small{font-size:11px;color:#a5b6b1;line-height:1.5}
+.finance-metrics strong{font-size:22px;letter-spacing:-.025em;margin-top:8px;overflow-wrap:anywhere}
+.finance-metrics .negative-value{color:#f4c0b6}.investor-small{font-size:11px;color:#a9b9b1;line-height:1.7}
+.funding-bar{height:16px;border:1px solid #485d54;border-radius:30px;display:flex;overflow:hidden;margin:21px 0 20px}
+.funding-bar span{display:block;min-width:0}
+.funding-lines{list-style:none;padding:0;margin:0 0 17px}.funding-lines li{display:flex;justify-content:space-between;gap:9px;padding:7px 0;border-bottom:1px solid #2d4643;font-size:12px;color:#bccbc5}
+.funding-lines li strong{color:var(--text);white-space:nowrap;font-variant-numeric:tabular-nums}
+.investor-funnel{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:24px;overflow:hidden;border:1px solid #38504e;border-radius:11px}
+.investor-funnel>div{background:#1b3030;border-right:1px solid #38504e;display:grid;padding:20px 22px}
+.investor-funnel>div:last-child{border-right:0}.investor-funnel span{font-size:10px;font-weight:800;color:var(--accent);letter-spacing:.08em}
+.investor-funnel strong{font-size:29px;letter-spacing:-.05em;line-height:1.2;margin-top:10px}
+.investor-funnel small{font-size:11px;color:#adbbb4;margin-top:5px}
+.investor-disclaimer{font-size:12px;color:#acbdb4;line-height:1.75;margin:17px 0 0}
+@media(max-width:950px){.tier-grid{grid-template-columns:1fr 1fr}.tier-card p{min-height:0}.investor-duo{grid-template-columns:1fr}}
+@media(max-width:650px){.tier-grid{grid-template-columns:1fr}.tier-card{padding:19px}.investor-funnel{grid-template-columns:1fr 1fr}.investor-funnel>div:nth-child(2){border-right:0}.investor-funnel>div:nth-child(-n+2){border-bottom:1px solid #38504e}.finance-metrics strong{font-size:20px}.funding-panel{padding:19px}}

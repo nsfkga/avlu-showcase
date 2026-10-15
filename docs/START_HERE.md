@@ -1,16 +1,16 @@
 # Start here | AvLü™ technical and venture review
 
-**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
 
 I created this public repository so an advisor can judge the seriousness of AvLü without being granted my implementation, data, source history or customer records.
 
 ## Five-minute route
 
-1. Open the real working prototype: **https://getavlu.com**.
-2. Read [Product Modules](PRODUCT_MODULES.md) to distinguish working functionality from design plans.
-3. Read [Status Snapshot](STATUS_SNAPSHOT.md) for the latest recorded version, tests and restrictions.
-4. Inspect [Architecture](ARCHITECTURE.md) and [Autonomy](AUTONOMY.md) for the technical challenges and operational boundaries.
-5. Read [Mentor Review](MENTOR_REVIEW.md) for the decisions where expert criticism is most valuable.
+1. Read [Investor Overview](INVESTOR_OVERVIEW.md) for the business case and unproven assumptions.
+2. Open **https://getavlu.com**, then check [Product Modules](PRODUCT_MODULES.md) for live-versus-staged features.
+3. Review [Pricing and Revenue](PRICING_REVENUE.md), [Funding](FUNDING_PLAN.md) and [Unit Economics](SAAS_UNIT_ECONOMICS.md).
+4. Check [Status Snapshot](STATUS_SNAPSHOT.md), [Architecture](ARCHITECTURE.md) and [Autonomy](AUTONOMY.md).
+5. Read [Go-to-Market](GO_TO_MARKET.md), [Investor Diligence](INVESTOR_DILIGENCE.md) and [Mentor Review](MENTOR_REVIEW.md).
 
 ## The founder's thesis
 

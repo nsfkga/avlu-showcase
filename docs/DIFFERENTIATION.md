@@ -1,10 +1,18 @@
 # Differentiation | Why buy AvLü instead of asking an AI?
 
-**v2.1.0 | Nathaniel Schroeder**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## The challenge is legitimate
 
 Someone can paste a listing into ChatGPT or another model and ask for a value, potential profit or due-diligence checklist. Modern AI can also help engineers develop similar software. The product cannot survive solely by claiming to have secret prompts.
+
+## The two investment objections
+
+**Why not just use ChatGPT?** A general AI can summarize lots, estimate rough resale possibilities and help build calculators. AvLü's proposed value is a *maintained, permissioned, source-linked pre-acquisition workflow*, with explicit uncertainty, controlled costs, durable history and future unit-matched realized outcomes. No individual ingredient is impossible to reproduce.
+
+**Why not use an incumbent?** Established platforms such as [Tractor Zoom](https://tractorzoom.com/), [Machinery Pete](https://www.machinerypete.com/about-us) and [EquipmentWatch](https://equipmentwatch.com/) already provide significant valuation, auction-market and dealership capabilities. The possible niche is a focused **cross-source evidence gate for messy auction and equipment listings before money is committed**, not an unsupported claim that competitors lack similar functions.
+
+**The commercial proof:** a customer must repeatedly pay for demonstrated value. Proposed rates of $199, $499 or from $999 monthly are not independently validated. [Business model](INVESTOR_OVERVIEW.md).
 
 ## The workflow hypothesis
 

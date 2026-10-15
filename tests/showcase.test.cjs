@@ -1,4 +1,4 @@
-// v2.1.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.2.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -51,5 +51,46 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.1\.0/);
+ assert.match(p,/v2\.2\.0/);
+});
+
+test('investor model separates hypothetical recurring revenue from actual traction',()=> {
+ const root=path.resolve(__dirname,'..');
+ const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
+ const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+ const diligence=fs.readFileSync(path.join(root,'docs/INVESTOR_DILIGENCE.md'),'utf8');
+ assert.match(home,/id="investors"/);
+ assert.match(home,/PRICING HYPOTHESES/);
+ assert.match(readme,/not existing subscriptions/);
+ assert.match(readme,/not money already raised/);
+ assert.match(diligence,/pricing has not been validated|not.*priced|not established/i);
+});
+test('proposed 25-account revenue and operating loss reconcile exactly',()=> {
+ const mrr=15*199+8*499+2*999;
+ const directCosts=2430, fixedCosts=9000;
+ const gross=mrr-directCosts, operating=gross-fixedCosts;
+ assert.equal(mrr,8975);
+ assert.equal(mrr*12,107700);
+ assert.equal(gross,6545);
+ assert.equal(operating,-2455);
+ assert.equal(Math.round(1000*gross/mrr)/10,729/10);
+ const perAccount=gross/25;
+ assert.equal(perAccount,261.8);
+ assert.ok(34*perAccount<fixedCosts&&35*perAccount>=fixedCosts);
+ const funds=[40000,20000,15000,10000,10000,5000];
+ assert.equal(funds.reduce((a,b)=>a+b,0),100000);
+});
+test('new investor docs identify planned prices and exclude revenue claims',()=> {
+ const root=path.resolve(__dirname,'..');
+ const docs=['INVESTOR_OVERVIEW','PRICING_REVENUE','FUNDING_PLAN','SAAS_UNIT_ECONOMICS','GO_TO_MARKET','INVESTOR_DILIGENCE'];
+ for(const doc of docs){
+   const body=fs.readFileSync(path.join(root,'docs/'+doc+'.md'),'utf8');
+   assert.ok(body.length>1000,doc+' should be substantial');
+   assert.ok(body.includes('Nathaniel Schroeder'),doc+' retains ownership');
+ }
+ const pricing=fs.readFileSync(path.join(root,'docs/PRICING_REVENUE.md'),'utf8');
+ assert.ok(pricing.includes('$199/month')&&pricing.includes('$499/month'));
+ assert.match(pricing,/not publicly purchasable|not.*contracts/i);
+ const funds=fs.readFileSync(path.join(root,'docs/FUNDING_PLAN.md'),'utf8');
+ assert.ok(funds.includes('$100,000')&&funds.includes('not'));
 });

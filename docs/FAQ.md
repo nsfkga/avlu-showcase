@@ -1,6 +1,22 @@
 # AvLü™ frequently asked questions
 
-**v2.1.0 | Nathaniel Schroeder**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
+
+### What will AvLü charge customers?
+
+The proposed subscription tiers are **$199/month** for Independent users, **$499/month** for Dealer Teams, and **from $999/month** for individually scoped integrations. I am also testing **$750–$1,500** one-time pilots. No paid uptake has been verified in this showcase. Customer equipment gross resale profits are not AvLü company revenue.
+
+### Is AvLü raising $100,000?
+
+I am exploring a **$100,000 funding scenario** for an evidence-based six-to-nine-month build and validation period, not representing that it has already been raised. The proposed spending split is $40k engineering, $20k authorized data, $15k pilot sales/onboarding, $10k security, $10k legal/accounting and $5k contingency.
+
+### Is there already profitable recurring revenue?
+
+No verified paying customer count or contracted ARR is supported here. A modeled 25-account mix generates $8,975 hypothetical MRR but also shows a $2,455 monthly operating shortfall under assumed costs. Break-even near 35 accounts is an illustration, not a proven result.
+
+[Investor brief](INVESTOR_OVERVIEW.md) · [Pricing](PRICING_REVENUE.md) · [Economics](SAAS_UNIT_ECONOMICS.md).
+
+
 
 ### Is AvLü an actual application or an idea?
 

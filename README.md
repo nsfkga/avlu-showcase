@@ -1,9 +1,9 @@
 # AvLü™ | Agriculture, equipment auctions and acquisition intelligence
 
-**Public technical and venture showcase | v2.1.0 | October 14, 2026**  
+**Public technical and investor showcase | v2.2.0 | October 15, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
-**[Explore the working AvLü prototype](https://getavlu.com)** · [Start here](docs/START_HERE.md) · [Product modules](docs/PRODUCT_MODULES.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md) · [Mentor review brief](docs/MENTOR_REVIEW.md)
+**[Explore the working AvLü prototype](https://getavlu.com)** · **[Investor overview](docs/INVESTOR_OVERVIEW.md)** · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
 
 ## Auction and agricultural equipment are central to this product
 
@@ -29,8 +29,8 @@ I am extending the existing prototype toward continuous market observation, outc
 | --- | --- |
 | Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
 | GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
-| Separate unpublished Replit worktree | **v2.15.2** adds inspection and market research workflows; it is not reconciled with GitHub and is not production. |
-| Public showcase | **v2.1.0**, a standalone presentation repo, not the private application. |
+| Separate Replit-derived source | **v2.15.2** market and inspection research modules have been preserved and staged for isolated private integration review; not merged to main or deployed. |
+| Public showcase | **v2.2.0**, a standalone presentation repo, not the private application. |
 | Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
 | First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
 | Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
@@ -83,6 +83,18 @@ Record disposition and verified outcomes when available
 Current functionality includes guided public intake and a protected owner review experience. The Inventory Watchlist stores research observations and conditional cost assumptions; the private reference engine supports non-executable decision states. Continuous scheduled market ingestion, fully matched realized-profit feedback and autonomous transactions still require further work.
 
 [Explore product modules and implementation status](docs/PRODUCT_MODULES.md).
+
+## Investor economics, proposed pricing and use of funds
+
+The primary commercial model I am testing is **recurring software subscriptions for independent inventory buyers and equipment dealers**, not owning their inventory or taking a percentage of their resale revenue. The proposed tiers are **$199/month Independent ($1,990/year)**, **$499/month Dealer Team** and **from $999/month negotiated integration**. A limited paid pilot is modeled at **$750–$1,500 once**. These are **pricing hypotheses**, not existing subscriptions, signed contracts or approved live checkout.
+
+At an illustrative 25-account mix of 15 Independent, eight Dealer Team and two Integration buyers, monthly recurring revenue would be **$8,975**, annualized revenue **$107,700**, and assumed direct service costs **$2,430/month**. That implies **$6,545 gross profit (72.9% margin)**. With **$9,000/month** in hypothetical fixed overhead, the model still produces a **$2,455 monthly operating shortfall** before additional acquisition expenses and taxes. Blended break-even would be about **35 accounts**, subject to actual costs and mix.
+
+The first funding scenario is a **$100,000 milestone-based plan**, with $40k for engineering/founder QA, $20k data rights/integrations, $15k paid-pilot onboarding, $10k security/infrastructure, $10k legal/accounting and $5k contingency. It is **not money already raised, a formal securities offer or a guaranteed runway**.
+
+The proposed funnel is **50 qualified buyers → 15 demonstrations → five paid pilots → three recurring conversions**. None of those commercial results has been established by the existing tests or dealer discovery.
+
+[Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing](docs/PRICING_REVENUE.md) · [Funding](docs/FUNDING_PLAN.md) · [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) · [Go-to-market](docs/GO_TO_MARKET.md) · [Investor diligence](docs/INVESTOR_DILIGENCE.md).
 
 ## Why not just ask a GPT?
 
@@ -155,6 +167,13 @@ I completed a Great Plains regional I-Corps customer discovery cohort. The next 
 | [Validation](docs/VALIDATION.md) | Audit and research counts with honest limits |
 | [Customer discovery](docs/CUSTOMER_DISCOVERY.md) | I-Corps, interviews and hypothesis changes |
 | [Differentiation](docs/DIFFERENTIATION.md) | Competitive thesis and why generic AI alone is insufficient |
+| [Investor overview](docs/INVESTOR_OVERVIEW.md) | Investment thesis, initial buyer and public evidence boundaries |
+| [Pricing and revenue](docs/PRICING_REVENUE.md) | Proposed tiers, pilot terms, core SaaS revenue versus future activities |
+| [Funding plan](docs/FUNDING_PLAN.md) | $100,000 proposed use-of-funds and milestone gates |
+| [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) | MRR, operating costs, CAC, churn and break-even math |
+| [Go-to-market](docs/GO_TO_MARKET.md) | Founder-led paid pilot path and conversion targets |
+| [Investor diligence](docs/INVESTOR_DILIGENCE.md) | Competitive, data, product, cash and execution risks |
+
 | [Commercialization](docs/COMMERCIALIZATION.md) | Beachhead users, pilot, revenue hypotheses and metrics |
 | [Roadmap](docs/ROADMAP.md) | Sequencing and explicit blocked gates |
 | [Mentor review](docs/MENTOR_REVIEW.md) | Requested review and concrete technical questions |

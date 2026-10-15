@@ -1,12 +1,20 @@
 # AvLü™ mentor review packet
 
-**v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## What I would like your help evaluating
 
 I am developing a web-based used-inventory screening product that turns fragmented listings, proof, total costs and market context into bounded pre-acquisition decisions. A working private prototype and substantial source-level testing exist. Commercial usefulness, completed-sale calibration and autonomous buying are **not yet established**.
 
 [Working prototype](https://getavlu.com) · [Product modules](PRODUCT_MODULES.md) · [Architecture](ARCHITECTURE.md) · [Evidence](VALIDATION.md) · [Current release status](STATUS_SNAPSHOT.md)
+
+## Investment and unit-economics questions
+
+I have outlined a hypothetical $100,000 milestone-based initial funding plan and a subscription model starting at $199/month, $499/month and from $999/month. Under a modeled 25-account mix, $8,975 MRR would still leave a $2,455 monthly operating shortfall after assumed costs. Neither these prices nor the business economics have been measured on paying accounts.
+
+I especially need help validating the **economic buyer, legal market-data rights, conversion from paid pilots, full founder-time CAC, support burden, retention and what could justify the next round**.
+
+[Investor overview](INVESTOR_OVERVIEW.md) · [Commercialization](COMMERCIALIZATION.md) · [Risks](INVESTOR_DILIGENCE.md).
 
 ## Questions for a technical mentor
 

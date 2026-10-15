@@ -3,6 +3,21 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.2.0] - 2026-10-15
+
+### Investor-facing business model
+- Added six investor research pages: investment thesis, subscriptions and pilot pricing, $100,000 use-of-funds scenario, SaaS unit economics, first-customer funnel, and diligence risks.
+- Added homepage business-model, proposed pricing, funding distribution and modeled 25-account economics.
+- Made recurring versus one-time revenue, gross versus operating result, price assumptions and unverified metrics explicit.
+- Added commercial navigation to README and investor/mentor entry points.
+
+### Guardrails
+- No live customer ARR, paid pilots, realized profit, observed CAC/churn, signed financing or returns are claimed.
+- No private implementation, source identities, confidential deals, investor contacts or financing terms are published.
+- Newer Replit-derived research work is acknowledged as privately staged, not deployed.
+
+## [2.1.0] - 2026-10-14
+
 ## [2.1.0] - 2026-10-14
 
 ### Added

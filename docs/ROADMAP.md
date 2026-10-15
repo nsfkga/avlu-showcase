@@ -1,6 +1,6 @@
 # Development roadmap | What comes next
 
-**Public roadmap v2.1.0 | October 14, 2026 | Nathaniel Schroeder**
+**Public roadmap v2.2.0 | October 15, 2026 | Nathaniel Schroeder**
 
 This page separates work already achieved from work proposed, under test or blocked. It is not a deployment promise.
 
@@ -46,6 +46,12 @@ This page separates work already achieved from work proposed, under test or bloc
 - Review of operational burden and data licensing terms.
 
 A saved Watchlist does **not** mean this fully autonomous monitoring layer is already running.
+
+## Parallel commercial milestones
+
+**Planning, not achieved:** validate the $199 / $499 / from-$999 monthly subscription rates; qualify 50 buyers; deliver 15 meaningful demos; target five fixed-scope paid pilots and three independent recurring conversions. Record founder sales time, source cost, support cost, missed proof, false HOLDs and observed customer benefit. The hypothetical $100,000 seed allocation supports only bounded proof, not every prospective AvLü product line.
+
+[Commercialization](COMMERCIALIZATION.md) · [Funding and milestones](FUNDING_PLAN.md).
 
 ## Phase 4: Narrow executable acquisition
 

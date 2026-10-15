@@ -1,6 +1,6 @@
 # Proposed controlled pilot | Acquisition review
 
-**v2.0.0 | Nathaniel Schroeder | Proposal, not an agreed pilot**
+**v2.2.0 | October 15, 2026 | Nathaniel Schroeder | Proposal, not an agreed pilot**
 
 ## Purpose
 
@@ -12,6 +12,12 @@ Determine whether AvLü meaningfully improves an operator's next-action decision
 - Compare the participant's existing process with an AvLü-assisted review using information that would have been available at the decision date.
 - No access to confidential systems, customer identities, seller accounts or private transactions unless an appropriate agreement authorizes it.
 - No automatic seller contact, binding offers, payments or changes to the operator's systems.
+
+## Paid pilot pricing under test
+
+The proposed pilot fee is **$750–$1,500 one-time** for a fixed scope, a small comparison set and a measured outcome review. Five pilots at a hypothetical $1,000 fee yield $5,000 **one-time revenue**, not recurring ARR. The prospect-to-customer planning funnel targets **50 qualified accounts, 15 demos, five paid pilots and three subscriptions**. No pilot or conversion is reported as achieved.
+
+[Go-to-market plan](GO_TO_MARKET.md) · [Pricing](PRICING_REVENUE.md).
 
 ## Four-stage experiment
 
