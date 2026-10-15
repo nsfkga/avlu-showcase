@@ -3,6 +3,23 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.4.0] - 2026-10-15
+
+### Investor experience
+- New standalone three-minute investor tour linked from the homepage and README, preserving the Facebook Marketplace and auction work of v2.3.0.
+- Sourced competitive matrix describing Tractor Zoom Pro/Anvil Pro, EquipmentWatch, generic AI and buyer spreadsheets without exclusive-function claims.
+- Interactive fictional acquisition-cost scenario with buyer premiums, transport, recon, seller costs, conditional resale and math-only maximum hammer; never approves a purchase.
+- Editable hypothetical SaaS model with customers, tiers, direct expenses, overhead, CAC and churn. Estimated break-even and LTV are labeled approximations.
+- Public traction and evidence scorecard distinguishing founder-reported meetings, independent course log counts, synthetic QA, missing resale profits and unpaid pilot targets.
+- Printable browser-based ten-slide investor presentation, meeting notes, reading guide and customer ROI experiment.
+- Added safeguards and automated tests for offline models, public-only files, company attribution, version integrity and non-executable demos.
+
+### Limits
+- No real subscription customer, ARR, buying authority, approved Marketplace API, lawful scheduled data collection or actual resale profit is claimed.
+- No confidential counterparties, private source code, internal investment terms or original transaction records were exported.
+- The private application and actual product deployment were not modified by this showcase release.
+
+
 ## [2.3.0] - 2026-10-15
 
 ### Added

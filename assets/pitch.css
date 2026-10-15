@@ -1,0 +1,50 @@
+/* AvLü investor presentation v2.4.0, owner Nathaniel Schroeder. */
+:root{color-scheme:dark;--dark:#0e1919;--panel:#19302e;--gold:#e4ce98;--mint:#bed8ce;--white:#f4f6ef}
+*{box-sizing:border-box}body{margin:0;background:#081313;color:var(--white);font:16px/1.5 system-ui,'Segoe UI',sans-serif}
+h1,h2,h3,p{margin-top:0}a{color:var(--gold)}
+.pitch-controls{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;align-items:center;gap:16px;padding:12px 23px;background:#102323;color:#cfdfd4;border-bottom:1px solid #45615b;font-size:12px}
+.pitch-controls a{color:var(--gold);text-decoration:none}.pitch-controls button{margin-left:auto;cursor:pointer;background:var(--gold);color:#132321;border:0;border-radius:7px;padding:9px 14px;font-weight:800}
+.pitch-slide{position:relative;width:min(1280px,calc(100% - 32px));min-height:720px;aspect-ratio:16/9;margin:28px auto;background:radial-gradient(circle at 85% 0%,#2d5046,transparent 36%),linear-gradient(138deg,#102222,#12282a);border:1px solid #4a6960;border-radius:10px;padding:55px 66px 54px;display:flex;flex-direction:column;overflow:hidden}
+.slide-label{color:var(--gold);font-size:11px;font-weight:850;letter-spacing:.18em;text-transform:uppercase}
+.pitch-slide h2{font-size:clamp(29px,3.1vw,46px);line-height:1.12;letter-spacing:-.045em;max-width:1000px;margin:22px 0 34px}
+.pitch-slide h1{font-size:clamp(46px,5.3vw,86px);line-height:1.05;letter-spacing:-.06em}
+.pitch-slide h1 em{color:var(--gold);font-style:normal}.cover-body{margin:auto 0}.cover-body .kicker{font-size:18px;font-weight:700;color:var(--mint)}
+.cover-body h1{margin:21px 0 22px}.cover-body>p{font-size:20px;color:#c7dbd0}
+.pillrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:33px}
+.pillrow span{font-size:11px;border:1px solid #6c8273;border-radius:40px;padding:8px 12px;color:#d5e5d9}
+.pitch-slide footer{margin-top:auto;padding-top:16px;border-top:1px solid #466059;font-size:11px;color:#b4c8bd;display:flex;justify-content:space-between}
+.slide-grid{display:grid;gap:16px}.slide-grid.three{grid-template-columns:repeat(3,1fr)}.slide-grid.two{grid-template-columns:repeat(2,1fr)}
+.slide-grid article{background:#1e3735;border:1px solid #507169;border-radius:12px;padding:25px}
+.slide-grid article>span{font-size:12px;color:var(--gold);font-weight:900;letter-spacing:.09em}.slide-grid h3{font-size:24px;letter-spacing:-.035em;margin:15px 0}
+.slide-grid p{font-size:16px;line-height:1.6;color:#c0d4ca}.bottom-note{margin-top:auto;margin-bottom:30px;border-left:4px solid var(--gold);padding:16px 20px;background:#26403c;color:#d6e4da;font-size:15px;line-height:1.6}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.process-grid>div{background:#1d3431;border:1px solid #49655b;padding:23px;border-radius:12px}
+.process-grid span,.process-grid b,.process-grid small{display:block}.process-grid span{color:var(--gold);font-weight:800;font-size:13px}.process-grid b{font-size:25px;margin:13px 0}
+.process-grid small{font-size:15px;color:#bbd0c4;line-height:1.6}
+.contrast article:first-child{background:#29332f}.contrast article:last-child{background:#22433c;border-color:#acaa78}
+.competitor-rows{display:grid;gap:12px}.competitor-rows>div{background:#203936;border:1px solid #43625a;border-radius:9px;padding:19px 24px;display:grid;grid-template-columns:260px 1fr;gap:15px}
+.competitor-rows strong{font-size:19px}.competitor-rows p{font-size:15px;color:#c6d7cc;margin:0}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.proof-grid>div{padding:20px;background:#223a36;border:1px solid #4b665a;border-radius:10px}
+.proof-grid strong{display:block;font-size:42px;letter-spacing:-.05em}.proof-grid small{display:block;font-size:14px;color:#c8d8ce}
+.source-note{font-size:15px;color:#bad0c3;line-height:1.7;margin-top:27px}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.price-grid>div{background:#213b37;border:1px solid #5e7465;border-radius:11px;padding:25px}
+.price-grid span{font-size:12px;color:var(--gold);font-weight:800}.price-grid strong,.price-grid small{display:block}
+.price-grid strong{font-size:44px;letter-spacing:-.06em;margin:17px 0 2px}.price-grid small{color:#bed1c7;font-size:13px}
+.price-grid p{color:#c6d9cf;font-size:16px;margin:25px 0 0}
+.econ-row{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.econ-row>div{background:#223d38;padding:23px;border-radius:10px;border:1px solid #557064}
+.econ-row small,.econ-row strong,.econ-row span{display:block}.econ-row small{font-size:13px;color:#c2d5ca}
+.econ-row strong{font-size:39px;margin:17px 0;letter-spacing:-.04em}.econ-row strong.loss{color:#f2b8a4}.econ-row span{font-size:14px;color:#c5d5cd}
+.funding-deck{display:grid;grid-template-columns:.75fr 1.25fr;gap:24px}.funding-main{border:1px solid #6a7869;background:#24413a;border-radius:10px;padding:25px}
+.funding-main strong{font-size:50px;letter-spacing:-.06em}.funding-main p{color:#cbdacf;font-size:16px;margin-top:25px}
+.funding-deck ul{list-style:none;padding:0;margin:0;display:grid;gap:9px}.funding-deck li{padding:11px 18px;background:#1f3533;border:1px solid #496257;border-radius:7px;font-size:15px;display:flex;gap:18px}
+.funding-deck li b{min-width:85px;color:var(--gold)}
+.milestone-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.milestone-grid>div{padding:20px;background:#1d3633;border:1px solid #5a756b;border-radius:11px}
+.milestone-grid span,.milestone-grid b,.milestone-grid small{display:block}.milestone-grid span{color:var(--gold);font-size:12px;font-weight:850}
+.milestone-grid b{font-size:40px;margin-top:7px}.milestone-grid small{color:#ceddd2;font-size:14px}
+.final>p{font-size:16px;max-width:1000px;color:#bfd4c9;line-height:1.7;margin-top:27px}
+.final-cta{margin-top:27px;background:#e4ce98;border-radius:11px;color:#1a2a24;padding:20px;font-size:17px;line-height:1.75}
+.final-cta strong{font-weight:900}.pitch-endnote{padding:18px 24px;text-align:center;color:#a7bdb1;font-size:11px;max-width:1250px;margin:auto}
+@media(max-width:750px){.pitch-slide{min-height:0;aspect-ratio:auto;padding:25px 22px 37px}.pitch-slide h2{font-size:30px}.slide-grid.three,.slide-grid.two,.process-grid,.proof-grid,.price-grid,.econ-row,.funding-deck,.milestone-grid{grid-template-columns:1fr}.competitor-rows>div{grid-template-columns:1fr}.pitch-controls span{display:none}.funding-main strong{font-size:40px}.pitch-slide h1{font-size:48px}}
+@media print{@page{size:13.333in 7.5in;margin:0}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}html,body{background:#102222!important}.pitch-controls,.pitch-endnote{display:none!important}.pitch-slide{margin:0!important;border:none!important;border-radius:0!important;width:13.333in!important;height:7.5in!important;min-height:0!important;max-height:7.5in!important;aspect-ratio:auto!important;padding:44px 59px 36px!important;page-break-after:always;break-after:page}.pitch-slide:last-child{page-break-after:auto;break-after:auto}.pitch-slide h1{font-size:76px}.pitch-slide h2{font-size:39px}.slide-grid.three{grid-template-columns:repeat(3,1fr)}.slide-grid.two{grid-template-columns:repeat(2,1fr)}.process-grid,.proof-grid,.price-grid,.milestone-grid{grid-template-columns:repeat(4,1fr)}.price-grid,.econ-row{grid-template-columns:repeat(3,1fr)}.funding-deck{grid-template-columns:.75fr 1.25fr}.competitor-rows>div{grid-template-columns:260px 1fr}}

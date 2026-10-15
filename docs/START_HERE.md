@@ -1,6 +1,6 @@
 # Start here | AvLü™ technical and venture review
 
-**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.4.0 | October 15, 2026 | Nathaniel Schroeder**
 
 I created this public repository so an advisor can judge the seriousness of AvLü without being granted my implementation, data, source history or customer records.
 
@@ -10,9 +10,15 @@ AvLü's opportunity sources include **Facebook Marketplace for vehicles and equi
 
 [Facebook Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md) · [Auction intelligence](AUCTION_INTELLIGENCE.md) · [Product modules](PRODUCT_MODULES.md).
 
+## Shortest investor route
+
+For investor or mentor review, I recommend starting with **[the three-minute investor experience](../investors.html)** and the [printable ten-slide pitch](../pitch.html). This makes the pricing assumptions, competition, proof limits and customer trial requirements visible without asking anyone to read the entire repository.
+
+[Three-minute reading guide](INVESTOR_3_MINUTE_TOUR.md) · [Competitor matrix](COMPETITIVE_MATRIX.md) · [Dated traction](TRACTION_SCORECARD.md).
+
 ## Five-minute route
 
-1. Read [Investor Overview](INVESTOR_OVERVIEW.md) for the business case and unproven assumptions.
+1. Open [Investor Experience](../investors.html), then [Investor Overview](INVESTOR_OVERVIEW.md), for the business case and unproven assumptions.
 2. Open **https://getavlu.com**, then check [Product Modules](PRODUCT_MODULES.md) for live-versus-staged features.
 3. Review [Pricing and Revenue](PRICING_REVENUE.md), [Funding](FUNDING_PLAN.md) and [Unit Economics](SAAS_UNIT_ECONOMICS.md).
 4. Check [Status Snapshot](STATUS_SNAPSHOT.md), [Architecture](ARCHITECTURE.md) and [Autonomy](AUTONOMY.md).

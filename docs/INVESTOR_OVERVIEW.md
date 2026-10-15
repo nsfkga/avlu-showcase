@@ -1,7 +1,15 @@
 # AvLü™ | Investor overview
 
-**Public business-model research | v2.3.0 | October 15, 2026**  
+**Public business-model research | v2.4.0 | October 15, 2026**  
 **Founder and owner: Nathaniel Schroeder**
+
+## Guided investor materials
+
+The fastest way to review the business is my [three-minute investor walkthrough](../investors.html). It includes a sourced competitor comparison, adjustable fictional acquisition mathematics, editable hypothetical subscription economics and a dated evidence scorecard. The [ten-slide investor presentation](../pitch.html) can be printed or saved as a PDF from a browser.
+
+[Competitor matrix](COMPETITIVE_MATRIX.md) · [Traction scorecard](TRACTION_SCORECARD.md) · [Pilot ROI method](CUSTOMER_ROI_TEST.md) · [Presentation guide](PITCH_DECK_GUIDE.md).
+
+These demonstrations are public illustrations, not a connection to the proprietary live acquisition engine, customer records or real paid subscriptions.
 
 ## The investment thesis
 

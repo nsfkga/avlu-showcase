@@ -1,6 +1,6 @@
 # Proposed controlled pilot | Acquisition review
 
-**v2.2.0 | October 15, 2026 | Nathaniel Schroeder | Proposal, not an agreed pilot**
+**v2.4.0 | October 15, 2026 | Nathaniel Schroeder | Proposal, not an agreed pilot**
 
 ## Purpose
 
@@ -27,6 +27,12 @@ The proposed pilot fee is **$750–$1,500 one-time** for a fixed scope, a small 
 | Side-by-side | Run the same decision-time inputs through the bounded review workflow | Missing-proof flags, estimate assumptions, conflicts, false positives |
 | Outcome review | Compare known final disposition records, only where authenticated and shareable | Avoided oversights and accuracy limits, not hindsight-inflated performance |
 | Follow-up | Ask for independent second usage and a budget-holder discussion | Repeat behavior, improvement, next product decision |
+
+## Economic impact and fairness
+
+I will compare the current buyer's tools, an appropriately capable generic AI approach, and AvLü on the **same decision-time evidence**, counting all human research and extra review steps. The pilot must measure false holds and incremental administrative work, not just correctly flagged missing proof.
+
+A fictional arithmetic example is available in the [investor tour](../investors.html#acquisition). My [customer ROI experiment](CUSTOMER_ROI_TEST.md) describes the actual measurement and what cannot be called cash savings.
 
 ## Pilot scorecard
 

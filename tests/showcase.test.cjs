@@ -1,4 +1,4 @@
-// v2.3.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.4.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -51,7 +51,7 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.3\.0/);
+ assert.match(p,/v2\.4\.0/);
 });
 
 test('investor model separates hypothetical recurring revenue from actual traction',()=> {
@@ -114,5 +114,38 @@ test('marketplace source is not mislabeled as an automated feed or verified sold
  assert.match(doc, /asking prices.*not|asking price.*not/i);
  assert.match(doc, /scraping|data rights|permission/i);
  assert.match(home, /does <strong>not<\/strong> currently claim a live Meta-approved API feed/);
- assert.match(home, /v2\.3\.0/);
+ assert.match(home, /v2\.4\.0/);
+});
+
+test('v2.4 investor site provides five focused review sections and competitor reality',()=>{
+  const root=path.resolve(__dirname,'..');
+  const html=fs.readFileSync(path.join(root,'investors.html'),'utf8');
+  const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+  for(const id of ['tour','difference','acquisition','business-model','traction'])
+    assert.ok(html.includes('id="'+id+'"'),id+' is missing');
+  assert.match(home,/href="investors.html"/);
+  assert.match(html,/Facebook Marketplace/);
+  assert.match(html,/No acquisition approval/);
+  assert.match(html,/NO VERIFIED PAID ARR/);
+  assert.match(html,/Tractor Zoom Pro/);
+});
+test('ten printable slides distinguish historical proof from plans',()=>{
+  const html=fs.readFileSync(path.resolve(__dirname,'../pitch.html'),'utf8');
+  assert.equal((html.match(/class="pitch-slide/g)||[]).length,10);
+  assert.match(html,/Print \/ Save as PDF/);
+  assert.match(html,/−\$2,455/);
+  assert.match(html,/48,000/);
+  assert.match(html,/No autonomous transactions/);
+});
+test('investor materials provide sources and preserve the Facebook Marketplace position',()=>{
+ const root=path.resolve(__dirname,'..');
+ const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
+ for(const p of ['INVESTOR_3_MINUTE_TOUR','COMPETITIVE_MATRIX','TRACTION_SCORECARD','CUSTOMER_ROI_TEST','PITCH_DECK_GUIDE'])
+  assert.ok(fs.readFileSync(path.join(root,'docs/'+p+'.md'),'utf8').includes('Nathaniel Schroeder'));
+ assert.match(readme,/Facebook Marketplace/);
+ assert.match(readme,/investors\.html/);
+ assert.match(readme,/pitch\.html/);
+ const scorecard=fs.readFileSync(path.join(root,'docs/TRACTION_SCORECARD.md'),'utf8');
+ assert.match(scorecard,/Not independently verified/);
+ assert.match(scorecard,/realized resale|actual resale|resale/i);
 });

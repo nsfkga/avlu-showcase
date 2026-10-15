@@ -1,6 +1,6 @@
 # Differentiation | Why buy AvLü instead of asking an AI?
 
-**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.4.0 | October 15, 2026 | Nathaniel Schroeder**
 
 ## The challenge is legitimate
 
@@ -21,6 +21,12 @@ A generic GPT can read a copied Facebook Marketplace listing and suggest a plaus
 That same discipline applies to regional equipment auctions and dealer inventory. Marketplace is an important **source of opportunities**, not a proprietary feed or completed sale database. Its current use is research/source selection and permitted listing input, **not** a deployed autonomous Facebook connection. [Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md).
 
 I must show in controlled paid pilots that combining these checks beats the actual alternative workflow. Calling the product "AI-powered Facebook flipping" would be inaccurate and commercially weak.
+
+## Sourced comparison and an investor walkthrough
+
+A practical comparison against Tractor Zoom Pro/Anvil Pro, EquipmentWatch, general AI and spreadsheets is available in the [public competitive matrix](COMPETITIVE_MATRIX.md). Existing providers have significant valuation and workflow capabilities; no unsupported zero-capability claims are made.
+
+The [investor experience](../investors.html) offers a fictional demonstration of why costs and missing proof matter, plus a hypothetical revenue model. It does not prove competitors lack comparable functions or that paying dealers prefer AvLü.
 
 ## The workflow hypothesis
 
