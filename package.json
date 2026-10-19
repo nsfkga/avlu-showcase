@@ -1,13 +1,14 @@
 {
   "name": "avlu-showcase",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "private": true,
   "description": "AvLü public investor showcase for Marketplace, agricultural equipment and auction acquisition intelligence",
   "author": "Nathaniel Schroeder",
   "scripts": {
     "test": "node --test tests/showcase.test.cjs tests/investor-experience.test.cjs",
     "verify:public": "node tools/verify-public.cjs",
-    "check": "npm run test && npm run verify:public"
+    "check": "npm run test && npm run verify:public && npm run verify:pages",
+    "verify:pages": "node tools/verify-pages-readiness.cjs"
   },
   "engines": {
     "node": ">=18"

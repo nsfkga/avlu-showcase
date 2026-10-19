@@ -1,4 +1,4 @@
-// v2.4.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.4.1 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -51,7 +51,7 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.4\.0/);
+ assert.match(p,/v2\.4\.1/);
 });
 
 test('investor model separates hypothetical recurring revenue from actual traction',()=> {
@@ -114,7 +114,7 @@ test('marketplace source is not mislabeled as an automated feed or verified sold
  assert.match(doc, /asking prices.*not|asking price.*not/i);
  assert.match(doc, /scraping|data rights|permission/i);
  assert.match(home, /does <strong>not<\/strong> currently claim a live Meta-approved API feed/);
- assert.match(home, /v2\.4\.0/);
+ assert.match(home, /v2\.4\.1/);
 });
 
 test('v2.4 investor site provides five focused review sections and competitor reality',()=>{

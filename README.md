@@ -1,9 +1,15 @@
 # AvLü™ | Facebook Marketplace, agriculture and auction acquisition intelligence
 
-**Public technical and investor showcase | v2.4.0 | October 15, 2026**  
+**Public technical and investor showcase | v2.4.1 | October 19, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
 **[Three-minute investor tour](investors.html)** · **[Working AvLü prototype](https://getavlu.com)** · **[Printable investor pitch](pitch.html)** · [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) · [Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+
+## GitHub Pages publishing
+
+The public investor website is prepared for free GitHub Pages hosting using `main` and `/(root)`. **The actual hosted site is not verified live** until the Pages publishing source is enabled and its URL tested.
+
+[Publishing setup and verification](docs/GITHUB_PAGES_PUBLISHING.md). The source code and formatted documentation remain readable here on GitHub.
 
 ## Start with the investor experience
 
