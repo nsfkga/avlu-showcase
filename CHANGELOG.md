@@ -3,6 +3,19 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.4.1] - 2026-10-19
+
+### GitHub Pages publication readiness
+- Added a no-Jekyll marker so GitHub Pages can serve the existing static HTML, CSS and JavaScript directly.
+- Routed website Markdown references to GitHub's formatted document viewer, retaining readable links.
+- Added a Pages static link, anchor, asset and version verification test to the standard GitHub checks.
+- Documented the one-time publishing configuration and separate live website confirmation requirement.
+- Preserved the private application, Marketplace strategy, investor projections and owner metadata.
+
+### Hosting boundary
+- Publishing source is prepared but a publicly hosted Pages address is not claimed until verified.
+- No paid service, domain change, seller contact, bid, customer login or payment was created.
+
 ## [2.4.0] - 2026-10-15
 
 ### Investor experience

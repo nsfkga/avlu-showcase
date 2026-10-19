@@ -1,6 +1,6 @@
 # Public information and disclosure boundary
 
-**v2.4.0 | Owner: Nathaniel Schroeder**
+**v2.4.1 | Owner: Nathaniel Schroeder**
 
 This public repository is **independently authored** and does not contain a fork, submodule, copied commit history, filtered directory or mirror of the private AvLü application.
 
