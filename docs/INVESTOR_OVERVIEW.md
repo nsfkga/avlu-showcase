@@ -1,15 +1,7 @@
 # AvLü™ | Investor overview
 
-**Public business-model research | v2.4.0 | October 15, 2026**  
+**Public business-model research | v2.5.0 | October 19, 2026**  
 **Founder and owner: Nathaniel Schroeder**
-
-## Guided investor materials
-
-The fastest way to review the business is my [three-minute investor walkthrough](../investors.html). It includes a sourced competitor comparison, adjustable fictional acquisition mathematics, editable hypothetical subscription economics and a dated evidence scorecard. The [ten-slide investor presentation](../pitch.html) can be printed or saved as a PDF from a browser.
-
-[Competitor matrix](COMPETITIVE_MATRIX.md) · [Traction scorecard](TRACTION_SCORECARD.md) · [Pilot ROI method](CUSTOMER_ROI_TEST.md) · [Presentation guide](PITCH_DECK_GUIDE.md).
-
-These demonstrations are public illustrations, not a connection to the proprietary live acquisition engine, customer records or real paid subscriptions.
 
 ## The investment thesis
 
@@ -18,6 +10,24 @@ I am building AvLü as **pre-acquisition intelligence for equipment, attachments
 The workflow I am testing joins exact asset and auction-lot identity, source and condition evidence, buyer fees, freight, reconditioning exposure, credible resale context and a reviewable next-action decision. I am developing it to preserve decision-time history and eventually learn from attributable, fully costed completed transactions.
 
 **AvLü is not a chatbot subscription or a standalone resale-price guide.** AI can help organize inconsistent information. The product thesis is a maintained, permissioned, evidence-gated operating workflow with deterministic calculations and recorded decisions. General AI and incumbent dealer tools are real competitors. Commercial value and defensibility remain to be proved with paying customers.
+
+## First: why this is not a normal AI answer
+
+AI can analyze listings, do math and build similar software. AvLü is a working acquisition-review product that saves cases, distinguishes seller claims from verified evidence, exposes missing asset/ownership/condition proof and supports conditional cost and decision reviews. Its **HOLD** behavior matters because an impressive resale spread is not an authorized purchase or realized profit. Future source monitoring and closed-loop verified outcomes are **not fully deployed**.
+
+## Second: how AvLü differs from established industry tools
+
+Tractor Zoom Pro/Anvil Pro already provide equipment valuations, dealer appraisals, inventory and sales workflows; EquipmentWatch already has auction and resale transaction histories. I am testing a **narrower cross-source proof-before-offer review** for under-documented Facebook Marketplace, auction, dealer and private-sale inventory, rather than replacing dealer software or claiming exclusive AI.
+
+Neither competitive superiority nor customer willingness to pay is proven yet. [Detailed competitive assessment](COMPETITIVE_MATRIX.md) · [Product status](STATUS_SNAPSHOT.md).
+
+## Guided investor materials
+
+The fastest way to review the business is my [three-minute investor walkthrough](../investors.html). It includes a sourced competitor comparison, adjustable fictional acquisition mathematics, editable hypothetical subscription economics and a dated evidence scorecard. The [ten-slide investor presentation](../pitch.html) can be printed or saved as a PDF from a browser.
+
+[Competitor matrix](COMPETITIVE_MATRIX.md) · [Traction scorecard](TRACTION_SCORECARD.md) · [Pilot ROI method](CUSTOMER_ROI_TEST.md) · [Presentation guide](PITCH_DECK_GUIDE.md).
+
+These demonstrations are public illustrations, not a connection to the proprietary live acquisition engine, customer records or real paid subscriptions.
 
 ## The actual acquisition channels
 

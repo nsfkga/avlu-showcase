@@ -1,7 +1,17 @@
 # AvLü™ | Competitive assessment and generic AI question
 
-**Public, dated product comparison | v1.0.0 | October 15, 2026**  
+**Public, dated product comparison | v1.1.0 | October 19, 2026**  
 **Founder and owner: Nathaniel Schroeder**
+
+## The quick investor answer
+
+**What is AvLü?** A pre-acquisition evidence and economics review for used vehicles, equipment and attachments across Marketplace, private-seller, dealer and auction sources.
+
+**Why not just AI?** The working product handles case review, saved records and explicit evidence gaps, while a one-time GPT answer is not independently verified. AI-powered software and integrations can certainly reproduce parts of this. Persistent permissions-aware source and outcome processes remain the value proposition to test.
+
+**Why not the established providers?** Tractor Zoom Pro/Anvil Pro already provide appraisal, inventory, workflow and margin tools; EquipmentWatch already has extensive historical sale data. AvLü is testing **a smaller, cross-source proof-before-offer discipline** for inconsistent listings. There is meaningful product overlap and **no proven exclusive advantage**.
+
+Sources checked October 19, 2026: [Tractor Zoom's dealer solution](https://www.tractorzoompro.com/our-solutions/equipment-dealers), [Tractor Zoom's AI products](https://www.tractorzoompro.com/tractor-zoom-ai-products), and [EquipmentWatch Market Activity](https://equipmentwatch.com/market-activity-data/).
 
 ## The honest competitive premise
 

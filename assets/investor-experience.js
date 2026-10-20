@@ -1,4 +1,4 @@
-/* AvLü™ investor demonstration v2.4.0.
+/* AvLü™ investor demonstration v2.5.0.
  * Fictional case arithmetic and hypothetical SaaS scenarios, NOT the private engine.
  * © 2026 Nathaniel Schroeder. All rights reserved.
  */

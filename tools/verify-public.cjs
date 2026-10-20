@@ -1,4 +1,4 @@
-// Public-release boundary verifier v2.4.1.
+// Public-release boundary verifier v2.5.0.
 // © 2026 Nathaniel Schroeder. All rights reserved.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -55,12 +55,12 @@ walk(root);
 for (const p of allowed) if(!fs.existsSync(path.join(root,p)))errors.push('Required file missing: '+p);
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
 const marker=fs.readFileSync(path.join(root,'VERSION.txt'),'utf8').trim().split(/\s+/)[0];
-if(pkg.version!=='2.4.1'||marker!=='2.4.1')errors.push('SemVer mismatch: showcase must be 2.4.1');
+if(pkg.version!=='2.5.0'||marker!=='2.5.0')errors.push('SemVer mismatch: showcase must be 2.5.0');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const js=fs.readFileSync(path.join(root,'assets/demo.js'),'utf8');
 const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
 if(!html.includes('getavlu.com'))errors.push('Link to working application missing');
-if(!html.includes('v2.4.1'))errors.push('Visible site version outdated');
+if(!html.includes('v2.5.0'))errors.push('Visible site version outdated');
 if(!html.includes('synthetic') && !html.includes('fictional'))errors.push('Synthetic demo not disclosed');
 if(!readme.includes('v2.13.0')||!readme.includes('v2.14.0'))errors.push('Published versus source status omitted');
 if(!readme.includes('48,000')||!readme.includes('30'))errors.push('Required bounded evidence omitted');
@@ -95,7 +95,7 @@ const pitchHTML=fs.readFileSync(path.join(root,'pitch.html'),'utf8');
 const experience=fs.readFileSync(path.join(root,'assets/investor-experience.js'),'utf8');
 const pitchScript=fs.readFileSync(path.join(root,'assets/pitch.js'),'utf8');
 for(const [name,body] of [['investors.html',investorHTML],['pitch.html',pitchHTML]]){
-  if(!body.includes('v2.4.1')||!body.includes('Nathaniel Schroeder'))errors.push(name+' missing current version or owner');
+  if(!body.includes('v2.5.0')||!body.includes('Nathaniel Schroeder'))errors.push(name+' missing current version or owner');
   if(/<form\b/i.test(body)||/<script\b[^>]*src\s*=\s*["']https?:/i.test(body))errors.push(name+' includes form or remote script');
   if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(body))errors.push(name+' appears to make network requests');
 }
@@ -105,6 +105,22 @@ for(const [name,script] of [['investor-experience.js',experience],['pitch.js',pi
 for(const id of ['tour','difference','acquisition','business-model','traction']){
   if(!investorHTML.includes('id="'+id+'"'))errors.push('Investor tour missing '+id);
 }
+// Product, AI and competitor framing must be the FIRST thing an investor reads.
+const introOrder=['## What AvLü is','## Why AvLü is more than a normal AI answer',
+  '## How AvLü differs from existing competitors','## GitHub Pages publishing']
+  .map(label=>readme.indexOf(label));
+if(introOrder.some(i=>i<0)||introOrder.some((x,i)=>i>0&&x<=introOrder[i-1]))
+  errors.push('README does not immediately explain product, AI distinction and competitor distinction');
+const investorPos=investorHTML.indexOf('id="difference"');
+const investorTourPos=investorHTML.indexOf('id="tour"');
+if(investorPos<0||investorTourPos<=investorPos||investorHTML.indexOf('class="investor-band"')<investorPos)
+  errors.push('Investor experience does not open with competitive differentiation');
+const labels=[...pitchHTML.matchAll(/<div class="slide-label">([^<]+)<\/div>/g)].map(m=>m[1]);
+if(labels.length!==10||!/^02 \/ WHY IT IS NOT JUST AI/.test(labels[1])||!/^03 \/ COMPETITION/.test(labels[2]))
+  errors.push('Pitch does not put AI and competitor contrasts on slides two and three');
+if(!html.includes('class="hero-differences"')||!html.includes('Tractor Zoom')||!html.includes('EquipmentWatch'))
+  errors.push('Homepage lacks prominent two-part contrast');
+
 if(!investorHTML.includes('PRICING')&&!investorHTML.includes('hypothetical'))errors.push('Investor risk caveat missing');
 if((pitchHTML.match(/class="pitch-slide/g)||[]).length!==10)errors.push('Pitch should have ten slide sections');
 if(!pitchHTML.includes('Print / Save as PDF'))errors.push('Pitch export instructions missing');
@@ -118,4 +134,4 @@ if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(js))errors.push('Sa
 if(/<script\b[^>]*src\s*=\s*["']https?:/i.test(html))errors.push('Remote script found');
 if(/<form\b/i.test(html))errors.push('Public demo should not collect user data');
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
-else console.log('Public showcase v2.4.1 boundary passed. '+allowed.size+' explicit files, no external data calls.');
+else console.log('Public showcase v2.5.0 boundary passed. '+allowed.size+' explicit files, no external data calls.');

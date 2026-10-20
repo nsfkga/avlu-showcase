@@ -1,6 +1,6 @@
 # Current status snapshot | October 19, 2026
 
-**Document v2.4.1 | Owner: Nathaniel Schroeder**  
+**Document v2.5.0 | Owner: Nathaniel Schroeder**  
 **This is a dated snapshot, not automatically synchronized with the private source.**
 
 ## Releases and environment
@@ -13,7 +13,7 @@
 | Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
 | Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
 | Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical and investor showcase | v2.4.1 source prepared for GitHub Pages; hosted deployment not verified |
+| Public technical and investor showcase | v2.5.0 source prepared for GitHub Pages; hosted deployment not verified |
 
 The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
 

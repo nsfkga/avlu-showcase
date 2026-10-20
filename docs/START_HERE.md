@@ -1,8 +1,18 @@
 # Start here | AvLü™ technical and venture review
 
-**v2.4.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.5.0 | October 19, 2026 | Nathaniel Schroeder**
 
 I created this public repository so an advisor can judge the seriousness of AvLü without being granted my implementation, data, source history or customer records.
+
+## First, what it is and why it is different
+
+**AvLü is a working pre-acquisition review application** for vehicles, equipment and attachments discovered on Facebook Marketplace, at auctions, through dealers and in private sales. It keeps seller claims, missing proof, conditional total costs and documented next actions together.
+
+**Versus normal AI:** the proposed product value is the persistent case/evidence and decision workflow, not unique prompting. Source automation and verified realized-profit feedback remain limited or planned.
+
+**Versus competitors:** Tractor Zoom and Anvil already provide valuation/appraisal and dealer workflows, while EquipmentWatch provides sold/auction data. I am testing a narrower **proof-before-offer** process for poorly documented mixed-source inventory. It needs direct pilot evidence before claiming superiority.
+
+[AI and competitor explanation](DIFFERENTIATION.md) · [Source-backed matrix](COMPETITIVE_MATRIX.md).
 
 ## Source coverage matters
 

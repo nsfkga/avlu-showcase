@@ -1,6 +1,6 @@
 # AvLü™ | Investor presentation and delivery guide
 
-**v2.4.0 | October 15, 2026**  
+**v2.5.0 | October 19, 2026**  
 **Founder and author: Nathaniel Schroeder**
 
 ## Open or save the presentation
@@ -14,10 +14,10 @@ Use a desktop browser's **Print / Save as PDF** control to export a 16:9 slide-s
 | Slide | Subject | What I should make clear |
 | --- | --- | --- |
 | 1 | AvLü and the acquisition problem | I am addressing the decision **before** purchasing, not offering guaranteed cheap equipment |
-| 2 | Incomplete proof and overlooked cost | Acquisition price alone does not establish economic viability |
-| 3 | Workflow | Source, identity, costs and review status with unresolved evidence shown |
-| 4 | Why not just AI | A maintained record and policy workflow, not irreplaceable prompts |
-| 5 | Competitive landscape | Tractor Zoom and EquipmentWatch already deliver substantial industry value |
+| 2 | Why not just general AI | A maintained record and proof gate, not exclusive AI or an irreplaceable prompt |
+| 3 | How AvLü differs from competitors | Incumbents already offer valuations, appraisals, inventory and dealer workflows; the targeted wedge must be tested |
+| 4 | Incomplete proof and overlooked cost | Acquisition price alone does not establish economic viability |
+| 5 | Acquisition workflow | Source, identity, costs and conditional decision status, with unresolved evidence visible |
 | 6 | Proof to date | Working software and synthetic tests are distinct from commercial traction and realized returns |
 | 7 | Proposed pricing | $199, $499, from $999 per month; one-time pilot $750–$1,500; no validated uptake |
 | 8 | Economics | Hypothetical $8,975 MRR case still loses $2,455/month after modeled fixed costs |

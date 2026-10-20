@@ -3,6 +3,21 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.5.0] - 2026-10-19
+
+### Lead immediately with the two critical investor distinctions
+- Reordered the homepage introduction: what AvLü is, why the product is not merely an AI answer, and where it differs from established providers, before the usual evidence, features and revenue sections.
+- Moved the README's actual product definition and both comparisons to its opening, ahead of setup instructions and background research.
+- Reordered the three-minute investor tour so the AI and competitor challenge is the first substantive section after the product introduction.
+- Reorganized ten printable pitch slides: slide 1 product, slide 2 AI differentiation, slide 3 existing competitors, then problem, workflow and financial evidence.
+- Updated the investor overview, competitor matrix, differentiation dossier, reading guide and pitch guide to match the new presentation flow.
+
+### Honesty, ownership and scope
+- Official Tractor Zoom and EquipmentWatch product materials confirm substantial overlap; AvLü's narrower cross-source proof-before-offer workflow remains a commercial hypothesis to test, not an exclusive invention.
+- Source-linked case reviews and non-executable HOLD rules exist; continuous permitted market feeds, matched realized-profit feedback, paid traction and automatic purchases have not been established in the released app.
+- Private source, identities, confidential transaction documents, hosting settings and proprietary calculations were not copied or published.
+- All public owner notices remain credited to Nathaniel Schroeder.
+
 ## [2.4.1] - 2026-10-19
 
 ### GitHub Pages publication readiness

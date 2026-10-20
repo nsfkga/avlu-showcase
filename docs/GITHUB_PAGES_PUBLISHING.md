@@ -1,6 +1,6 @@
 # AvLü™ GitHub Pages publishing
 
-**Source readiness v2.4.1 | October 19, 2026 | Owner: Nathaniel Schroeder**
+**Source readiness v2.5.0 | October 19, 2026 | Owner: Nathaniel Schroeder**
 
 ## What this means
 

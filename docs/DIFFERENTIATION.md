@@ -1,18 +1,38 @@
 # Differentiation | Why buy AvLü instead of asking an AI?
 
-**v2.4.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.5.0 | October 19, 2026 | Nathaniel Schroeder**
 
-## The challenge is legitimate
+## What AvLü is
 
-Someone can paste a listing into ChatGPT or another model and ask for a value, potential profit or due-diligence checklist. Modern AI can also help engineers develop similar software. The product cannot survive solely by claiming to have secret prompts.
+I am building an acquisition screening system for used vehicles, equipment and attachments discovered on Facebook Marketplace, at auctions, through dealers and in private-sale listings. Its purpose is to assemble what a buyer can **actually verify**, the full conditional acquisition cost, and whether the next action should be further investigation, negotiation, rejection or **HOLD**.
 
-## The two investment objections
+## 1. Why AvLü is more than just normal AI
 
-**Why not just use ChatGPT?** A general AI can summarize lots, estimate rough resale possibilities and help build calculators. AvLü's proposed value is a *maintained, permissioned, source-linked pre-acquisition workflow*, with explicit uncertainty, controlled costs, durable history and future unit-matched realized outcomes. No individual ingredient is impossible to reproduce.
+An ordinary GPT can interpret a pasted listing, estimate a price, research public sources or help build a competing app. **That is real competition and not a capability I own exclusively.** My proposed product value is the **maintained workflow around the answer**, including:
 
-**Why not use an incumbent?** Established platforms such as [Tractor Zoom](https://tractorzoom.com/), [Machinery Pete](https://www.machinerypete.com/about-us) and [EquipmentWatch](https://equipmentwatch.com/) already provide significant valuation, auction-market and dealership capabilities. The possible niche is a focused **cross-source evidence gate for messy auction and equipment listings before money is committed**, not an unsupported claim that competitors lack similar functions.
+- **Source and identity:** Preserve the specific listing, event, source date, VIN/serial/configuration and their verification states rather than treating a plausible AI completion as established truth.
+- **Economics and risk:** Distinguish the seller's ask from actual purchase costs, repair/freight, permitted comparable results and resale proceeds. Unknown is not zero.
+- **Repeatable decisions:** Use saved cases, explicit HOLD reasons, review history and non-executable controls. A good-looking profit estimate should not trigger a bid or promise a return.
+- **Accountability over time:** A planned, permissions-aware loop of dated observations and unit-matched realized transactions could calibrate the system. This is **future development**, not a claim of a live always-synchronized service.
 
-**The commercial proof:** a customer must repeatedly pay for demonstrated value. Proposed rates of $199, $499 or from $999 monthly are not independently validated. [Business model](INVESTOR_OVERVIEW.md).
+**What is already real:** A working web prototype, protected owner research workflow, reference decision logic and synthetic engineering tests. **What is not yet proven:** authorized unattended source feeds, sufficient matched realized profits, ongoing paid use or automatic purchasing.
+
+## 2. How AvLü is positioned differently from competitors
+
+[Tractor Zoom Pro and Anvil Pro](https://www.tractorzoompro.com/our-solutions/equipment-dealers) already support equipment comps, valuations, inventories, appraisals, CRM, quotes and dealer sales processes. [EquipmentWatch](https://equipmentwatch.com/market-activity-data/) supplies deep historical auction and resale records. Marketplaces themselves show source listings. I cannot responsibly claim those companies lack relevant underwriting or decision functions.
+
+**The narrower opportunity I am testing:** a lightweight **pre-purchase proof gate across messy Marketplace, dealer, private and auction listings**, especially for independent buyers and compact attachments, *before* inventory enters a dealer's system.
+
+| Existing capability | Specific AvLü job to validate |
+| --- | --- |
+| Auction/resale price history | Connect a sourced market signal to one exact asset's verification and total acquisition-cost uncertainty |
+| Dealer CRM, appraisal and inventory workflow | Complement the earlier sourcing/offer decision, rather than attempt to replace dealership operations |
+| Marketplace or dealer listing pages | Turn seller claims into a dated evidence record with explicit unknowns and practical next actions |
+| Custom GPTs and buyer spreadsheets | Test the value of a consistent, maintained product versus manually recreating every screen and review |
+
+The potential benefit **must beat the actual alternatives** in a fair pilot, including data-license cost, onboarding burden, founder time and false HOLDs. This is **not** proven commercial superiority, exclusive software invention or an established moat.
+
+[Competitive source matrix](COMPETITIVE_MATRIX.md) · [Current release status](STATUS_SNAPSHOT.md) · [Pilot comparison method](CUSTOMER_ROI_TEST.md).
 
 ## Marketplace listings illustrate the differentiation
 

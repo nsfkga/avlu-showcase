@@ -1,6 +1,6 @@
 # AvLü™ | Three-minute investor reading guide
 
-**Public investor material | v2.4.0 | October 15, 2026**  
+**Public investor material | v2.5.0 | October 19, 2026**  
 **Founder and owner: Nathaniel Schroeder**
 
 This guide is for someone deciding whether to learn more about AvLü, not for an engineer looking for proprietary algorithms.
@@ -9,8 +9,8 @@ This guide is for someone deciding whether to learn more about AvLü, not for an
 
 | Time | Open | What the reviewer should understand |
 | --- | --- | --- |
-| 0:00 to 0:30 | [Investor Experience](../investors.html) | The problem is the gap between an appealing auction/listing price and a supported decision after all costs and missing evidence. |
-| 0:30 to 1:00 | [Competitive Matrix](COMPETITIVE_MATRIX.md) | Industry platforms and AI already handle significant valuation and sales work. I am testing a narrow proof-before-offer wedge, not claiming exclusivity. |
+| 0:00 to 0:30 | [Investor Experience](../investors.html) | AvLü reviews pre-acquisition evidence and full costs for vehicles/equipment found across Marketplace, dealers, auctions and private sellers. |
+| 0:30 to 1:00 | [Why AvLü is different](../investors.html#difference) | First, why the maintained evidence review is more than a one-off AI answer; second, what remains different from dealer/valuation incumbents. Neither is an exclusive or proven commercial advantage. |
 | 1:00 to 1:45 | [Fictional Acquisition Calculator](../investors.html#acquisition) | Change fees, freight, repairs and exit assumptions. An attractive projected margin is not a real transaction or purchase approval. |
 | 1:45 to 2:20 | [Editable SaaS Scenario](../investors.html#business-model) | Change proposed customer counts, prices, churn and costs; inspect gross margin and losses. None is reported revenue. |
 | 2:20 to 3:00 | [Traction Scorecard](TRACTION_SCORECARD.md) | See working software, actual historical accounting, synthetic tests, customer discovery and the biggest missing commercial evidence. |

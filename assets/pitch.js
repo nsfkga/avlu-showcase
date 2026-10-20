@@ -1,4 +1,4 @@
-/* Investor deck print controls v2.4.0. © 2026 Nathaniel Schroeder. */
+/* Investor deck print controls v2.5.0. © 2026 Nathaniel Schroeder. */
 (function(){
   'use strict';
   if(typeof document==='undefined')return;

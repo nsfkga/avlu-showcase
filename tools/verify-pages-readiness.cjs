@@ -1,4 +1,4 @@
-/* AvLü Pages static-readiness verification v2.4.1.
+/* AvLü Pages static-readiness verification v2.5.0.
  * Owner: Nathaniel Schroeder. © 2026 Nathaniel Schroeder. All rights reserved.
  * Offline only. Does not deploy, fetch, use accounts, or place offers.
  */
@@ -15,7 +15,7 @@ for (const page of pages) {
   if (!exists(page)) { errors.push('Missing entry: '+page); continue; }
   const html = fs.readFileSync(path.join(root,page), 'utf8');
   if (!html.includes('Nathaniel Schroeder')) errors.push(page+' missing owner credit');
-  if (!html.includes('v2.4.1')) errors.push(page+' missing version');
+  if (!html.includes('v2.5.0')) errors.push(page+' missing version');
   if (/<form\b/i.test(html)) errors.push(page+' includes a form');
   if (/<script\b[^>]*src\s*=\s*["']https?:/i.test(html)) errors.push(page+' includes remote script');
   const refs = [...html.matchAll(/\b(?:href|src)\s*=\s*["']([^"']+)["']/g)].map(m=>m[1]);
@@ -45,7 +45,7 @@ for (const file of ['assets/style.css','assets/demo.js','assets/investor.css',
 }
 const version = JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')).version;
 const marker = fs.readFileSync(path.join(root,'VERSION.txt'),'utf8').trim().split(/\s+/)[0];
-if (version !== '2.4.1' || marker !== '2.4.1') errors.push('Version mismatch');
+if (version !== '2.5.0' || marker !== '2.5.0') errors.push('Version mismatch');
 const guide = fs.readFileSync(path.join(root,'docs/GITHUB_PAGES_PUBLISHING.md'),'utf8');
 if (!guide.includes('Prepared source is not a verified deployment') || !guide.includes('main') || !guide.includes('/(root)')) errors.push('Pages deployment gate absent');
 if (tested < 40) errors.push('Unexpectedly few checked site links');

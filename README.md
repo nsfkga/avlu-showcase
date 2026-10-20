@@ -1,9 +1,46 @@
 # AvLü™ | Facebook Marketplace, agriculture and auction acquisition intelligence
 
-**Public technical and investor showcase | v2.4.1 | October 19, 2026**  
+**Public technical and investor showcase | v2.5.0 | October 19, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
 **[Three-minute investor tour](investors.html)** · **[Working AvLü prototype](https://getavlu.com)** · **[Printable investor pitch](pitch.html)** · [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) · [Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+
+## What AvLü is
+
+AvLü is a working, privately developed web application for evaluating **used vehicles, equipment, and attachments before money is committed**. It brings asset identity, seller claims, market observations, condition and inspection evidence, likely costs, potential resale, uncertainty, and decision controls into one reviewable workflow.
+
+**The goal is not to produce an optimistic price. It is to determine what the evidence supports, what is missing, and what the next responsible action should be.**
+
+I am extending the existing prototype toward continuous market observation, outcome-backed calibration, and bounded autonomous acquisition. Those are **development objectives**, not features that I claim are fully deployed. The product does **not** place orders, send bids, guarantee profit, or automatically purchase inventory today.
+
+## Why AvLü is more than a normal AI answer
+
+AI can read a Facebook Marketplace listing, suggest a value, make a spreadsheet, connect tools or help someone build a similar app. **I am not claiming exclusive AI capabilities or a secret prompt.** AvLü is a **working, maintained acquisition-review product** rather than just the text of one recommendation.
+
+- **It organizes a case:** Source and listing details, asset identity, condition and title/ownership gaps, reconstruction or repair estimates, transport and transaction costs, and review history stay tied to an opportunity.
+- **It distinguishes what is known:** Seller claims and asking prices are not confirmed serial numbers, paid settlement or completed resale proceeds. The reference logic uses explicit **HOLD** and other non-executable review states when proof or economics are missing.
+- **It has a longer-term feedback loop:** Versioned controls, permitted dated price updates and exact purchase-to-resale matching can improve the workflow over time. Continuous integrations and realized-profit calibration are still **development goals, not fully deployed results**.
+
+**Example:** An attachment might look cheap compared with someone's advertised retail price. AvLü's question is whether the exact unit is compatible, actually in the stated condition, and likely to resell for enough *after* all buying, freight, repair and selling costs. If evidence is weak, the appropriate answer is **HOLD**, not a confidently invented profit.
+
+[Technical status](docs/PRODUCT_MODULES.md) · [Detailed AI differentiation](docs/DIFFERENTIATION.md).
+
+## How AvLü differs from existing competitors
+
+**Tractor Zoom Pro/Anvil Pro already have extensive appraisal, comparable-sale, inventory and dealer-workflow capabilities. EquipmentWatch already offers historical auction and resale transactions.** AvLü is not the first equipment data provider or the first system that calculates margins.
+
+My **narrower, testable focus** is a **cross-source proof-before-offer workflow for mixed or poorly documented acquisitions**. A buyer might discover a vehicle on **Facebook Marketplace**, an attachment at a regional auction or equipment on a dealer site, then need to know what is missing and whether the all-in cost leaves any defensible margin **before** purchasing.
+
+| Established alternative | AvLü's intended role |
+| --- | --- |
+| Market-price and auction-history tools | Connect comparable evidence to *this exact listing*, its unknowns, the cost stack and the next action |
+| Dealer management, CRM and quotation systems | Complement upstream buying diligence for smaller operators; not replace an entire dealership platform |
+| Facebook Marketplace and auction catalogs | Treat source listings as leads, not verified asset identities or realized sale profit |
+| A custom GPT or spreadsheet | Offer a maintained case history, explicit uncertainty and consistent review gates instead of an isolated estimate |
+
+**This is a hypothesis to validate, not proven superiority.** I must compare AvLü against the customer's actual alternatives and show that recurring subscription value exceeds source, servicing and setup costs.
+
+[Tractor Zoom's dealer capabilities](https://www.tractorzoompro.com/our-solutions/equipment-dealers) · [EquipmentWatch auction/resale data](https://equipmentwatch.com/market-activity-data/) · [Sourced competitive matrix](docs/COMPETITIVE_MATRIX.md).
 
 ## GitHub Pages publishing
 
@@ -39,14 +76,6 @@ Public auction research has also tested why an **auction lot title**, **price-re
 
 Start with [Agricultural Equipment](docs/AGRICULTURAL_EQUIPMENT.md), [Auction Intelligence](docs/AUCTION_INTELLIGENCE.md), [Auction Evidence Cases](docs/AG_AUCTION_CASE_STUDIES.md), [Automation Architecture](docs/AUCTION_DATA_AUTOMATION.md) or [Project History](docs/PROJECT_ORIGINS_TIMELINE.md).
 
-## What I am building
-
-AvLü is a working, privately developed web application for evaluating **used vehicles, equipment, and attachments before money is committed**. It brings asset identity, seller claims, market observations, condition and inspection evidence, likely costs, potential resale, uncertainty, and decision controls into one reviewable workflow.
-
-**The goal is not to produce an optimistic price. It is to determine what the evidence supports, what is missing, and what the next responsible action should be.**
-
-I am extending the existing prototype toward continuous market observation, outcome-backed calibration, and bounded autonomous acquisition. Those are **development objectives**, not features that I claim are fully deployed. The product does **not** place orders, send bids, guarantee profit, or automatically purchase inventory today.
-
 ## The project in one minute
 
 | Dimension | Current status |
@@ -54,7 +83,7 @@ I am extending the existing prototype toward continuous market observation, outc
 | Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
 | GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
 | Separate Replit-derived source | **v2.15.2** market and inspection research modules have been preserved and staged for isolated private integration review; not merged to main or deployed. |
-| Public showcase | **v2.4.0**, a standalone presentation repo, not the private application. |
+| Public showcase | **v2.5.0**, a standalone presentation repo, not the private application. |
 | Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
 | First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
 | Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
@@ -119,16 +148,6 @@ The first funding scenario is a **$100,000 milestone-based plan**, with $40k for
 The proposed funnel is **50 qualified buyers → 15 demonstrations → five paid pilots → three recurring conversions**. None of those commercial results has been established by the existing tests or dealer discovery.
 
 [Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing](docs/PRICING_REVENUE.md) · [Funding](docs/FUNDING_PLAN.md) · [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) · [Go-to-market](docs/GO_TO_MARKET.md) · [Investor diligence](docs/INVESTOR_DILIGENCE.md).
-
-## Why not just ask a GPT?
-
-A language model can summarize a listing, explain a market concept, help estimate a cost, or help someone build a competing tool. **I do not claim that ordinary AI access is unique.**
-
-The value I am testing is **the maintained operational system around the answer**: data lineage, identity and configuration checks, verified versus assumed inputs, category calibration, reusable policy controls, stored decision history, restricted access, repeatable tests, and eventual links from observations to actual outcomes. Users would be paying for a proven workflow that is cheaper and safer than maintaining their own equivalent, not access to an irreplaceable prompt.
-
-That economic and performance advantage is **not yet proven**. I intend to test it against existing dealer workflows rather than assume it.
-
-[Competitive positioning and the GPT challenge](docs/DIFFERENTIATION.md).
 
 ## Actual engineering, not a pitch-only mockup
 

@@ -1,4 +1,4 @@
-// v2.4.1 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.5.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -51,7 +51,7 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.4\.1/);
+ assert.match(p,/v2\.5\.0/);
 });
 
 test('investor model separates hypothetical recurring revenue from actual traction',()=> {
@@ -114,10 +114,10 @@ test('marketplace source is not mislabeled as an automated feed or verified sold
  assert.match(doc, /asking prices.*not|asking price.*not/i);
  assert.match(doc, /scraping|data rights|permission/i);
  assert.match(home, /does <strong>not<\/strong> currently claim a live Meta-approved API feed/);
- assert.match(home, /v2\.4\.1/);
+ assert.match(home, /v2\.5\.0/);
 });
 
-test('v2.4 investor site provides five focused review sections and competitor reality',()=>{
+test('v2.5 investor site provides five focused review sections and competitor reality',()=>{
   const root=path.resolve(__dirname,'..');
   const html=fs.readFileSync(path.join(root,'investors.html'),'utf8');
   const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
@@ -148,4 +148,43 @@ test('investor materials provide sources and preserve the Facebook Marketplace p
  const scorecard=fs.readFileSync(path.join(root,'docs/TRACTION_SCORECARD.md'),'utf8');
  assert.match(scorecard,/Not independently verified/);
  assert.match(scorecard,/realized resale|actual resale|resale/i);
+});
+
+test('README leads with product definition, AI distinction, then incumbent comparison',()=>{
+ const s=fs.readFileSync(path.resolve(__dirname,'../README.md'),'utf8');
+ const first=['## What AvLü is','## Why AvLü is more than a normal AI answer','## How AvLü differs from existing competitors','## GitHub Pages publishing'];
+ const at=first.map(x=>s.indexOf(x));
+ assert.ok(at.every(v=>v>=0) && at.every((v,i)=>i===0||v>at[i-1]),'The investor-facing opening must appear in order');
+ assert.match(s,/Tractor Zoom Pro\/Anvil Pro/);
+ assert.match(s,/EquipmentWatch/);
+ assert.match(s,/HOLD/);
+ assert.match(s,/development goals/);
+});
+test('homepage puts both clear differentiators directly after product introduction',()=>{
+ const s=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
+ const hero=s.indexOf('<section class="intro hero"');
+ const intro=s.indexOf("I'm building AvLü for buyers",hero);
+ const first=s.indexOf('MORE THAN A GENERAL AI ANSWER',intro);
+ const second=s.indexOf('DIFFERENT FOCUS FROM ESTABLISHED TOOLS',first);
+ const banner=s.indexOf('showcase-investor-banner',second);
+ assert.ok(hero>=0&&intro>hero&&first>intro&&second>first&&banner>second);
+ assert.match(s,/proven|test|unproven/i);
+});
+test('investor walkthrough and ten-slide pitch front-load the competitive objections',()=>{
+ const investor=fs.readFileSync(path.resolve(__dirname,'../investors.html'),'utf8');
+ const pitch=fs.readFileSync(path.resolve(__dirname,'../pitch.html'),'utf8');
+ const diff=investor.indexOf('id="difference"');
+ const rail=investor.indexOf('class="investor-band"');
+ const tour=investor.indexOf('id="tour"');
+ assert.ok(diff>=0&&rail>diff&&tour>diff);
+ assert.equal((pitch.match(/<section class="pitch-slide/g)||[]).length,10);
+ const headings=[...pitch.matchAll(/<div class="slide-label">([^<]+)<\/div>/g)].map(x=>x[1]);
+ assert.equal(headings.length,10);
+ assert.match(headings[1],/02 \/ WHY IT IS NOT JUST AI/);
+ assert.match(headings[2],/03 \/ COMPETITION/);
+ assert.match(headings[3],/04 \/ PROBLEM/);
+ assert.match(headings[4],/05 \/ PRODUCT/);
+ const ids=[...pitch.matchAll(/<section class="pitch-slide[^"]*" id="slide-(\d+)"/g)].map(x=>Number(x[1]));
+ assert.deepEqual(ids,[1,2,3,4,5,6,7,8,9,10]);
+ assert.match(pitch,/No autonomous transactions/);
 });
