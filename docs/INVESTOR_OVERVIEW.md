@@ -1,110 +1,77 @@
-# AvLü™ | Investor overview
+# AvLü™ | The investment case
 
-**Public business-model research | v2.5.0 | October 19, 2026**  
+**Investor message revision v2.5.1 | October 19, 2026**  
 **Founder and owner: Nathaniel Schroeder**
 
-## The investment thesis
+## What AvLü is
 
-I am building AvLü as **pre-acquisition intelligence for equipment, attachments and used vehicles**. It addresses the expensive gap between discovering an attractive listing and determining whether the asset actually deserves an offer.
+**AvLü helps inventory buyers decide what is worth buying, what they can afford to pay, and what they need to verify first.** The working prototype organizes used-vehicle and equipment opportunities from Facebook Marketplace, auctions, dealers, and private sellers around evidence, acquisition costs, and documented decisions.
 
-The workflow I am testing joins exact asset and auction-lot identity, source and condition evidence, buyer fees, freight, reconditioning exposure, credible resale context and a reviewable next-action decision. I am developing it to preserve decision-time history and eventually learn from attributable, fully costed completed transactions.
+## Why it is more than normal AI
 
-**AvLü is not a chatbot subscription or a standalone resale-price guide.** AI can help organize inconsistent information. The product thesis is a maintained, permissioned, evidence-gated operating workflow with deterministic calculations and recorded decisions. General AI and incumbent dealer tools are real competitors. Commercial value and defensibility remain to be proved with paying customers.
+**A recommendation should survive verification.** The product is the maintained workflow behind the estimate: dated sources, saved opportunities, explicit missing-cost warnings, and a record of the decision.
 
-## First: why this is not a normal AI answer
+In the latest source-tested Owner Resale integration, the original forecast is preserved, later actual trades remain separate owner-entered records, and downloaded reports carry the same source-policy warnings as the screen. Completed auction lots stay historical scenarios; an unknown premium does not become confirmed by entering zero. The integration remains unmerged and unpublished.
 
-AI can analyze listings, do math and build similar software. AvLü is a working acquisition-review product that saves cases, distinguishes seller claims from verified evidence, exposes missing asset/ownership/condition proof and supports conditional cost and decision reviews. Its **HOLD** behavior matters because an impressive resale spread is not an authorized purchase or realized profit. Future source monitoring and closed-loop verified outcomes are **not fully deployed**.
+That is concrete engineering beyond a single generated answer. AI can help build competing software; the reason to buy AvLü is a reliable, maintained workflow rather than the work of assembling and maintaining an equivalent system.
 
-## Second: how AvLü differs from established industry tools
+## How it differs from competitors
 
-Tractor Zoom Pro/Anvil Pro already provide equipment valuations, dealer appraisals, inventory and sales workflows; EquipmentWatch already has auction and resale transaction histories. I am testing a **narrower cross-source proof-before-offer review** for under-documented Facebook Marketplace, auction, dealer and private-sale inventory, rather than replacing dealer software or claiming exclusive AI.
+Tractor Zoom Pro/Anvil Pro already cover equipment valuation, appraisals, inventory, quoting, and dealer workflows. EquipmentWatch already offers historical transactions and APIs. AvLü focuses on the **independent buyer's acquisition decision across fragmented sources**, combining buyer-specific costs with preserved forecasts and evidence-sensitive reports.
 
-Neither competitive superiority nor customer willingness to pay is proven yet. [Detailed competitive assessment](COMPETITIVE_MATRIX.md) · [Product status](STATUS_SNAPSHOT.md).
+A specific difference is documented in Anvil Pro's April 2026 Margin Targets feature: it provides visual sales-margin guidance and does not block below-target quotes. AvLü's reference review uses **HOLD** when required source evidence or costs are unresolved. One guides a sales quote; the other evaluates whether a purchase conclusion is sufficiently supported. This comparison describes that particular feature, not every control in the broader Anvil platform.
 
-## Guided investor materials
+[Detailed differentiation](DIFFERENTIATION.md) · [Official Anvil feature description](https://www.tractorzoompro.com/blog/margin-targets-for-quote-real-time-profit-visibility-inside-anvil-pro) · [Competitive matrix](COMPETITIVE_MATRIX.md).
 
-The fastest way to review the business is my [three-minute investor walkthrough](../investors.html). It includes a sourced competitor comparison, adjustable fictional acquisition mathematics, editable hypothetical subscription economics and a dated evidence scorecard. The [ten-slide investor presentation](../pitch.html) can be printed or saved as a PDF from a browser.
+## The buyer and the benefit
 
-[Competitor matrix](COMPETITIVE_MATRIX.md) · [Traction scorecard](TRACTION_SCORECARD.md) · [Pilot ROI method](CUSTOMER_ROI_TEST.md) · [Presentation guide](PITCH_DECK_GUIDE.md).
+The initial customer is an independent equipment/attachment reseller or smaller dealer evaluating inconsistent auction and private-sale inventory. Automotive functionality remains supported. The first proposed autonomous category is limited to selected non-powered attachments, with purchasing disabled.
 
-These demonstrations are public illustrations, not a connection to the proprietary live acquisition engine, customer records or real paid subscriptions.
+The intended benefit is **better coordination with less complication**: keep the listing, cost exposure, missing proof, original forecast, and later result together rather than reconstruct them across browsing tabs, chats, and spreadsheets.
 
-## The actual acquisition channels
+The next commercial test is a paid comparison against the buyer's existing process, measuring time, material omissions, false warnings, repeat use, and cost to serve. Customer savings and superiority over alternatives are not yet established.
 
-My product deliberately spans **Facebook Marketplace, used-equipment auctions, dealer inventories and private listings**. Facebook Marketplace is a meaningful source of used vehicles and attachments with incomplete seller descriptions. Our private source-search configuration already includes `facebook.com/marketplace` for both vehicle and equipment search categories.
+## Evidence already available
 
-The investment thesis is **not** that Facebook or auction platforms lack data or that AvLü has special access to them. Buyers already see asking prices on Marketplace and published auction results elsewhere. The test is whether AvLü can reconcile **source, exact asset identity, condition, total acquisition cost, comparable evidence and the reason to reject or investigate** without burying the buyer in manual research.
-
-Source access is a business risk: the app does not currently have verified unrestricted or automated Facebook ingestion rights. An approved import path, buyer-supplied listing or user-mediated workflow is a more credible initial lane than promising an unauthorized always-on scraper. [Marketplace and access plan](FACEBOOK_MARKETPLACE_STRATEGY.md).
-
-## The initial commercial wedge
-
-**First buyer to test:** independent equipment-attachment reseller or smaller dealer that frequently evaluates imperfect auction and private-sale listings. Maintain automotive capabilities while validating one narrow category of non-powered compact-equipment attachments.
-
-**Initial job:** help a buyer decide whether a listing warrants immediate rejection, further evidence, inspection, negotiation or continued monitoring. Do not promise automated bidding or buy-ready approval.
-
-I will measure whether this is more useful than the buyer's current mixture of pricing guides, dealer systems, spreadsheets, and generative AI.
-
-## What is real versus what is proposed
-
-| Evidence already available | What it does not establish |
+| Evidence | Meaning |
 | --- | --- |
-| Working AvLü application and published protected owner baseline | That the newer source branches have been deployed |
-| 150-row historical formula audit; zero reported arithmetic mismatches; seven test-deeper results | That seven units were purchased profitably |
-| 2,000 fictional regression cases and 48,000 passing assertions | Real-world pricing accuracy or acquired margin |
-| 71 first-party acquisition lines representing 79 units | Verified completed resale revenue: the archived sales log was empty |
-| 31 founder-reported dealer meetings; 23 completed discussions in an earlier course log | Paying pilots, subscriptions, purchase orders or product-market fit |
-| A separate private integration review with read-only auction research tests | A production autonomous scanner or real-money transaction system |
+| Working web prototype and private owner baseline | A developed application, not every later feature deployed |
+| 150-row historical audit; zero reported arithmetic mismatches | Consistent calculations for the audited inputs |
+| 2,000 fictional regression cases; 48,000 assertions | Software QA, not actual trades |
+| 71 acquisition lines representing 79 equipment units | Real aggregate acquisition accounting; retained sales evidence does not establish realized resale profit |
+| 30 shadow cases, all HOLD | No purchase approvals released |
+| Latest Owner Resale source-release check passed | Preserved forecasts, source-aware exports, and database/browser behavior tested in development; not independent review or deployment approval |
+| 31 founder-reported meetings and 23 conversations in a separate course log | Discovery evidence, not paying customer counts |
 
-**As of this update, no paying SaaS customers, contractual ARR, successful paid pilots, measured CAC/churn, or verified model-wide realized-profit accuracy have been established in this public record.** No autonomous purchase authority or profit coverage is active.
+[Validation](VALIDATION.md) · [Evidence scorecard](TRACTION_SCORECARD.md) · [Dated release snapshot](STATUS_SNAPSHOT.md).
 
-## Proposed monetization
+## Revenue model
 
-The primary model is **recurring subscription revenue from buyers and dealers**, not AvLü taking ownership of their equipment or claiming a percentage of their gross resale.
+The core model is subscription software, not financing customer inventory or collecting the buyer's resale proceeds.
 
-| Hypothesis | Proposed charge | Purpose |
-| --- | ---: | --- |
-| Independent | $199/month or $1,990/year | Individual buyer's structured review workflow |
-| Dealer Team | $499/month | Multiple users, saved cases and workflow review, subject to product completion |
-| Dealer Integration | From $999/month | Permissioned integration, higher support and usage scope, quote-dependent |
-| Limited evaluation pilot | $750 to $1,500 total | Fixed-scope demonstration of measurable operator benefit |
+| Offer under evaluation | Proposed price |
+| --- | ---: |
+| Independent | $199/month or $1,990/year |
+| Dealer Team | $499/month |
+| Negotiated integration | From $999/month |
+| Fixed-scope paid pilot | $750–$1,500 once |
 
-**None is a current confirmed price, live checkout, signed contract or proof of willingness to pay.** Pricing and plan inclusion need to be tested, and licensed source-data charges may require additional limits or negotiated terms.
+These are hypotheses, not confirmed offers or paid subscriptions. Data rights, plan features, usage limits, and delivery costs must be established before customer commitments.
 
-[Commercial pricing and model](PRICING_REVENUE.md) · [Pilot design](PILOT_PLAN.md).
+A hypothetical 25-account mix generates $8,975 MRR and $107,700 annualized ARR. Assumed direct costs of $2,430/month leave $6,545 gross profit. After $9,000/month of modeled fixed costs, the scenario loses $2,455/month before additional acquisition costs and taxes. Approximate blended break-even is 35 accounts. [Pricing](PRICING_REVENUE.md) · [Unit economics](SAAS_UNIT_ECONOMICS.md).
 
-## Illustrative operating model
+## What funding would accomplish
 
-A hypothetical 25-account mix of 15 Independent, eight Dealer Team and two Dealer Integration customers yields **$8,975 monthly recurring revenue**, or **$107,700 annualized recurring revenue**. Assuming $2,430/month in direct delivery costs gives **$6,545 gross profit**, about **72.9% gross margin**. At a hypothetical $9,000/month of fixed overhead, that scenario loses **$2,455/month before additional acquisition expenses and taxes**.
+The illustrative $100,000 plan allocates $40,000 to engineering/founder QA, $20,000 to data access and integration, $15,000 to pilots/onboarding, $10,000 to security/infrastructure, $10,000 to legal/accounting, and $5,000 to contingency.
 
-These are arithmetic scenarios, not actual or forecast sales. The corresponding mix-based fixed-cost break-even is about **35 accounts**, assuming the modeled gross contribution per account holds. Direct source and support costs could be higher.
+The objective is a protected integrated product, authorized source access, paid pilots, measured customer value, and actual delivery costs. This is not money raised, a securities offer, or guaranteed runway. [Funding plan](FUNDING_PLAN.md).
 
-[Unit-economics formulas and limitations](SAAS_UNIT_ECONOMICS.md).
+## The next business milestone
 
-## Illustrative first financing plan
+The proposed founder-led funnel is 50 qualified accounts, 15 demonstrations, five paid pilots, and three recurring conversions. Those are targets, not traction. Recurring value must be supported by voluntary repeat use, customer economics, and maintainable operations.
 
-I am evaluating a **$100,000 milestone-based raise**, aimed at six to nine months of focused engineering, authorized data access and commercial validation rather than building every future module simultaneously.
+Continuous unattended Marketplace sourcing, automatic purchases, Profit Protection™, and independently verified profit prediction are not active features. The first commercial test is whether the acquisition-review workflow earns its subscription.
 
-The proposed use is **$40,000 engineering and founder/QA work, $20,000 market data/integrations, $15,000 paid-pilot onboarding and sales validation, $10,000 security/infrastructure, $10,000 legal/accounting/data rights, and $5,000 contingency**.
-
-This is a planning scenario, **not a committed fundraise, valuation, investor offer or guaranteed runway**. Equity, SAFE, grant and loan paths have distinct terms and require professional review.
-
-[Funding plan and milestones](FUNDING_PLAN.md).
-
-## What this capital must prove
-
-I want a measurable funnel of 50 qualified buyers, 15 substantive demonstrations, five **paid** trials and three proposed subscriptions, without labeling any of those steps as achieved. The decision to continue would depend on real repeat usage, economic value to buyers, legally usable data, the ability to serve accounts profitably, and a safe production release.
-
-[Go-to-market plan](GO_TO_MARKET.md) · [Investor diligence and risks](INVESTOR_DILIGENCE.md).
-
-## Defensibility rather than AI hype
-
-Existing platforms provide appraisal, auction histories, margins, inventory management and customer workflows. The possible differentiation is a focused, cross-source **proof-before-offer decision layer**, especially for inconsistent auction listings and compact attachments. Whether that is valuable enough to justify a separate subscription is still an experiment.
-
-A GPT can make an estimate or assist in building software. Investors should ask whether AvLü can operate **authorized data feeds, durable identity and outcome reconciliation, consistent review controls, measurable savings and sustainable unit economics** more conveniently than a dealer doing it alone.
-
-No claim of exclusive invention, unreplicable AI or guaranteed returns is made.
-
-**AvLü is intended to answer: what does the available evidence actually support before I spend money acquiring this unit?**
+[Investor tour](../investors.html) · [Printable pitch](../pitch.html) · [Customer ROI test](CUSTOMER_ROI_TEST.md) · [Diligence](INVESTOR_DILIGENCE.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

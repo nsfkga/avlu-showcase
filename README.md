@@ -1,243 +1,120 @@
-# AvLü™ | Facebook Marketplace, agriculture and auction acquisition intelligence
+# AvLü™ | Purchase intelligence for Marketplace, equipment, and auctions
 
-**Public technical and investor showcase | v2.5.0 | October 19, 2026**  
+**Public investor and technical showcase | v2.5.1 | October 19, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
-**[Three-minute investor tour](investors.html)** · **[Working AvLü prototype](https://getavlu.com)** · **[Printable investor pitch](pitch.html)** · [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) · [Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing and revenue](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md) · [Start here](docs/START_HERE.md) · [Technical architecture](docs/ARCHITECTURE.md) · [Evidence and validation](docs/VALIDATION.md)
+[Investor tour](investors.html) · [Working prototype](https://getavlu.com) · [Printable pitch](pitch.html) · [Competitive assessment](docs/COMPETITIVE_MATRIX.md) · [Pricing](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md)
 
 ## What AvLü is
 
-AvLü is a working, privately developed web application for evaluating **used vehicles, equipment, and attachments before money is committed**. It brings asset identity, seller claims, market observations, condition and inspection evidence, likely costs, potential resale, uncertainty, and decision controls into one reviewable workflow.
+**AvLü helps inventory buyers decide what is worth buying, what they can afford to pay, and what they need to verify first.**
 
-**The goal is not to produce an optimistic price. It is to determine what the evidence supports, what is missing, and what the next responsible action should be.**
+I am building it for used vehicles, agricultural and compact equipment, and attachments found on **Facebook Marketplace, at auctions, through dealers, and in private sales**. The working application brings listing information, condition evidence, acquisition costs, resale assumptions, and review history into one decision process.
 
-I am extending the existing prototype toward continuous market observation, outcome-backed calibration, and bounded autonomous acquisition. Those are **development objectives**, not features that I claim are fully deployed. The product does **not** place orders, send bids, guarantee profit, or automatically purchase inventory today.
+**Price the purchase. Preserve the proof.** A promising resale price is only useful when the exact asset, expenses, and evidence support the purchase.
 
 ## Why AvLü is more than a normal AI answer
 
-AI can read a Facebook Marketplace listing, suggest a value, make a spreadsheet, connect tools or help someone build a similar app. **I am not claiming exclusive AI capabilities or a secret prompt.** AvLü is a **working, maintained acquisition-review product** rather than just the text of one recommendation.
+**A recommendation should survive verification.** A one-off AI answer can suggest a number. AvLü is being built to preserve the information, calculations, and conditions behind a buyer's decision.
 
-- **It organizes a case:** Source and listing details, asset identity, condition and title/ownership gaps, reconstruction or repair estimates, transport and transaction costs, and review history stay tied to an opportunity.
-- **It distinguishes what is known:** Seller claims and asking prices are not confirmed serial numbers, paid settlement or completed resale proceeds. The reference logic uses explicit **HOLD** and other non-executable review states when proof or economics are missing.
-- **It has a longer-term feedback loop:** Versioned controls, permitted dated price updates and exact purchase-to-resale matching can improve the workflow over time. Continuous integrations and realized-profit calibration are still **development goals, not fully deployed results**.
+The difference is the product around the answer:
 
-**Example:** An attachment might look cheap compared with someone's advertised retail price. AvLü's question is whether the exact unit is compatible, actually in the stated condition, and likely to resell for enough *after* all buying, freight, repair and selling costs. If evidence is weak, the appropriate answer is **HOLD**, not a confidently invented profit.
+- **Evidence changes the result.** Missing identity, ownership, condition, or cost information stays visible. A plausible margin does not erase an unresolved requirement or turn a historical auction result into a current buying opportunity.
+- **The original forecast stays intact.** The source-tested Owner Resale workflow connects saved opportunities, dated observations, the calculator, and preserved forecasts. Later edits do not silently replace the original basis for the decision.
+- **The warnings travel with the numbers.** In the latest tested development workflow, downloaded reports retain the screen's source classifications and missing-cost warnings. An export does not turn uncertain expenses into confirmed costs.
+- **Expected profit and actual results remain separate.** Forecasts use stated assumptions. Actual trades have a separate owner-entered record, with independent verification still required before treating those entries as established transaction evidence.
 
-[Technical status](docs/PRODUCT_MODULES.md) · [Detailed AI differentiation](docs/DIFFERENTIATION.md).
+AI can help extract descriptions, explain results, or build similar software. AvLü's value proposition is a maintained acquisition workflow with explicit rules, durable records, and consistent handling of uncertainty, not exclusive access to a model.
+
+**Development status:** The Owner Resale integration has passed source, browser, export, and database tests but remains unmerged and unpublished. Continuous authorized source feeds and independently verified realized-profit calibration remain development goals. [Product status](docs/PRODUCT_MODULES.md) · [Detailed differentiation](docs/DIFFERENTIATION.md).
 
 ## How AvLü differs from existing competitors
 
-**Tractor Zoom Pro/Anvil Pro already have extensive appraisal, comparable-sale, inventory and dealer-workflow capabilities. EquipmentWatch already offers historical auction and resale transactions.** AvLü is not the first equipment data provider or the first system that calculates margins.
+**AvLü focuses on the buyer's acquisition decision: not just what an item might sell for, but what it is worth buying for.**
 
-My **narrower, testable focus** is a **cross-source proof-before-offer workflow for mixed or poorly documented acquisitions**. A buyer might discover a vehicle on **Facebook Marketplace**, an attachment at a regional auction or equipment on a dealer site, then need to know what is missing and whether the all-in cost leaves any defensible margin **before** purchasing.
+Tractor Zoom Pro/Anvil Pro already offer substantial valuation, appraisal, inventory, quoting, and dealer-workflow capabilities. EquipmentWatch already provides extensive auction and resale data. AvLü's distinctive product focus is the **independent buyer reviewing incomplete opportunities across different sources**, with the original forecast, unresolved evidence, and eventual actual result kept separate and connected.
 
-| Established alternative | AvLü's intended role |
-| --- | --- |
-| Market-price and auction-history tools | Connect comparable evidence to *this exact listing*, its unknowns, the cost stack and the next action |
-| Dealer management, CRM and quotation systems | Complement upstream buying diligence for smaller operators; not replace an entire dealership platform |
-| Facebook Marketplace and auction catalogs | Treat source listings as leads, not verified asset identities or realized sale profit |
-| A custom GPT or spreadsheet | Offer a maintained case history, explicit uncertainty and consistent review gates instead of an isolated estimate |
+| Alternative | Documented strength | AvLü's specific focus and buyer benefit |
+| --- | --- | --- |
+| Tractor Zoom Pro / Anvil Pro | Equipment valuations, appraisals, inventory, CRM, quotes, and settlement workflows | A focused acquisition review across Marketplace, private sales, dealer listings, and auctions, without requiring the buyer to adopt an entire dealership workflow |
+| EquipmentWatch | Historical auction/resale transactions and market-data services | Apply market evidence to this exact unit, the buyer's costs, and the reasons an opportunity should remain on HOLD |
+| Marketplace and auction catalogs | Finding inventory and observing asking prices or reported results | Carry an opportunity from discovery into a documented cost-and-evidence review rather than treat the listing as sufficient proof |
+| A custom GPT or spreadsheet | Flexible analysis, calculations, and user-built workflows | Preserve original forecasts, retain uncertainty in reports, and keep expected returns separate from actual trade records in a maintained application |
 
-**This is a hypothesis to validate, not proven superiority.** I must compare AvLü against the customer's actual alternatives and show that recurring subscription value exceeds source, servicing and setup costs.
+**The benefit to test is better coordination with less complication:** fewer repeated lookups, clearer cost exposure, and a decision that can be reviewed without reconstructing the reasoning from scattered notes.
 
-[Tractor Zoom's dealer capabilities](https://www.tractorzoompro.com/our-solutions/equipment-dealers) · [EquipmentWatch auction/resale data](https://equipmentwatch.com/market-activity-data/) · [Sourced competitive matrix](docs/COMPETITIVE_MATRIX.md).
+One concrete comparison is already visible in the published product descriptions. Anvil Pro's April 2026 Margin Targets release displays profit guidance inside a sales quote and explicitly does not block below-target deals. AvLü's reference acquisition logic uses **HOLD** when source evidence or required costs are unresolved. Those controls serve different decisions: a sales-margin indicator versus a pre-purchase evidence gate. This comparison applies to that specific Anvil feature, not every control in its wider platform.
+
+[Anvil Pro margin-target behavior](https://www.tractorzoompro.com/blog/margin-targets-for-quote-real-time-profit-visibility-inside-anvil-pro) · [Anvil Pro product scope](https://www.tractorzoompro.com/anvil-pro) · [EquipmentWatch data](https://equipmentwatch.com/market-activity-data/) · [Full comparison](docs/COMPETITIVE_MATRIX.md).
+
+**Validation milestone:** Measure review time, overlooked costs, false holds, repeat use, and willingness to pay against the customer's actual tools. The workflow difference is specific; superior customer outcomes still need a fair comparison.
 
 ## GitHub Pages publishing
 
-The public investor website is prepared for free GitHub Pages hosting using `main` and `/(root)`. **The actual hosted site is not verified live** until the Pages publishing source is enabled and its URL tested.
+The static homepage, investor tour, and pitch are prepared for GitHub Pages using `main` and `/(root)`. **Prepared source is not a verified deployment.** The formatted README and linked documents remain available on GitHub. [Publishing instructions](docs/GITHUB_PAGES_PUBLISHING.md).
 
-[Publishing setup and verification](docs/GITHUB_PAGES_PUBLISHING.md). The source code and formatted documentation remain readable here on GitHub.
+## Marketplace, agriculture, and auctions belong together
 
-## Start with the investor experience
+Facebook Marketplace is present in the private source-search configuration for both vehicles and equipment. It supplies candidate opportunities alongside dealer inventory, private sellers, and regional auctions. A listing's asking price or sold badge is not independently verified resale proceeds.
 
-**[Open the three-minute interactive investor review](investors.html)**. It shows what the product is meant to solve, what incumbents already offer, a fictional auction cost scenario, adjustable hypothetical subscription economics, and a dated validation scorecard. The examples do not inspect real listings or connect to the private application.
+The agricultural and auction work is foundational. Original research includes **71 acquisition lines representing 79 units**, with actual aggregate purchase accounting and a separate projected retail ledger. The retained sales log was empty at its recorded snapshot, so projected retail spread is not realized profit.
 
-**[Open the printable ten-slide investor presentation](pitch.html)** for a concise discussion. Use the browser's Print / Save as PDF control to export the slide layout.
+Research categories include root rakes, pallet forks, buckets, blades, snow pushers, flail-mowing equipment, pressure washers, and compact loaders. The first proposed autonomous category is narrower: selected non-powered attachments. Vehicles and powered equipment remain research categories rather than authorized automatic purchases.
 
-For detailed review: [Reading guide](docs/INVESTOR_3_MINUTE_TOUR.md) · [Competitor assessment](docs/COMPETITIVE_MATRIX.md) · [Evidence scorecard](docs/TRACTION_SCORECARD.md) · [Customer ROI test](docs/CUSTOMER_ROI_TEST.md).
+**Source access:** The published application does not have a verified live Facebook Marketplace feed or an authorized unattended Facebook scraper. User-provided listings and permitted observations are distinct from commercially licensed, recurring collection.
 
-## We use Facebook Marketplace, auctions, and dealer/private-sale listings
+[Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) · [Agricultural equipment](docs/AGRICULTURAL_EQUIPMENT.md) · [Auction intelligence](docs/AUCTION_INTELLIGENCE.md) · [Original research](docs/PROJECT_ORIGINS_TIMELINE.md).
 
-**Yes, Facebook Marketplace is an intended core AvLü opportunity source**, for used vehicles, pickups, trailers, compact equipment and attachments. The private application already recognizes Facebook Marketplace in **both its vehicle and equipment source selectors**. Its historical QA work includes manually researched Marketplace leads alongside dealer and auction sources.
+## Development and evidence
 
-Facebook Marketplace provides **candidate asking-price listings**, often with incomplete or conflicting information. AvLü's business case is to transform a buyer-supplied or otherwise authorized listing into a **proof-first acquisition decision**: identify VIN/serial and configuration gaps, note condition and seller claims, examine total fees/recon/transport, compare legitimate sale evidence, and decide whether a deal warrants more work or stays **HOLD**.
+| Area | Recorded position | Interpretation |
+| --- | --- | --- |
+| Working application | Last documented published baseline: v2.13.0 | A working prototype, not confirmation that later development is live |
+| Source history | v2.14.0 GitHub baseline; later Replit-derived and Owner Resale work on separate development branches | Source progress and publication remain different milestones |
+| Owner Resale integration | Latest reviewed draft connects source-aware forecasts, saved opportunities, and separate actual trades; full source-release check passed | Development evidence, not deployment or independent review approval |
+| Historical arithmetic audit | 150 rows; zero reported mismatches; seven advanced for further investigation | Calculation consistency for audited inputs, not trading profit |
+| Synthetic regression | 2,000 fictional cases and 48,000 passing assertions | Software testing, not real acquisitions |
+| Shadow research | 30 sealed cases, all HOLD and non-executable | No purchase authority released |
+| Customer discovery | 31 founder-reported dealer meetings; a separate course log recorded 23 completed conversations | Distinct research records, not paying customers |
+| Buying and Profit Protection™ | OFF / inactive | No autonomous bids, payments, purchases, or active coverage |
 
-**Important access boundary:** There is no independently verified live Facebook Marketplace API connection, automated scraping or unattended synchronization in the published application. Meta actively restricts unauthorized scraping. Our future source automation depends on explicit rights, supported access and user-approved workflows, with manual submissions available when feeds are unavailable. Facebook asking prices and "sold" badges are **not verified completed resale proceeds**. [Full Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md).
+The newest private development receipt reports 47 forecast/concurrency/export tests, 11 real PostgreSQL and local-storage checks, 35 forecast browser/API checks, and 43 retained desktop/mobile browser checks passing. It also records a successful full source-release check. These are isolated software tests. Independent review, owner production acceptance, backup/restore, and controlled deployment remain release gates.
 
-Facebook Marketplace is **not** replacing equipment auctions or the original January equipment-acquisition evidence. The channels complement one another: Marketplace for private-sale discovery, auctions for attributable lot/result research, and dealer sources for cross-checks. None is a purchase approval.
+[Validation](docs/VALIDATION.md) · [Technical testing](docs/TESTING.md) · [Historical status snapshot](docs/STATUS_SNAPSHOT.md) · [Public evidence scorecard](docs/TRACTION_SCORECARD.md).
 
-## Auction and agricultural equipment are central to this product
+## How the business would earn revenue
 
-AvLü started with **real auction-purchased inventory, equipment attachments, buyer costs and resale analysis**, not just car appraisal screens. My early-2026 work preserved a **71-line, 79-unit inventory** with actual aggregate acquisition costs and a separate projected retail ledger. That is real operational research, **not proof that those units were resold at the proposed prices**. The archived sales log was empty at the relevant summary date.
+The primary model is recurring software subscriptions for inventory buyers and dealers, not ownership of their equipment or a percentage of their resale proceeds.
 
-The equipment categories I have studied include **root rakes, pallet forks, buckets, blades, snow pushers, flail-mowing equipment, pressure washers, compact loaders and other farm-adjacent machinery**. The first possible autonomous buying policy is deliberately narrower than the research portfolio: selected non-powered attachments only, with live execution still OFF.
+**Proposed pricing:** $199/month Independent ($1,990/year), $499/month Dealer Team, and from $999/month for a negotiated integration. A bounded pilot is modeled at $750–$1,500 once. These are **pricing hypotheses**, not existing subscriptions or confirmed customer acceptance.
 
-Public auction research has also tested why an **auction lot title**, **price-realized amount**, **online buyer premium**, **exact powered configuration**, and **verified buyer settlement** must remain separate. The current private auction-evidence ledger includes 22 potential reported-sale observations, but weak comparability means no category is released for real-money decisions.
+A hypothetical mix of 15 Independent, eight Team, and two Integration accounts produces **$8,975 MRR** and **$107,700 annualized ARR**. Assumed direct costs of $2,430/month leave $6,545 gross profit, or approximately 72.9% gross margin. After hypothetical fixed expenses of $9,000/month, the scenario has a **$2,455 monthly operating loss**, before additional acquisition costs and taxes. Approximate blended break-even is 35 accounts.
 
-Start with [Agricultural Equipment](docs/AGRICULTURAL_EQUIPMENT.md), [Auction Intelligence](docs/AUCTION_INTELLIGENCE.md), [Auction Evidence Cases](docs/AG_AUCTION_CASE_STUDIES.md), [Automation Architecture](docs/AUCTION_DATA_AUTOMATION.md) or [Project History](docs/PROJECT_ORIGINS_TIMELINE.md).
+The proposed **$100,000** capital plan allocates $40,000 to engineering/founder QA, $20,000 to data rights/integrations, $15,000 to pilots/onboarding, $10,000 to security/infrastructure, $10,000 to legal/accounting, and $5,000 to contingency. This is **not money already raised**, a financing offer, or guaranteed runway.
 
-## The project in one minute
+The first commercial test is a founder-led path from 50 qualified buyers to 15 demonstrations, five paid pilots, and three recurring conversions. Those are targets, not recorded revenue.
 
-| Dimension | Current status |
+[Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing](docs/PRICING_REVENUE.md) · [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) · [Funding](docs/FUNDING_PLAN.md) · [Go-to-market](docs/GO_TO_MARKET.md).
+
+## Related agricultural service research
+
+Equipment Service Readiness and Recovery examines machine configuration, parts, technician preparation, and confirmed field-service recovery. It remains a separate R&D track, not a deployed dealer-service product. The current acquisition focus and automotive support remain intact. [Service research](docs/AG_SERVICE_READINESS_RND.md).
+
+## Read deeper
+
+| Topic | Documents |
 | --- | --- |
-| Working app | Yes. Public site and private owner features exist. Last verified publication: **application v2.13.0**. |
-| GitHub private source | **v2.14.0**, including later historical research and recovery controls; **not yet verified as published**. |
-| Separate Replit-derived source | **v2.15.2** market and inspection research modules have been preserved and staged for isolated private integration review; not merged to main or deployed. |
-| Public showcase | **v2.5.0**, a standalone presentation repo, not the private application. |
-| Research scope | Vehicles, non-powered attachments and other equipment research. Initial proposed autonomous policy is narrower than the research scope. |
-| First autonomous policy scope | Selected **non-powered compact-equipment attachments**. Powered machines and vehicles are not authorized for live automated acquisition. |
-| Historical arithmetic audit | **150** screened rows; **0** reported arithmetic mismatches; **7** advanced to investigate further; **0** acquisition approvals. |
-| Synthetic regression | **2,000** fictional scenarios and **48,000/48,000** automated assertions passed in a recorded regression run. This is software QA, not real profits. |
-| Live-market research | **30** sealed public shadow cases. All remain **HOLD** and non-executable. |
-| Customer discovery | **31 dealer meetings reported by the founder**; a separate course workbook documented **23 completed discovery conversations** at its final handoff. These counts are not interchangeable. |
-| Purchase authority | **OFF**. No autonomous bids, buying, or binding offers are authorized. |
-| Profit Protection™ | **Inactive**. No guarantee, funded protection program or coverage is being sold. |
+| Investor presentation | [Interactive tour](investors.html), [ten-slide pitch](pitch.html), [reading guide](docs/INVESTOR_3_MINUTE_TOUR.md), [pitch guide](docs/PITCH_DECK_GUIDE.md) |
+| Why AvLü | [Differentiation](docs/DIFFERENTIATION.md), [competitor matrix](docs/COMPETITIVE_MATRIX.md), [customer ROI experiment](docs/CUSTOMER_ROI_TEST.md) |
+| Product and engineering | [Modules](docs/PRODUCT_MODULES.md), [architecture](docs/ARCHITECTURE.md), [autonomy](docs/AUTONOMY.md), [testing](docs/TESTING.md) |
+| Acquisition evidence | [Market data](docs/MARKET_DATA.md), [auction cases](docs/AG_AUCTION_CASE_STUDIES.md), [source automation](docs/AUCTION_DATA_AUTOMATION.md) |
+| Business and diligence | [Commercialization](docs/COMMERCIALIZATION.md), [pilot plan](docs/PILOT_PLAN.md), [investor diligence](docs/INVESTOR_DILIGENCE.md), [roadmap](docs/ROADMAP.md) |
+| Research and review | [Customer discovery](docs/CUSTOMER_DISCOVERY.md), [mentor questions](docs/MENTOR_REVIEW.md), [all documentation](docs/) |
 
-[Read the status and limits in full](docs/STATUS_SNAPSHOT.md).
+## Public and private boundaries
 
-## The research spans two different agricultural problems
+This repository contains public presentation material and browser-only fictional examples. The homepage's three sample cases have fixed states; the investor page recalculates hypothetical costs and subscription scenarios. Neither accesses the proprietary engine, production records, or live market feeds.
 
-**Current priority: equipment acquisition and auctions.** Track exact lot/asset evidence, fees, complete landed costs, defensible comparisons, resale timing and eventually verified realized outcomes. Preserve vehicle functionality.
-
-**Related historical R&D: Equipment Service Readiness and Recovery.** Earlier work specified configuration, fitment, parts/tools/technician preparation and confirmed field-service recovery, with synthetic reference tests. It has not been shown to be a deployed or validated agricultural service product. See [Service R&D](docs/AG_SERVICE_READINESS_RND.md).
-
-This separation matters because a mentor should see both the **history of the research** and the **current product focus**, without mistaking a second set of requirements for an already shipped application.
-
-## Why I am building it
-
-The attractive asking price is rarely the whole economic story. It can conceal missing ownership proof, inaccurate specifications, unresolved condition issues, reconditioning, freight, taxes and fees, weak local comparables, resale timing, or a mismatch between advertised equipment and actual configuration.
-
-For a dealer, small fleet, resale operator, or equipment buyer, the hard work is often **assembling and trusting the evidence before making the decision**. AvLü is being designed to handle that process consistently.
-
-## Product workflow
-
-```text
-Listing / auction / dealer observation
-           |
-           v
-Normalize asset identity, description and provenance
-           |
-           v
-Separate stated facts, verified evidence and unknowns
-           |
-           v
-Evaluate supported market context and complete cost stack
-           |
-           v
-Apply versioned decision controls and explicit HOLD reasons
-           |
-           v
-Review, reject, counter, monitor or investigate further
-           |
-           v
-Record disposition and verified outcomes when available
-```
-
-Current functionality includes guided public intake and a protected owner review experience. The Inventory Watchlist stores research observations and conditional cost assumptions; the private reference engine supports non-executable decision states. Continuous scheduled market ingestion, fully matched realized-profit feedback and autonomous transactions still require further work.
-
-[Explore product modules and implementation status](docs/PRODUCT_MODULES.md).
-
-## Investor economics, proposed pricing and use of funds
-
-The primary commercial model I am testing is **recurring software subscriptions for independent inventory buyers and equipment dealers**, not owning their inventory or taking a percentage of their resale revenue. The proposed tiers are **$199/month Independent ($1,990/year)**, **$499/month Dealer Team** and **from $999/month negotiated integration**. A limited paid pilot is modeled at **$750–$1,500 once**. These are **pricing hypotheses**, not existing subscriptions, signed contracts or approved live checkout.
-
-At an illustrative 25-account mix of 15 Independent, eight Dealer Team and two Integration buyers, monthly recurring revenue would be **$8,975**, annualized revenue **$107,700**, and assumed direct service costs **$2,430/month**. That implies **$6,545 gross profit (72.9% margin)**. With **$9,000/month** in hypothetical fixed overhead, the model still produces a **$2,455 monthly operating shortfall** before additional acquisition expenses and taxes. Blended break-even would be about **35 accounts**, subject to actual costs and mix.
-
-The first funding scenario is a **$100,000 milestone-based plan**, with $40k for engineering/founder QA, $20k data rights/integrations, $15k paid-pilot onboarding, $10k security/infrastructure, $10k legal/accounting and $5k contingency. It is **not money already raised, a formal securities offer or a guaranteed runway**.
-
-The proposed funnel is **50 qualified buyers → 15 demonstrations → five paid pilots → three recurring conversions**. None of those commercial results has been established by the existing tests or dealer discovery.
-
-[Investor overview](docs/INVESTOR_OVERVIEW.md) · [Pricing](docs/PRICING_REVENUE.md) · [Funding](docs/FUNDING_PLAN.md) · [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) · [Go-to-market](docs/GO_TO_MARKET.md) · [Investor diligence](docs/INVESTOR_DILIGENCE.md).
-
-## Actual engineering, not a pitch-only mockup
-
-The private application has a Node-based runtime, server-enforced protected routes, a PostgreSQL storage adapter, durable owner sessions, review exports, browser and API verification, and an Inventory Watchlist with stored observations and optimistic revision control. A reference acquisition engine and separately constrained shadow workflow have also been built and tested without enabling purchases.
-
-More recent source work includes a tested disposable PostgreSQL restore rehearsal and a read-only raw-state attestor. Neither is proof of an actual production backup. Owner sign-in/save/export acceptance and deployed recovery controls remain outstanding.
-
-The public GitHub repo deliberately contains **only architecture-level descriptions and a fictional, fixed-state interactive sample**, not the private algorithms, data, API implementation or infrastructure credentials.
-
-[Engineering architecture](docs/ARCHITECTURE.md) · [Autonomy and safety](docs/AUTONOMY.md) · [Verification matrix](docs/TESTING.md).
-
-## Actual auction data problems I am working on
-
-**Pre-bid:** maintain dated listing and lot observations; distinguish catalog claim from verified configuration; derive full cost exposure from the applicable auction's terms, rather than copying a fixed buyer fee between events.
-
-**At close:** distinguish an ended auction, a public "Price Realized" figure, an attributable hammer price and a paid invoice. An archived pre-close bid cannot become a sale result.
-
-**After acquisition:** separate an advertised future retail price from a completed disposition. Only a unit-matched transaction with actual expenses supports a realized-margin record.
-
-**In calibration:** avoid false confidence from geographically clustered, mixed-configuration sold-result samples. A historical median is not automatically a supported resale number.
-
-External sources including [I.R.A.Y. Companies](https://www.iraymn.com/auctions/8443ee3c) and [HiBid](https://hibid.com/www.heretn.com/lot/323004423/wolverine-db-15-84w-skid-steer-snow-pusher) illustrate these problems. Those public sources do **not** establish ownership of any specific lot or commercial reuse permissions. [Read the auction research](docs/AUCTION_INTELLIGENCE.md).
-
-## Evidence rather than exaggerated claims
-
-I keep **asking price, current bid, completed auction price, projected resale, verified sold result, and realized net profit** as distinct concepts. Synthetic regression passes do not create sold units; a screenshot does not prove clear title; an attractive spread is not profit.
-
-The evidence currently supports arithmetic consistency, structured workflows, selected source recovery, and software guardrail testing. It does **not** support claimed realized-profit accuracy, fully calibrated autonomous decisions, a live protection guarantee, or purchase authority.
-
-[Detailed evidence status](docs/VALIDATION.md) · [Market-data lifecycle](docs/MARKET_DATA.md) · [Customer discovery](docs/CUSTOMER_DISCOVERY.md).
-
-## Who I am seeking feedback from
-
-- **gBETA and early-stage mentors:** category focus, commercialization pathway, defendability, first paid use case, and the validation milestone needed to justify investment.
-- **Technical reviewers:** system boundaries, permitted data sourcing, matching sold results to observed units, auditability, security, reliability and the automation release gates.
-- **Independent dealers and equipment professionals:** real past workflow examples, handoffs, repeated work, hidden costs, useful outputs, and what would justify replacing or supplementing their current process.
-
-I completed a Great Plains regional I-Corps customer discovery cohort. The next phase is to turn that research into bounded pilot tests with measurable operational outcomes, not claim that meeting activity is a paid customer.
-
-[Read the mentor review brief](docs/MENTOR_REVIEW.md) · [Pilot plan](docs/PILOT_PLAN.md).
-
-## Repository guide
-
-| Resource | What it covers |
-| --- | --- |
-| [Three-minute investor experience](investors.html) | Guided web presentation with two editable fictional models |
-| [Printable ten-slide investor pitch](pitch.html) | Slide-style HTML presentation with Save as PDF |
-| [Investor reading guide](docs/INVESTOR_3_MINUTE_TOUR.md) | Navigation for reviewers with limited time |
-| [Competitive matrix](docs/COMPETITIVE_MATRIX.md) | Official competitor references, overlap, and testable wedge |
-| [Traction scorecard](docs/TRACTION_SCORECARD.md) | Dated actual progress, unverified claims, and upcoming milestones |
-| [Customer ROI experiment](docs/CUSTOMER_ROI_TEST.md) | Fair baseline, cost and productivity measurement for pilots |
-| [Slide presentation guide](docs/PITCH_DECK_GUIDE.md) | Ten-slide narrative and export instructions |
-| [Start here](docs/START_HERE.md) | Five-minute tour for evaluators |
-| [Agricultural equipment](docs/AGRICULTURAL_EQUIPMENT.md) | Actual equipment categories, physical configuration and acquisition scope |
-| [Facebook Marketplace strategy](docs/FACEBOOK_MARKETPLACE_STRATEGY.md) | Vehicle, equipment and private-seller opportunity sourcing, verification and access rights |
-
-| [Auction intelligence](docs/AUCTION_INTELLIGENCE.md) | Lot lifecycle, premiums, sale outcomes and reconciliation |
-| [Auction research cases](docs/AG_AUCTION_CASE_STUDIES.md) | Sanitized original inventory, public results and configuration traps |
-| [Auction data automation](docs/AUCTION_DATA_AUTOMATION.md) | Proposed permitted-source ingestion and outcome-linking workflow |
-| [Ag and auction competitive context](docs/AG_AUCTION_COMPETITIVE_CONTEXT.md) | Existing offerings and the differentiator to test |
-| [Project history](docs/PROJECT_ORIGINS_TIMELINE.md) | Chronology from equipment auctions to current source engineering |
-| [Ag service R&D](docs/AG_SERVICE_READINESS_RND.md) | Separate prior dealer service preparation research |
-| [Product modules](docs/PRODUCT_MODULES.md) | Existing features, source-tested features, and planned features |
-| [Current status](docs/STATUS_SNAPSHOT.md) | Exact release, evidence and permission boundaries |
-| [Architecture](docs/ARCHITECTURE.md) | Conceptual data flow, module map, trust boundaries |
-| [Autonomy](docs/AUTONOMY.md) | Non-executable engine, shadow mode and prerequisites to live release |
-| [Market data](docs/MARKET_DATA.md) | Data types, provenance, comparables and outcome linking |
-| [Testing](docs/TESTING.md) | What was tested and what test passes do not prove |
-| [Validation](docs/VALIDATION.md) | Audit and research counts with honest limits |
-| [Customer discovery](docs/CUSTOMER_DISCOVERY.md) | I-Corps, interviews and hypothesis changes |
-| [Differentiation](docs/DIFFERENTIATION.md) | Competitive thesis and why generic AI alone is insufficient |
-| [Investor overview](docs/INVESTOR_OVERVIEW.md) | Investment thesis, initial buyer and public evidence boundaries |
-| [Pricing and revenue](docs/PRICING_REVENUE.md) | Proposed tiers, pilot terms, core SaaS revenue versus future activities |
-| [Funding plan](docs/FUNDING_PLAN.md) | $100,000 proposed use-of-funds and milestone gates |
-| [Unit economics](docs/SAAS_UNIT_ECONOMICS.md) | MRR, operating costs, CAC, churn and break-even math |
-| [Go-to-market](docs/GO_TO_MARKET.md) | Founder-led paid pilot path and conversion targets |
-| [Investor diligence](docs/INVESTOR_DILIGENCE.md) | Competitive, data, product, cash and execution risks |
-
-| [Commercialization](docs/COMMERCIALIZATION.md) | Beachhead users, pilot, revenue hypotheses and metrics |
-| [Roadmap](docs/ROADMAP.md) | Sequencing and explicit blocked gates |
-| [Mentor review](docs/MENTOR_REVIEW.md) | Requested review and concrete technical questions |
-| [Synthetic demo](index.html) | Three predetermined fictional cases, not the live app |
-| [Disclosure policy](docs/INFORMATION_BOUNDARY.md) | What is deliberately excluded |
-
-## Important boundaries
-
-The **live application is at [getavlu.com](https://getavlu.com)**. The homepage's three original demo cases remain a **fictional fixed-state illustration**. The new investor page additionally calculates user-editable **hypothetical numbers entirely in the browser**, not live equipment or AvLü revenue. It does not calculate real offers, obtain source data, access production or demonstrate autonomous purchasing.
-
-This repo is public to make the problem, product discipline, and technical work **reviewable without publishing proprietary code, protected records, confidential business details, or private source history**. It is not an open-source release or a dealer implementation package.
-
-**AvLü™** and **Profit Protection™** are used as pending or unregistered marks. No license to commercialize or redistribute the private application is granted.
+Private implementation, participant details, transaction documents, credentials, and source history remain outside this repository. [Disclosure policy](docs/INFORMATION_BOUNDARY.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.
