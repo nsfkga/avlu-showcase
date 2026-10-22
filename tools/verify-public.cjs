@@ -107,8 +107,8 @@ for(const id of ['tour','difference','acquisition','business-model','traction'])
   if(!investorHTML.includes('id="'+id+'"'))errors.push('Investor tour missing '+id);
 }
 // Product, AI and competitor framing must be the FIRST thing an investor reads.
-const introOrder=['## What AvLü is','## Why AvLü is more than a normal AI answer',
-  '## How AvLü differs from existing competitors','## GitHub Pages publishing']
+const introOrder=['## What AvLü is','## Why AvLü is different from just using normal AI',
+  '## How AvLü is different from competitors','## GitHub Pages publishing']
   .map(label=>readme.indexOf(label));
 if(introOrder.some(i=>i<0)||introOrder.some((x,i)=>i>0&&x<=introOrder[i-1]))
   errors.push('README does not immediately explain product, AI distinction and competitor distinction');
@@ -117,7 +117,7 @@ const investorTourPos=investorHTML.indexOf('id="tour"');
 if(investorPos<0||investorTourPos<=investorPos||investorHTML.indexOf('class="investor-band"')<investorPos)
   errors.push('Investor experience does not open with competitive differentiation');
 const labels=[...pitchHTML.matchAll(/<div class="slide-label">([^<]+)<\/div>/g)].map(m=>m[1]);
-if(labels.length!==10||!/^02 \/ WHY IT IS NOT JUST AI/.test(labels[1])||!/^03 \/ COMPETITION/.test(labels[2]))
+if(labels.length!==10||!/^02 \/ WHY IT IS MORE THAN AI/.test(labels[1])||!/^03 \/ COMPETITION/.test(labels[2]))
   errors.push('Pitch does not put AI and competitor contrasts on slides two and three');
 if(!html.includes('class="hero-differences"')||!html.includes('Tractor Zoom')||!html.includes('EquipmentWatch'))
   errors.push('Homepage lacks prominent two-part contrast');
