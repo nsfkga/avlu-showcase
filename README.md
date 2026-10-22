@@ -1,53 +1,54 @@
 # AvLü™ | Purchase intelligence for Marketplace, equipment, and auctions
 
-**Public investor and technical showcase | v2.5.1 | October 19, 2026**  
+**Public investor and technical showcase | v2.6.0 | October 22, 2026**  
 **Created and owned by Nathaniel Schroeder**
 
 [Investor tour](investors.html) · [Working prototype](https://getavlu.com) · [Printable pitch](pitch.html) · [Competitive assessment](docs/COMPETITIVE_MATRIX.md) · [Pricing](docs/PRICING_REVENUE.md) · [Funding plan](docs/FUNDING_PLAN.md)
 
 ## What AvLü is
 
-**AvLü helps inventory buyers decide what is worth buying, what they can afford to pay, and what they need to verify first.**
+**I built AvLü to help buyers decide what inventory is worth pursuing, what the entire acquisition would cost and what evidence they still need before committing capital.** It supports used vehicles, agricultural equipment and attachments discovered on **Facebook Marketplace, at auctions, from dealers and through private sellers**.
 
-I am building it for used vehicles, agricultural and compact equipment, and attachments found on **Facebook Marketplace, at auctions, through dealers, and in private sales**. The working application brings listing information, condition evidence, acquisition costs, resale assumptions, and review history into one decision process.
+The project now has **two concrete auction-market components**:
 
-**Price the purchase. Preserve the proof.** A promising resale price is only useful when the exact asset, expenses, and evidence support the purchase.
+1. **A published Auction Market Tracker** at [getavlu.com](https://getavlu.com/#market-engine). It presents actual *reported* auction-result observations with equipment filters, dated captures, sample sizes, median and price-range context, and original source links. It is software operating on real market observations, not a fictional AI-generated pricing chart.
+2. **A separately developed private Auction Intelligence Engine** for source policies, recorded observations, conditional all-in acquisition costs, explicit **HOLD** decisions, frozen forecasts and separate outcome records. Its source tests have passed, but full private-owner production acceptance and automatic purchasing are **not released**.
 
-## Why AvLü is more than a normal AI answer
+**Price the purchase. Preserve the proof.** A low auction result only becomes a worthwhile opportunity after configuration, condition, buyer fees, freight, reconditioning and a credible exit are considered.
 
-**A recommendation should survive verification.** A one-off AI answer can suggest a number. AvLü is being built to preserve the information, calculations, and conditions behind a buyer's decision.
+[See the built Auction Market Engine](docs/AUCTION_MARKET_ENGINE.md) · [Open the published tracker](https://getavlu.com/#market-engine) · [Current release boundaries](docs/STATUS_SNAPSHOT.md).
 
-The difference is the product around the answer:
+## Why AvLü is different from just using normal AI
 
-- **Evidence changes the result.** Missing identity, ownership, condition, or cost information stays visible. A plausible margin does not erase an unresolved requirement or turn a historical auction result into a current buying opportunity.
-- **The original forecast stays intact.** The source-tested Owner Resale workflow connects saved opportunities, dated observations, the calculator, and preserved forecasts. Later edits do not silently replace the original basis for the decision.
-- **The warnings travel with the numbers.** In the latest tested development workflow, downloaded reports retain the screen's source classifications and missing-cost warnings. An export does not turn uncertain expenses into confirmed costs.
-- **Expected profit and actual results remain separate.** Forecasts use stated assumptions. Actual trades have a separate owner-entered record, with independent verification still required before treating those entries as established transaction evidence.
+**An AI answer can estimate a price. AvLü has a market-data process and a decision record behind the number.**
 
-AI can help extract descriptions, explain results, or build similar software. AvLü's value proposition is a maintained acquisition workflow with explicit rules, durable records, and consistent handling of uncertainty, not exclusive access to a model.
+- **Actual observed market activity:** The public tracker uses a bounded collector of reviewed auction-result pages. It stores dated observations, distinguishes the capture date from the auction date, and shows only supported categories and price statistics. A user can review the source instead of relying on a fabricated answer.
+- **Evidence before economics:** The private evaluator distinguishes asks, bids, reported auction hammer results and verified completed resales. An unknown acquisition expense stays **unknown**, not zero. Required missing costs can produce **HOLD** rather than a false buying ceiling.
+- **A repeatable record:** Source policies, revisioned observations, decision-time forecasts and later separately documented trade outcomes are designed to remain traceable across repeated reviews. That is operational software, not a prompt pasted into a new conversation.
+- **Visible limitations:** A chart median is not a universal valuation, and a reported auction price is not a buyer's paid invoice or a reseller's earned profit. The engine keeps those differences explicit.
 
-**Development status:** The Owner Resale integration has passed source, browser, export, and database tests but remains unmerged and unpublished. Continuous authorized source feeds and independently verified realized-profit calibration remain development goals. [Product status](docs/PRODUCT_MODULES.md) · [Detailed differentiation](docs/DIFFERENTIATION.md).
+The public market collection works **at most hourly on activity**, not as a guaranteed always-on commercial feed. User-device alerts are opt-in and do not send messages when the browser is closed. Additional sources, actual realized-profit calibration and automated purchases remain gated.
 
-## How AvLü differs from existing competitors
+**The advantage to test:** verification before valuation, followed by an informed acquisition decision. AI can assist the process; the value of AvLü is the maintained, evidence-controlled workflow and the time and risk it could save a recurring buyer.
 
-**AvLü focuses on the buyer's acquisition decision: not just what an item might sell for, but what it is worth buying for.**
+## How AvLü is different from competitors
 
-Tractor Zoom Pro/Anvil Pro already offer substantial valuation, appraisal, inventory, quoting, and dealer-workflow capabilities. EquipmentWatch already provides extensive auction and resale data. AvLü's distinctive product focus is the **independent buyer reviewing incomplete opportunities across different sources**, with the original forecast, unresolved evidence, and eventual actual result kept separate and connected.
+**Tractor Zoom Pro and Anvil Pro already offer extensive equipment valuations, appraisals, inventory and dealership workflows. EquipmentWatch already provides auction/resale history and market-data APIs.** AvLü's opportunity is not exclusive ownership of price data or AI calculations.
 
-| Alternative | Documented strength | AvLü's specific focus and buyer benefit |
+I am developing a **focused source-to-purchase workflow for independent buyers and smaller resale operators**. The buyer can examine an auction lot, a Facebook Marketplace listing or a dealer offer, then evaluate *this exact item*, its proof gaps, total acquisition exposure and the original basis for a decision, instead of piecing those steps together across multiple tools.
+
+| Established solution | What it provides | AvLü's more specific job |
 | --- | --- | --- |
-| Tractor Zoom Pro / Anvil Pro | Equipment valuations, appraisals, inventory, CRM, quotes, and settlement workflows | A focused acquisition review across Marketplace, private sales, dealer listings, and auctions, without requiring the buyer to adopt an entire dealership workflow |
-| EquipmentWatch | Historical auction/resale transactions and market-data services | Apply market evidence to this exact unit, the buyer's costs, and the reasons an opportunity should remain on HOLD |
-| Marketplace and auction catalogs | Finding inventory and observing asking prices or reported results | Carry an opportunity from discovery into a documented cost-and-evidence review rather than treat the listing as sufficient proof |
-| A custom GPT or spreadsheet | Flexible analysis, calculations, and user-built workflows | Preserve original forecasts, retain uncertainty in reports, and keep expected returns separate from actual trade records in a maintained application |
+| **Tractor Zoom Pro / Anvil Pro** | Rich used-equipment comps, appraisals, inventory, quoting, CRM and dealership operations | A narrower, cross-source **pre-purchase evidence and cost review** for an independent buyer, not a dealership-system replacement |
+| **EquipmentWatch** | Historical equipment transactions, valuation tools, auction/resale research and APIs | Bring suitable market observations into a **specific asset's acquisition scenario**, with cost uncertainty and documented next steps |
+| **Auction and Marketplace platforms** | Listings, bids and publicly reported sale results | Transform a discovery lead into a traceable review that distinguishes seller claims, reported hammer and paid resale evidence |
+| **General-purpose AI or spreadsheets** | Flexible summaries, calculations and custom workflows | Deliver a purpose-built market tracker plus maintained review rules, source history and explicit HOLD behavior |
 
-**The benefit to test is better coordination with less complication:** fewer repeated lookups, clearer cost exposure, and a decision that can be reviewed without reconstructing the reasoning from scattered notes.
+**One concrete lifecycle difference:** Anvil Pro's published April 2026 *Margin Targets* feature displays profit expectations in **sales quotes** and expressly permits a below-target quote to proceed. AvLü's reference **acquisition** evaluator instead returns **HOLD** if required proof or costs are incomplete. This illustrates **sale-side guidance versus pre-purchase evidence gating**, without suggesting that Anvil lacks other approval controls.
 
-One concrete comparison is already visible in the published product descriptions. Anvil Pro's April 2026 Margin Targets release displays profit guidance inside a sales quote and explicitly does not block below-target deals. AvLü's reference acquisition logic uses **HOLD** when source evidence or required costs are unresolved. Those controls serve different decisions: a sales-margin indicator versus a pre-purchase evidence gate. This comparison applies to that specific Anvil feature, not every control in its wider platform.
+[Tractor Zoom's dealer capabilities](https://www.tractorzoompro.com/our-solutions/equipment-dealers) · [Anvil's Margin Targets feature](https://www.tractorzoompro.com/blog/margin-targets-for-quote-real-time-profit-visibility-inside-anvil-pro) · [EquipmentWatch market data](https://equipmentwatch.com/market-activity-data/) · [Detailed comparison](docs/COMPETITIVE_MATRIX.md).
 
-[Anvil Pro margin-target behavior](https://www.tractorzoompro.com/blog/margin-targets-for-quote-real-time-profit-visibility-inside-anvil-pro) · [Anvil Pro product scope](https://www.tractorzoompro.com/anvil-pro) · [EquipmentWatch data](https://equipmentwatch.com/market-activity-data/) · [Full comparison](docs/COMPETITIVE_MATRIX.md).
-
-**Validation milestone:** Measure review time, overlooked costs, false holds, repeat use, and willingness to pay against the customer's actual tools. The workflow difference is specific; superior customer outcomes still need a fair comparison.
+The proposed competitive advantage must still be demonstrated in pilots through **time saved, avoided missed costs, false HOLD rates, repeated use and price acceptance**. Current software and synthetic checks establish development progress, not proven superiority or paying customers.
 
 ## GitHub Pages publishing
 
@@ -69,12 +70,12 @@ Research categories include root rakes, pallet forks, buckets, blades, snow push
 
 | Area | Recorded position | Interpretation |
 | --- | --- | --- |
-| Working application | Last documented published baseline: v2.13.0 | A working prototype, not confirmation that later development is live |
-| Source history | v2.14.0 GitHub baseline; later Replit-derived and Owner Resale work on separate development branches | Source progress and publication remain different milestones |
-| Owner Resale integration | Latest reviewed draft connects source-aware forecasts, saved opportunities, and separate actual trades; full source-release check passed | Development evidence, not deployment or independent review approval |
+| Published Auction Market Tracker | **Application v2.18.6**, verified October 22, 2026 | Real reported auction-result data, equipment filters, capture inspection, price ranges, source dates and locally saved views |
+| Private development | GitHub main v2.16.0; separate v2.18.6 auction release and v2.19.0 candidate | Source and deployment approvals must be treated separately |
+| Owner Resale and private Auction Intelligence | Preserved private development branches and source-tested logic | Forecast/decision history exists; authenticated owner deployment, buying and autonomous-worker release remain gated |
 | Historical arithmetic audit | 150 rows; zero reported mismatches; seven advanced for further investigation | Calculation consistency for audited inputs, not trading profit |
 | Synthetic regression | 2,000 fictional cases and 48,000 passing assertions | Software testing, not real acquisitions |
-| Shadow research | 30 sealed cases, all HOLD and non-executable | No purchase authority released |
+| Shadow underwriting | 30 sealed cases, all HOLD and non-executable | Not actual trades or released buying approval |
 | Customer discovery | 31 founder-reported dealer meetings; a separate course log recorded 23 completed conversations | Distinct research records, not paying customers |
 | Buying and Profit Protection™ | OFF / inactive | No autonomous bids, payments, purchases, or active coverage |
 
@@ -100,12 +101,21 @@ The first commercial test is a founder-led path from 50 qualified buyers to 15 d
 
 Equipment Service Readiness and Recovery examines machine configuration, parts, technician preparation, and confirmed field-service recovery. It remains a separate R&D track, not a deployed dealer-service product. The current acquisition focus and automotive support remain intact. [Service research](docs/AG_SERVICE_READINESS_RND.md).
 
+## Published tracker versus next version
+
+The **latest verified public release is v2.18.6**, tested with eight equipment families and 66 eligible filter cohorts in one dated capture, with **two of three source pages** covered. That partial-source count must not be treated as market-wide coverage.
+
+The **v2.19.0 candidate is not yet published** in the reviewed evidence. It adds a separate view of up to 160 individual anonymous reported auction prices per supported group at the latest capture; it does not pretend that source-page order is a time trend or that mixed equipment lots are automatically comparable. Historical capture medians remain separately labeled.
+
+[Engine release details](docs/AUCTION_MARKET_ENGINE.md).
+
 ## Read deeper
 
 | Topic | Documents |
 | --- | --- |
 | Investor presentation | [Interactive tour](investors.html), [ten-slide pitch](pitch.html), [reading guide](docs/INVESTOR_3_MINUTE_TOUR.md), [pitch guide](docs/PITCH_DECK_GUIDE.md) |
 | Why AvLü | [Differentiation](docs/DIFFERENTIATION.md), [competitor matrix](docs/COMPETITIVE_MATRIX.md), [customer ROI experiment](docs/CUSTOMER_ROI_TEST.md) |
+| Built Auction Market Engine | [Market tracker and private engine status](docs/AUCTION_MARKET_ENGINE.md), [live published tracker](https://getavlu.com/#market-engine) |
 | Product and engineering | [Modules](docs/PRODUCT_MODULES.md), [architecture](docs/ARCHITECTURE.md), [autonomy](docs/AUTONOMY.md), [testing](docs/TESTING.md) |
 | Acquisition evidence | [Market data](docs/MARKET_DATA.md), [auction cases](docs/AG_AUCTION_CASE_STUDIES.md), [source automation](docs/AUCTION_DATA_AUTOMATION.md) |
 | Business and diligence | [Commercialization](docs/COMMERCIALIZATION.md), [pilot plan](docs/PILOT_PLAN.md), [investor diligence](docs/INVESTOR_DILIGENCE.md), [roadmap](docs/ROADMAP.md) |

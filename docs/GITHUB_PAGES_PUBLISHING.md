@@ -1,6 +1,8 @@
 # AvLü™ GitHub Pages publishing
 
-**Source readiness v2.5.0 | October 19, 2026 | Owner: Nathaniel Schroeder**
+**Source readiness v2.6.0 | October 22, 2026 | Owner: Nathaniel Schroeder**
+
+**Two different websites:** The working product's **Auction Market Tracker v2.18.6 is published on [getavlu.com](https://getavlu.com/#market-engine)**. This GitHub showcase's separate static investor site is only prepared for GitHub Pages until independent hosted-site publication is verified. Publishing either must not redirect or overwrite the other.
 
 ## What this means
 

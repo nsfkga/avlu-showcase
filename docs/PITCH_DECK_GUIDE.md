@@ -1,6 +1,6 @@
 # AvLü™ | Investor presentation and delivery guide
 
-**v2.5.0 | October 19, 2026**  
+**v2.6.0 | October 22, 2026**  
 **Founder and author: Nathaniel Schroeder**
 
 ## Open or save the presentation
@@ -13,12 +13,12 @@ Use a desktop browser's **Print / Save as PDF** control to export a 16:9 slide-s
 
 | Slide | Subject | What I should make clear |
 | --- | --- | --- |
-| 1 | AvLü and the acquisition problem | I am addressing the decision **before** purchasing, not offering guaranteed cheap equipment |
-| 2 | Why not just general AI | A maintained record and proof gate, not exclusive AI or an irreplaceable prompt |
-| 3 | How AvLü differs from competitors | Incumbents already offer valuations, appraisals, inventory and dealer workflows; the targeted wedge must be tested |
+| 1 | The built engine | I have published a source-backed equipment auction market tracker and developed a separate guarded acquisition engine |
+| 2 | Why this is more than AI | Real reported auction observations with dated sources; private cost and HOLD controls remain separately gated |
+| 3 | Specific competitor contrast | Incumbents have substantial data and dealer systems; AvLü joins observed prices to a focused pre-purchase evidence and cost workflow |
 | 4 | Incomplete proof and overlooked cost | Acquisition price alone does not establish economic viability |
-| 5 | Acquisition workflow | Source, identity, costs and conditional decision status, with unresolved evidence visible |
-| 6 | Proof to date | Working software and synthetic tests are distinct from commercial traction and realized returns |
+| 5 | Two-layer auction engine | Published market-data capture versus private guarded cost/decision review, not released automatic buying |
+| 6 | Proof to date | Dated partial public coverage plus software regression evidence; not paid profits, broad coverage or traction |
 | 7 | Proposed pricing | $199, $499, from $999 per month; one-time pilot $750–$1,500; no validated uptake |
 | 8 | Economics | Hypothetical $8,975 MRR case still loses $2,455/month after modeled fixed costs |
 | 9 | Funding | Illustrative $100,000 uses of funds; not money raised or a formal investor offer |

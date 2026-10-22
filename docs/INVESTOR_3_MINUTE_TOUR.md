@@ -1,6 +1,6 @@
 # AvLü™ | Three-minute investor reading guide
 
-**Public investor material | v2.5.0 | October 19, 2026**  
+**Public investor material | v2.6.0 | October 22, 2026**  
 **Founder and owner: Nathaniel Schroeder**
 
 This guide is for someone deciding whether to learn more about AvLü, not for an engineer looking for proprietary algorithms.
@@ -9,8 +9,8 @@ This guide is for someone deciding whether to learn more about AvLü, not for an
 
 | Time | Open | What the reviewer should understand |
 | --- | --- | --- |
-| 0:00 to 0:30 | [Investor Experience](../investors.html) | AvLü reviews pre-acquisition evidence and full costs for vehicles/equipment found across Marketplace, dealers, auctions and private sellers. |
-| 0:30 to 1:00 | [Why AvLü is different](../investors.html#difference) | First, why the maintained evidence review is more than a one-off AI answer; second, what remains different from dealer/valuation incumbents. Neither is an exclusive or proven commercial advantage. |
+| 0:00 to 0:30 | [Published Auction Market Tracker](https://getavlu.com/#market-engine) | See the working tracker with real reported auction-result observations, category/lot counts, dated source context and price ranges. |
+| 0:30 to 1:00 | [Why AvLü is different](../investors.html#difference) | Public market observations are built; the separate private engine adds pre-purchase evidence and full-cost controls. Compare that specific buying workflow with Tractor Zoom and EquipmentWatch. |
 | 1:00 to 1:45 | [Fictional Acquisition Calculator](../investors.html#acquisition) | Change fees, freight, repairs and exit assumptions. An attractive projected margin is not a real transaction or purchase approval. |
 | 1:45 to 2:20 | [Editable SaaS Scenario](../investors.html#business-model) | Change proposed customer counts, prices, churn and costs; inspect gross margin and losses. None is reported revenue. |
 | 2:20 to 3:00 | [Traction Scorecard](TRACTION_SCORECARD.md) | See working software, actual historical accounting, synthetic tests, customer discovery and the biggest missing commercial evidence. |
@@ -19,7 +19,7 @@ If slides are easier, use the [10-slide printable investor presentation](../pitc
 
 ## What I want an investor to take away
 
-AvLü is a maintained pre-acquisition evidence and cost-review concept with working software. I am not asking investors to believe that access to AI is rare, that incumbents have no overlapping products, or that estimated resale spreads are realized net profits.
+AvLü has a published equipment Auction Market Tracker and a separately built, source-tested acquisition review engine. The value proposition is not exclusive AI or ownership of auction prices, but the combination of real source observations, guarded cost decisions and a maintained review history.
 
 The commercial test is whether independent equipment and attachment buyers get enough additional value from a structured, permissioned and reliable review to pay for it regularly.
 

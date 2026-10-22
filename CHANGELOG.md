@@ -3,6 +3,25 @@
 **Owner: Nathaniel Schroeder**  
 All public showcase releases follow Semantic Versioning.
 
+## [2.6.0] - 2026-10-22
+
+### Built Auction Market Engine becomes the investor story
+- Replaced generic AI-pricing framing with the **verified published v2.18.6 Auction Market Tracker** and the separately source-tested private Auction Intelligence Engine.
+- Added a dedicated [Auction Market Engine report](docs/AUCTION_MARKET_ENGINE.md) describing what is built, what is live and what the newer v2.19.0 candidate adds.
+- Rewrote the opening README, public homepage, investor tour, pitch slides 1-6, product matrix, competitive assessment, investor overview, status snapshot and traction scorecard.
+- Highlighted reviewed auction-result sources, date/provenance, equipment filters, median/quartile context, local saved views and on-activity hourly bounded capture.
+- Recorded October 22 public acceptance of eight observed equipment families and 66 filter cohorts with **partial two-of-three-page coverage**, not a nationally representative or independently calibrated market.
+- Explained private source policies, conditional cost and HOLD logic, forecast snapshots and outcome structure as implemented/source-tested; not live automatic trading.
+- Corrected the previously outdated v2.13.0 last-publication statement with the latest verified v2.18.6 publication evidence.
+- Added a concrete workflow-stage comparison against Tractor Zoom/Anvil Pro and equipment-data providers without suggesting those products lack substantial competing functionality.
+
+### Release and ethical boundaries
+- The v2.19.0 item-price graph is an unpublished candidate, not part of the last verified public application.
+- Reported auction prices are not paid settlements or owner realized profits. No confirmed paid SaaS ARR or realized profitability is presented.
+- Public capture is on activity and source-limited. The private continuous worker, automated purchases and Profit Protection remain gated/off.
+- Public source includes no private engine code, confidential owners, original invoices, secrets or raw customer data.
+- Copyright, repository author and source attribution remain Nathaniel Schroeder.
+
 ## [2.5.0] - 2026-10-19
 
 ### Lead immediately with the two critical investor distinctions

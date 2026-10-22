@@ -1,4 +1,4 @@
-// Public-release boundary verifier v2.5.0.
+// Public-release boundary verifier v2.6.0.
 // © 2026 Nathaniel Schroeder. All rights reserved.
 const fs = require('node:fs');
 const path = require('node:path');
@@ -28,6 +28,7 @@ const allowed = new Set([
   'docs/GO_TO_MARKET.md',
   'docs/INVESTOR_DILIGENCE.md',
   'docs/FACEBOOK_MARKETPLACE_STRATEGY.md',
+  'docs/AUCTION_MARKET_ENGINE.md',
   'investors.html','pitch.html',
   'assets/investor.css','assets/investor-experience.js','assets/pitch.css','assets/pitch.js',
   'tests/investor-experience.test.cjs',
@@ -55,14 +56,14 @@ walk(root);
 for (const p of allowed) if(!fs.existsSync(path.join(root,p)))errors.push('Required file missing: '+p);
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8'));
 const marker=fs.readFileSync(path.join(root,'VERSION.txt'),'utf8').trim().split(/\s+/)[0];
-if(pkg.version!=='2.5.0'||marker!=='2.5.0')errors.push('SemVer mismatch: showcase must be 2.5.0');
+if(pkg.version!=='2.6.0'||marker!=='2.6.0')errors.push('SemVer mismatch: showcase must be 2.6.0');
 const html=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const js=fs.readFileSync(path.join(root,'assets/demo.js'),'utf8');
 const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
 if(!html.includes('getavlu.com'))errors.push('Link to working application missing');
-if(!html.includes('v2.5.0'))errors.push('Visible site version outdated');
+if(!html.includes('v2.6.0'))errors.push('Visible site version outdated');
 if(!html.includes('synthetic') && !html.includes('fictional'))errors.push('Synthetic demo not disclosed');
-if(!readme.includes('v2.13.0')||!readme.includes('v2.14.0'))errors.push('Published versus source status omitted');
+if(!readme.includes('v2.18.6')||!readme.includes('v2.19.0'))errors.push('Current published versus candidate status omitted');
 if(!readme.includes('48,000')||!readme.includes('30'))errors.push('Required bounded evidence omitted');
 if(!readme.includes('79')||!readme.includes('auction')||!readme.includes('agricultural')) errors.push('Auction/agriculture product story absent');
 if(!html.includes('id="auctions"')||!html.includes('id="equipment"')) errors.push('Agriculture and auctions not visible on homepage');
@@ -95,7 +96,7 @@ const pitchHTML=fs.readFileSync(path.join(root,'pitch.html'),'utf8');
 const experience=fs.readFileSync(path.join(root,'assets/investor-experience.js'),'utf8');
 const pitchScript=fs.readFileSync(path.join(root,'assets/pitch.js'),'utf8');
 for(const [name,body] of [['investors.html',investorHTML],['pitch.html',pitchHTML]]){
-  if(!body.includes('v2.5.0')||!body.includes('Nathaniel Schroeder'))errors.push(name+' missing current version or owner');
+  if(!body.includes('v2.6.0')||!body.includes('Nathaniel Schroeder'))errors.push(name+' missing current version or owner');
   if(/<form\b/i.test(body)||/<script\b[^>]*src\s*=\s*["']https?:/i.test(body))errors.push(name+' includes form or remote script');
   if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(body))errors.push(name+' appears to make network requests');
 }
@@ -130,8 +131,27 @@ for(const p of ['docs/INVESTOR_3_MINUTE_TOUR.md','docs/COMPETITIVE_MATRIX.md','d
   if(c.length<1000||!c.includes('Nathaniel Schroeder'))errors.push(p+' incomplete or missing author credit');
 }
 
+// New public tracker evidence and investment narrative must be clear without disclosing internals.
+const engineDoc=fs.readFileSync(path.join(root,'docs/AUCTION_MARKET_ENGINE.md'),'utf8');
+const difference=fs.readFileSync(path.join(root,'docs/DIFFERENTIATION.md'),'utf8');
+const status=fs.readFileSync(path.join(root,'docs/STATUS_SNAPSHOT.md'),'utf8');
+if(!engineDoc.includes('Nathaniel Schroeder')||!engineDoc.includes('v2.18.6')||!engineDoc.includes('v2.19.0')||!engineDoc.includes('partial'))
+  errors.push('Missing dated built-engine proof, separate release states or owner credit');
+if(!readme.includes('published Auction Market Tracker')&&!readme.includes('published Auction Market Tracker'.replace('p','P')))
+  errors.push('README fails to lead with the published engine');
+if(!html.includes('getavlu.com/#market-engine')||!html.includes('v2.18.6')||!html.includes('v2.19.0'))
+  errors.push('Homepage omits published live tracker or development split');
+if(!html.includes('id="auctions"')||!html.includes('source-tested'))
+  errors.push('Homepage auction section omits tested acquisition logic');
+if(!difference.includes('v2.18.6')||!difference.includes('Tractor Zoom')||!difference.includes('EquipmentWatch'))
+  errors.push('Differentiation does not compare built engine with substantial competitors');
+if(!status.includes('v2.18.6')||!status.includes('v2.19.0'))
+  errors.push('Status snapshot omits current published versus candidate release');
+if(/I claim|I do not claim/i.test(readme.slice(0,7000)+difference.slice(0,4300)))
+  errors.push('Opening differentiation uses defensive or unsupported ownership phrasing');
+
 if(/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon)\s*\(/.test(js))errors.push('Sample appears to make network calls');
 if(/<script\b[^>]*src\s*=\s*["']https?:/i.test(html))errors.push('Remote script found');
 if(/<form\b/i.test(html))errors.push('Public demo should not collect user data');
 if(errors.length){console.error(errors.join('\n'));process.exitCode=1;}
-else console.log('Public showcase v2.5.0 boundary passed. '+allowed.size+' explicit files, no external data calls.');
+else console.log('Public showcase v2.6.0 boundary passed. '+allowed.size+' explicit files, no external data calls.');

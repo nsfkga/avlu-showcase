@@ -1,6 +1,6 @@
 # Product modules and actual state
 
-**v2.3.0 | October 15, 2026 | Nathaniel Schroeder**
+**v2.6.0 | October 22, 2026 | Nathaniel Schroeder**
 
 The core product is a *proof-first acquisition decision workflow*. These areas are intentionally separated by release state.
 
@@ -16,12 +16,22 @@ The core product is a *proof-first acquisition decision workflow*. These areas a
 | Non-executable acquisition decision engine | **Tested reference engine** | APPROVE, COUNTER, REJECT and HOLD are evaluation states. The reference remains `live_executable=false`. |
 | Shadow case and intent controls | **Source-tested; disabled for production execution** | Studies acquisition decisions while preventing binding purchase actions. Deployment gates are still open. |
 | Digital Inspection™ evidence protocol | **Designed/tested intake and evidence verification; field-complete captures not established** | Missing, contradictory or incomplete photo/video evidence remains unresolved and cannot silently pass. |
-| Comparable matching and calibration | **Under active evidence development** | Public comparisons and completed-sale observations exist, but category release requires trustworthy matched outcomes. |
+| Comparable matching and calibration | **Public price ranges published; acquisition calibration unverified** | Equipment-family medians and ranges are observed market context, not confirmed exact-unit valuations or profit outcomes. |
 | Persistent PostgreSQL and recovery engineering | **Implemented and partly verified** | Adapter, atomic revisions, private sessions and disposable restore tests exist; full production owner recovery acceptance does not. |
-| Continuous market monitoring/synchronization | **Goal / not verified live** | Repeated authorized market observations are a central product direction, not yet a proven browser-closed service. |
+| Public auction-market collection | **Published v2.18.6; source-specific and on-activity** | Reviewed result observations with durable due-time leases, bounded retries and explicit partial-coverage flags; not a general 24/7 cross-platform feed. |
 | Automatic bidding, transaction execution | **Off / future only** | Not an active capability; requires explicit release and separate legal, capital, data and control gates. |
 | Profit Protection™ | **Inactive development concept** | Not funded or contractually offered. No coverage or profit guarantee is active. |
 | Agricultural service readiness and recovery | **Separate historical R&D track** | Requirements and synthetic reference checks exist, but it is not the current autonomous-acquisition production module. |
+
+## The built Auction Market Engine now has two distinct release layers
+
+**Published Auction Market Tracker v2.18.6:** Real, reviewed public auction results, dated source captures, supported equipment filters, lot counts, medians, Q1/Q3 ranges, original result-page links and device-local saved views. On-activity due captures are at most hourly, not guaranteed collection every hour with the browser closed. October 22 production acceptance: eight equipment families, 66 eligible filter cohorts, two of three source pages. The figures describe a partial source sample.
+
+**Private Auction Intelligence Engine:** Source-tested policies, classified observations, cost and protected-ceiling evaluation, unknown-cost HOLD, decision/forecast snapshots, outcome/calibration records, private owner controls and backup/restore. A hosted continuous private collector and autonomous acquisition are not released.
+
+**v2.19.0 candidate:** An additional item-price graph of up to 160 anonymous reported prices from one latest capture, separate from the aggregate capture-history view. Not yet verified published.
+
+[Engine architecture and exact limits](AUCTION_MARKET_ENGINE.md) · [Source/economic distinction](DIFFERENTIATION.md).
 
 ## Facebook Marketplace research capability and limits
 

@@ -1,6 +1,6 @@
 # AvLü™ | Evidence, traction and missing proof
 
-**Public snapshot | October 15, 2026 | v1.0.0**  
+**Public snapshot | October 22, 2026 | v1.1.0**  
 **Founder and owner: Nathaniel Schroeder**
 
 This is a deliberately conservative, dated scorecard. It is not connected to the private production database or automatically synchronized with GitHub workflow runs.
@@ -9,9 +9,9 @@ This is a deliberately conservative, dated scorecard. It is not connected to the
 
 | Category | Dated record | What I can honestly claim |
 | --- | --- | --- |
-| Working public prototype | Last verified published application v2.13.0 | Real web application with guided workflow; newer privately staged features are not established live |
-| Private GitHub application | Main source v2.14.0 | Source includes later Watchlist and recovery changes; not verified deployed |
-| Separate Replit-derived work | Unpublished v2.15.2 staging | Source preserved for reconciliation; read-only research and inspection work tested in isolation, not production acceptance |
+| Published equipment Auction Market Tracker | Application v2.18.6, verified October 22 | Real reported auction prices, dated capture/auction context, medians, quartiles, equipment filters and source links; not realized profits |
+| Private source and engine | v2.16.0 main baseline; separate private Auction Intelligence and newer v2.19.0 candidate | Tested source controls and emerging item-price graph; private buying and the candidate graph are not verified published |
+| Actual public-source coverage | October 22 verification: eight families, 66 eligible cohorts, two of three pages | Partial reviewed-source sample, not total market or verified exact-asset profit |
 | Formula audit | 150 rows | Zero reported arithmetic mismatches; seven advanced to "test deeper"; zero real purchase approvals |
 | Synthetic QA | 2,000 fictional cases; 48,000 passing assertions in recorded campaign | Software behavior verification, not real market performance or realized resale profits |
 | Historical inventory | 71 inventory lines representing 79 units | Recorded aggregate acquisition costs and projected retail pricing; archived sales log had no matched completed-sale outcomes |
@@ -20,6 +20,14 @@ This is a deliberately conservative, dated scorecard. It is not connected to the
 | Facebook Marketplace sourcing | Listed in source selectors for vehicles and equipment; manually researched cases | Does not establish a Meta-approved API feed or unattended scraping |
 | Purchase authority | Disabled | No binding autonomous bids or live purchase authorization |
 | Profit Protection™ | Inactive | No active insurance, coverage, guarantee or financial protection contract |
+
+## The new investor-proof distinction
+
+There is **a real production market-data component**. The public Auction Market Tracker has recorded source-linked reported result observations using bounded, permitted source collection and reviewed presentation; the acquisition/forecast controls are additional private source-tested software.
+
+This moves the technical story past an AI pricing mockup. It does **not** validate a unique valuation algorithm, broad source coverage, paid net-profit outcomes, customer retention or autonomous buying. Source rights, accuracy, buyer benefit and subscription economics remain the essential commercial checks.
+
+[Published tracker](https://getavlu.com/#market-engine) · [Built engine report](AUCTION_MARKET_ENGINE.md).
 
 ## Commercial validation
 

@@ -1,8 +1,16 @@
 # Start here | AvLü™ technical and venture review
 
-**v2.5.0 | October 19, 2026 | Nathaniel Schroeder**
+**v2.6.0 | October 22, 2026 | Nathaniel Schroeder**
 
 I created this public repository so an advisor can judge the seriousness of AvLü without being granted my implementation, data, source history or customer records.
+
+## Start with the actual Auction Market Engine
+
+**The public tracker is already live.** The October 22 verified v2.18.6 release shows source-linked reported auction prices, equipment filters, dated captures, medians and price ranges. Its capture example contained eight equipment families and 66 eligible filter cohorts, from only two of three source pages. The private Auction Intelligence Engine is separately source-tested for policy-bound collection, complete-cost HOLD and decision history; it is not authorized to buy inventory.
+
+The new v2.19.0 individual-price graph remains an unpublished candidate. Do not confuse a public result price with a paid settlement or realized resale profit.
+
+[Open the published tracker](https://getavlu.com/#market-engine) · [How I built the two layers](AUCTION_MARKET_ENGINE.md) · [Comparison against competitors](COMPETITIVE_MATRIX.md).
 
 ## First, what it is and why it is different
 

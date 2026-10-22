@@ -1,4 +1,4 @@
-/* AvLü public investor arithmetic and privacy regressions v2.5.0.
+/* AvLü public investor arithmetic and privacy regressions v2.6.0.
  * © 2026 Nathaniel Schroeder. All rights reserved.
  */
 const test=require('node:test');

@@ -1,4 +1,4 @@
-// v2.5.0 | © 2026 Nathaniel Schroeder. All rights reserved.
+// v2.6.0 | © 2026 Nathaniel Schroeder. All rights reserved.
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -20,7 +20,7 @@ test('gross potential is explicitly unverified',()=> {
 test('public-facing README points to real app and separates versions',()=> {
   const readme=fs.readFileSync(path.resolve(__dirname,'../README.md'),'utf8');
   assert.ok(readme.includes('https://getavlu.com'));
-  assert.ok(readme.includes('v2.13.0')&&readme.includes('v2.14.0'));
+  assert.ok(readme.includes('v2.18.6')&&readme.includes('v2.19.0'));
 });
 test('proof figures are identified as synthetic or historical, not real profit',()=> {
   const readme=fs.readFileSync(path.resolve(__dirname,'../README.md'),'utf8');
@@ -51,7 +51,7 @@ test('current agricultural auction scope and public version are visible',()=> {
  const p=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  assert.match(p,/id="auctions"/);
  assert.match(p,/id="equipment"/);
- assert.match(p,/v2\.5\.0/);
+ assert.match(p,/v2\.6\.0/);
 });
 
 test('investor model separates hypothetical recurring revenue from actual traction',()=> {
@@ -114,10 +114,10 @@ test('marketplace source is not mislabeled as an automated feed or verified sold
  assert.match(doc, /asking prices.*not|asking price.*not/i);
  assert.match(doc, /scraping|data rights|permission/i);
  assert.match(home, /does <strong>not<\/strong> currently claim a live Meta-approved API feed/);
- assert.match(home, /v2\.5\.0/);
+ assert.match(home, /v2\.6\.0/);
 });
 
-test('v2.5 investor site provides five focused review sections and competitor reality',()=>{
+test('v2.6 investor site provides five focused review sections and competitor reality',()=>{
   const root=path.resolve(__dirname,'..');
   const html=fs.readFileSync(path.join(root,'investors.html'),'utf8');
   const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
@@ -187,4 +187,42 @@ test('investor walkthrough and ten-slide pitch front-load the competitive object
  const ids=[...pitch.matchAll(/<section class="pitch-slide[^"]*" id="slide-(\d+)"/g)].map(x=>Number(x[1]));
  assert.deepEqual(ids,[1,2,3,4,5,6,7,8,9,10]);
  assert.match(pitch,/No autonomous transactions/);
+});
+test('a real source-backed Auction Market Tracker is front and center',()=>{
+ const root=path.resolve(__dirname,'..');
+ const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
+ const home=fs.readFileSync(path.join(root,'index.html'),'utf8');
+ const intro=readme.indexOf('## What AvLü is');
+ const ai=readme.indexOf('## Why AvLü is different from just using normal AI');
+ const competitors=readme.indexOf('## How AvLü is different from competitors');
+ const technical=readme.indexOf('## GitHub Pages publishing');
+ assert.ok(intro>=0 && ai>intro && competitors>ai && technical>competitors);
+ assert.ok(readme.includes('docs/AUCTION_MARKET_ENGINE.md'));
+ assert.ok(readme.includes('getavlu.com/#market-engine'));
+ assert.match(home,/published Auction Market Tracker|Auction Market Tracker/i);
+ assert.match(home,/v2\.18\.6/);
+ assert.match(home,/v2\.19\.0/);
+ assert.ok(home.indexOf('id="auctions"')<home.indexOf('id="investors"'));
+});
+test('the source facts and private capability gates stay separate',()=>{
+ const root=path.resolve(__dirname,'..');
+ const e=fs.readFileSync(path.join(root,'docs/AUCTION_MARKET_ENGINE.md'),'utf8');
+ const status=fs.readFileSync(path.join(root,'docs/STATUS_SNAPSHOT.md'),'utf8');
+ for(const phrase of ['v2.18.6','v2.19.0','66','eight','source','HOLD','not'])assert.ok(e.toLowerCase().includes(phrase.toLowerCase()),'engine fact: '+phrase);
+ assert.match(e,/not.*settlement|not.*paid|not.*realized/is);
+ assert.match(status,/two of three source pages/i);
+ assert.match(status,/disabled/i);
+});
+test('investor slides show the built auction engine before hypothetical scenarios',()=>{
+ const root=path.resolve(__dirname,'..');
+ const tour=fs.readFileSync(path.join(root,'investors.html'),'utf8');
+ const pitch=fs.readFileSync(path.join(root,'pitch.html'),'utf8');
+ assert.ok(tour.indexOf('Auction Market Tracker')<tour.indexOf('id="acquisition"'));
+ assert.ok(tour.includes('v2.18.6') && tour.includes('v2.19.0'));
+ assert.equal((pitch.match(/class="pitch-slide/g)||[]).length,10);
+ const slides=[...pitch.matchAll(/<div class="slide-label">([^<]+)<\/div>/g)].map(m=>m[1]);
+ assert.match(slides[1],/02 \/ WHY IT IS MORE THAN AI/);
+ assert.match(slides[2],/03 \/ COMPETITION/);
+ assert.match(pitch,/v2\.18\.6/);
+ assert.match(pitch,/48,000/);
 });

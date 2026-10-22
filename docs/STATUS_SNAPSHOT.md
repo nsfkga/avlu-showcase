@@ -1,118 +1,81 @@
-# Current status snapshot | October 19, 2026
+# AvLü™ | Dated project and public tracker status
 
-**Document v2.5.0 | Owner: Nathaniel Schroeder**  
-**This is a dated snapshot, not automatically synchronized with the private source.**
+**Snapshot: October 22, 2026 | Public showcase v2.6.0**  
+**Owner: Nathaniel Schroeder**  
+**This is a release/evidence snapshot, not a live database report.**
 
-## Releases and environment
+## Published public Auction Market Tracker
 
-| Component | Verified state |
+| Component | Last verified status |
 | --- | --- |
-| Public AvLü application | v2.13.0, last verified successful publication at getavlu.com |
-| Current private GitHub source | v2.14.0, merged and source verified, with later recovery and privacy test additions |
-| v2.14.0 production publication | Not completed or verified |
-| Owner Inventory Watchlist | v1.0.0 included in verified published v2.13.0 |
-| Historical Watchlist enhancement | v1.1.0 in later source, not verified published |
-| Canonical operating checklist | v2.28.1, 28 task items, 7 Done |
-| Public technical and investor showcase | v2.5.0 source prepared for GitHub Pages; hosted deployment not verified |
+| Published application | **v2.18.6** on [getavlu.com](https://getavlu.com/#market-engine), verified October 22, 2026 |
+| Public tracker | Source-linked, real reported auction-result observations, equipment families/filtered cohorts, lot counts, medians, quartiles, dates, capture inspection and locally saved views |
+| Example verified production capture | **Eight families, 66 eligible filter cohorts, two of three source pages**. Explicitly partial, source-specific coverage |
+| Public source capture | **At most once per hour on app activity**, using a persistent due-time lease, partial/error flags and backoff; minute-level browser read checks while visible |
+| Saved views/alerts | Device-local opt-in; no promise of email/push notifications when the browser is closed |
+| Provenance | Public result-page URLs, observation dates, auction-date context; **reported hammer evidence**, not buyer settlement or unit-level resale profit |
+| Deployment verification | Exact deployed public assets, anonymous route permissions, denied private access and public POST rejection passed for v2.18.6 |
 
-The tests and releases are independent. Passing a GitHub workflow is not equivalent to verifying the current production database.
+The public collector is intentionally bounded. Published capture history can extend to one year only as **real observations accumulate**. Different lot configurations and changing sample mixes prevent treating a reported category median as an individualized appraisal.
 
-## Static investor-site publishing
+[Built engine evidence](AUCTION_MARKET_ENGINE.md) · [Published tracker](https://getavlu.com/#market-engine).
 
-The investor tour, pitch and homepage have been prepared for free GitHub Pages publication from the `main` branch root. Offline link and asset checks are included in GitHub CI. **This does not establish that Pages is enabled or the hosted URL is live.** No production app deployment or domain change took place.
+## Newer v2.19.0 Auction Price Graph
 
-[GitHub Pages setup and verification](GITHUB_PAGES_PUBLISHING.md).
+A separate **v2.19.0 private source candidate**, not the verified published release, adds up to **160 anonymous individual reported result prices** for the latest capture of each eligible group, alongside a separate dated-median capture history.
 
-## Investor experience release scope
+The item-price list is ordered by source page and numeric lot, **not a price trend over time or a validated matched comparable set**. The candidate retains actual prior aggregate history without reconstructing missing lot-level history. Its source collector proposes more rotating result pages under the existing hourly limits. Local/browser and source tests were recorded; check the exact candidate and publication receipts before describing it as live.
 
-Version v2.4.0 adds a **public three-minute investor walkthrough**, a fictional browser-only auction cost calculator, a hypothetical subscription model, a sourced competitor comparison, an evidence/traction status page and a printable presentation. The new calculators do **not** connect to real inventory, modify costs, use external market feeds or authorize purchases.
+## Private Auction Intelligence Engine
 
-No acquisition receipts, paid subscription records, Meta-approved data access, company finances, credentials or private algorithms have been imported into the public repository. The displayed customer prices, SaaS economics, CAC/churn and $100,000 financing plan remain **hypotheses only**.
+The private implementation includes **asset/listing/observation and source-policy records, cost scenarios, forecast and decision snapshots, public result adapters, calibrated-outcome data structures, owner revision controls, backup/restore and bounded scheduler/worker logic**.
 
-[Investor walkthrough](../investors.html) · [Presentation](../pitch.html) · [Traction status](TRACTION_SCORECARD.md).
+| Private capability | State |
+| --- | --- |
+| Complete-cost evaluation and missing-cost HOLD | Implemented and source-tested, non-executable |
+| Asking/bid/reported hammer/verified completed resale classifications | Implemented in reference engine, preserves distinct meanings |
+| Source-policy/collector/lease/quarantine/retry controls | Implemented and tested in isolated code; the continuous private hosted worker remains disabled |
+| Outcome/calibration calculations | Source-tested; meaningful accuracy unavailable without matched real acquisitions and resales |
+| Private cockpit and raw backup/restore | Source/isolated tests exist; deployed authenticated owner acceptance is separate |
+| Autonomous bids, payments and purchases | **OFF** |
+| Profit Protection™ | **Inactive** |
 
-## Facebook Marketplace status
+A source-tested internal workflow is different from a private production release. The public tracker can be live while private buying and owner-release acceptance remain gated.
 
-- **Present in private source-search code:** `facebook.com/marketplace` appears in both vehicle and equipment source lists.
-- **Historical research:** Marketplace candidate observations and QA datasets for vehicles, loaders and attachments exist, with incomplete proof appropriately held for further checks.
-- **Not established:** an authorized Facebook data feed, unattended collection, always-current sync, completed-sale API, seller messaging or resale posting automation.
-- **Required evidence:** user or source permission, exact listing identity, source date, missing VIN/serial/title/condition checks, comparable sale support and actual receipts before realized profit can be calculated.
-- **Business role:** source of buyer-researched opportunities, not subscription revenue or independently verified sold comparables.
+## Source history versus published application
 
-[Public Facebook Marketplace strategy](FACEBOOK_MARKETPLACE_STRATEGY.md).
+The **GitHub main application baseline is v2.16.0** in the dated private engineering record, with later mechanic/inspection source changes. Public deployment v2.18.6 is tracked through a separate auction feature branch and verified published assets. The v2.19.0 candidate is later source work, not confirmed deployed.
 
-## Investor economics status: hypothetical, not traction
+Replit's earlier source lineage has been preserved/reconciled in the private project. Do not treat a local commit, passing CI run, or merged source branch alone as published owner functionality.
 
-- SaaS subscriber count, contracted ARR, paid pilot conversions, realized churn and CAC: **not established in this public evidence**.
-- Price hypotheses: **$199/month Independent, $499/month Team, from $999/month Integration**; one-time pilots $750–$1,500.
-- Illustrative 25-account mix: **$8,975 MRR, $6,545 gross profit, $2,455 monthly operating loss** after hypothetical costs.
-- Proposed initial financing plan: **$100,000**, allocated to engineering, market data, pilots, security, legal and contingency. Not capital raised.
-- Founder-led sales targets: 50 qualified accounts, 15 demonstrations, five paid pilots and three recurring conversions. These are not actual outcomes.
+## Customer and economic evidence
 
-[Investor overview](INVESTOR_OVERVIEW.md) · [Economics](SAAS_UNIT_ECONOMICS.md) · [Risk register](INVESTOR_DILIGENCE.md).
-
-## Acquisition roadmap
-
-The controlled 28-item register recorded:
-
-| State | Count |
-| --- | ---: |
-| Done | 7 |
-| In progress | 15 |
-| Blocked | 1 |
-| Later | 4 |
-| Later / blocked | 1 |
-
-The first potential autonomous buying policy is restricted to selected **non-powered compact-equipment attachments**, and even that policy is **not enabled for buying**. Vehicles and powered equipment are research/support categories, not covered by a working autonomous purchase permission.
-
-## Frozen evidence window
-
-| Evidence gate | Observed result | Required/meaning |
+| Evidence | Dated recorded result | What it does not prove |
 | --- | --- | --- |
-| Sealed public shadow cases | 30 | All HOLD/non-executable |
-| Approved inspection captures | 0 of 252 | Field evidence remains missing |
-| Outcome-linked cases | 0 of 15 | Threshold not met |
-| Full-economics cases | 0 of 10 | Threshold not met |
-| Sealed APPROVE/COUNTER cases | 0 of 5 | Threshold not met |
-| Independent human acquisition decisions | 0 of 10 | Threshold not met |
-| Real purchase approvals | 0 | Buying disabled |
+| Early equipment purchases | **71 acquisition lines / 79 units**; actual aggregate first-party costs | Completed unit-matched resale proceeds or business net profit |
+| Historical arithmetic screening | **150 rows**, zero reported arithmetic mismatches | Valuation accuracy for new live buyers |
+| Synthetic regression | **2,000 fictional cases / 48,000 passing assertions** | Real closed trades or expected economic return |
+| Acquisition shadow research | **30 sealed public cases**, all **HOLD** / non-executable | Authorized live bids or actual paid deals |
+| Customer discovery | Founder-reported **31 dealer meetings**; separate course log **23 completed interviews** | Paid subscriptions or signed pilots |
+| Subscription scenarios | Proposed $199/$499/from-$999 per month; hypothetical 25 accounts = $8,975 MRR | Contracted revenue, observed CAC/churn or profitability |
+| Funding | Illustrative **$100,000** allocation, not committed | Money raised or guaranteed runway |
 
-**Meeting counts are not shadow cases:** 31 dealer meetings are founder-reported. The earlier final I-Corps course log documented 23 completed discovery conversations. Neither count measures product sales, pilots, or transactions.
+The existing outcome-linked and actual-economics gates are incomplete. The public data tracker does not change those acquisition-readiness counts. Seller asking prices and public auction results cannot become realized-owner-profit claims without the appropriate paid purchase, expenses and disposal receipts.
 
-## Already demonstrated
+## What the next milestones actually are
 
-- Working public and protected-owner web experience.
-- Published Watchlist release, with stored listing research, conditional assumptions and exports (full owner acceptance pending).
-- Non-executable reference decision engine with four disposition states; 51/51 synthetic reference tests reported passing.
-- 2,000 synthetic QA packets, 48,000 assertions passed.
-- Source tests for security and protected routes, including production anonymous-denial observations.
-- Disposable PostgreSQL raw-restore rehearsal passed.
-- Read-only raw-state attestor source tests passed, with production attestation still pending.
-- Public comparable-source and identity work, while conservative acceptance gates remain strict.
+1. **Protect data permissions:** validate approved source terms and costs before expanding beyond the current reviewed auction source.
+2. **Verify the v2.19.0 candidate separately:** maintain item-price versus capture-history semantics, keyboard access, read-only public rules and exact deployment evidence.
+3. **Complete owner acceptance for the private engine:** source and privacy review, database backup/restore, owner login/save/reload/export and controls for worker activation.
+4. **Pilot against existing tools:** demonstrate time and cost value for one independent-buyer category; measure errors, false HOLDs and repeat willingness to pay.
+5. **Obtain matched realized outcomes:** preserve exact paid acquisition, costs and actual resale receipts before calibrating profit estimates.
 
-## Still unproven or unavailable
+There is **no live autonomous purchasing, confirmed company ARR or active profit guarantee** in this snapshot.
 
-- Browser-closed scheduled sourcing, ongoing automatic market synchronization, and verified bid-to-sale matching across categories.
-- Sufficient matched realized sale proceeds plus all actual selling, holding and repair costs to substantiate predicted profits.
-- Completed approval/legal/capital/reserve arrangements for automated buying or coverage.
-- Owner production sign-in/save/export acceptance of the newer source.
-- Deployed recovery, rollback, kill-switch and production transaction-adapter acceptance.
-- Category-specific calibration adequate to release real-money decisions.
+## Public showcase publishing
 
-**No demo, shadow status, simulation pass or expected profit should be interpreted as buying authorization, guaranteed return, or an active coverage product.**
+The GitHub showcase homepage, investor tour and pitch are static assets prepared for GitHub Pages publication. Source readiness and passing offline link tests do **not** establish that an independently hosted Pages URL is available. The product's published auction tracker is a **separate real application at [getavlu.com](https://getavlu.com/#market-engine)**.
 
-The private engineering evidence and release receipts were reviewed when this snapshot was prepared, but are not copied into this public repository.
-
-## Auction and agriculture: overlooked evidence and current code split
-
-**Historical acquisition evidence:** the retained early-2026 inventory has 71 lines and 79 units, actual aggregate acquisition accounting, and projected retail values. Its archived sales log was empty, so completed resale profit cannot be inferred.
-
-**Auction sources:** the January 7, 2026 public regional archive has 523 items; separate public sold-result analysis contains 22 candidate attachment outcomes. Four September auction events were confirmed ended without verified final settlement amounts for those shadow cases.
-
-**Mechanical scope:** selected non-powered compact attachments are the proposed first policy. A catalog title may mask hydraulic actuation, requiring a HOLD/exclusion when configuration is unverified.
-
-**Application versions:** v2.13.0 remains the last verified published build. Private GitHub main v2.14.0 includes later historical/recovery source. A separate **unpublished Replit-derived v2.15.2** has been preserved and staged for private integration review, including limited read-only research testing; it is **not merged into application main or verified deployed**. Production owner acceptance remains outstanding.
-
-[Full auction chain](AUCTION_INTELLIGENCE.md) · [Agricultural equipment scope](AGRICULTURAL_EQUIPMENT.md).
+[Public engine](AUCTION_MARKET_ENGINE.md) · [Product modules](PRODUCT_MODULES.md) · [Competitors](COMPETITIVE_MATRIX.md) · [Investor overview](INVESTOR_OVERVIEW.md) · [Pages readiness](GITHUB_PAGES_PUBLISHING.md).
 
 © 2026 Nathaniel Schroeder. All rights reserved.

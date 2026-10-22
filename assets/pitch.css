@@ -1,4 +1,4 @@
-/* AvLü investor presentation v2.5.0, owner Nathaniel Schroeder. */
+/* AvLü investor presentation v2.6.0, owner Nathaniel Schroeder. */
 :root{color-scheme:dark;--dark:#0e1919;--panel:#19302e;--gold:#e4ce98;--mint:#bed8ce;--white:#f4f6ef}
 *{box-sizing:border-box}body{margin:0;background:#081313;color:var(--white);font:16px/1.5 system-ui,'Segoe UI',sans-serif}
 h1,h2,h3,p{margin-top:0}a{color:var(--gold)}

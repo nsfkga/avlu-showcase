@@ -2,6 +2,18 @@
 
 **Public research brief v1.0.0 | October 14, 2026 | Nathaniel Schroeder**
 
+## The published Auction Market Tracker
+
+AvLü now has a **verified published public market tracker** at [getavlu.com](https://getavlu.com/#market-engine), application v2.18.6 as of October 22, 2026. It displays source-linked, real reported public auction results with equipment categories, dated captures, eligible filter cohorts, lot counts, medians and range context.
+
+Production acceptance recorded eight families and 66 eligible cohorts from two of three source pages. This is a partial, source-specific sample, not a market-wide appraisal. Bounded capture happens no more than hourly on app activity, with the last stored snapshot available for read-only viewing.
+
+The **private Auction Intelligence Engine** separately handles source policies, exact lot records, cost evidence, review snapshots and calibration structures. Its guarded worker and real-money purchase capability have not passed production owner-release gates.
+
+The newer v2.19.0 view of individual reported item prices is **not published** in this recorded status. A reported hammer price is not a final paid invoice or realized resale profit.
+
+[Current engine and tracker detail](AUCTION_MARKET_ENGINE.md).
+
 ## Why auctions are central
 
 AvLü grew from real equipment auction and resale tracking, not only from vehicle listings. The challenge is not simply finding a low auction bid. It is determining whether an **exact lot**, acquired under a **specific auction's rules**, has enough supported resale potential after **all costs and evidence gaps**.

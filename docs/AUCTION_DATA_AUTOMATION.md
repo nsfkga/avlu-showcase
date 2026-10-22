@@ -1,6 +1,18 @@
 # Auction and equipment data automation | Future operating model
 
-**Public architectural research v1.1.0 | October 15, 2026 | Nathaniel Schroeder**
+**Public market and automation research v1.2.0 | October 22, 2026 | Nathaniel Schroeder**
+
+## What is published now, versus the next autonomy milestone
+
+**Already published:** A bounded, fixed-source public auction-results collector and Auction Market Tracker v2.18.6. It captures actual reported result prices at most hourly **on app activity**, keeps dated medians and source links, and exposes incomplete coverage. The capture's eight observed equipment families and 66 filter cohorts are source-specific rather than a claim of universal market completeness. Saved views/alerts are device-local.
+
+**Private source tested, not owner-released:** Auction Intelligence source-policy control, classified observations, non-executable complete-cost review and HOLD decisions, recorded forecasts/outcomes, revisioned storage, private restore and bounded scheduler/worker logic.
+
+**Not yet published:** v2.19.0 individual reported price view, which preserves latest-capture price samples separately from dated aggregate history. Additional source rights, hosted private worker release and actual profitable acquisitions remain outstanding.
+
+**Never infer:** A published auction hammer observation is not the buyer's paid settlement, seller proceeds, or verified resale net profit.
+
+[Built-engine current facts](AUCTION_MARKET_ENGINE.md).
 
 ## What I want AvLü to become
 
