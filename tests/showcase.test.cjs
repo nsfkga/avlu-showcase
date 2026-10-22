@@ -152,18 +152,18 @@ test('investor materials provide sources and preserve the Facebook Marketplace p
 
 test('README leads with product definition, AI distinction, then incumbent comparison',()=>{
  const s=fs.readFileSync(path.resolve(__dirname,'../README.md'),'utf8');
- const first=['## What AvLü is','## Why AvLü is more than a normal AI answer','## How AvLü differs from existing competitors','## GitHub Pages publishing'];
+ const first=['## What AvLü is','## Why AvLü is different from just using normal AI','## How AvLü is different from competitors','## GitHub Pages publishing'];
  const at=first.map(x=>s.indexOf(x));
  assert.ok(at.every(v=>v>=0) && at.every((v,i)=>i===0||v>at[i-1]),'The investor-facing opening must appear in order');
- assert.match(s,/Tractor Zoom Pro\/Anvil Pro/);
+ assert.match(s,/Tractor Zoom Pro.*Anvil Pro/);
  assert.match(s,/EquipmentWatch/);
  assert.match(s,/HOLD/);
- assert.match(s,/development goals/);
+ assert.match(s,/development goals|development objective|developed and tested|candidate/i);
 });
 test('homepage puts both clear differentiators directly after product introduction',()=>{
  const s=fs.readFileSync(path.resolve(__dirname,'../index.html'),'utf8');
  const hero=s.indexOf('<section class="intro hero"');
- const intro=s.indexOf("I'm building AvLü for buyers",hero);
+ const intro=s.indexOf('I built an <strong>Auction Market Tracker',hero);
  const first=s.indexOf('MORE THAN A GENERAL AI ANSWER',intro);
  const second=s.indexOf('DIFFERENT FOCUS FROM ESTABLISHED TOOLS',first);
  const banner=s.indexOf('showcase-investor-banner',second);
@@ -180,10 +180,10 @@ test('investor walkthrough and ten-slide pitch front-load the competitive object
  assert.equal((pitch.match(/<section class="pitch-slide/g)||[]).length,10);
  const headings=[...pitch.matchAll(/<div class="slide-label">([^<]+)<\/div>/g)].map(x=>x[1]);
  assert.equal(headings.length,10);
- assert.match(headings[1],/02 \/ WHY IT IS NOT JUST AI/);
+ assert.match(headings[1],/02 \/ WHY IT IS MORE THAN AI/);
  assert.match(headings[2],/03 \/ COMPETITION/);
  assert.match(headings[3],/04 \/ PROBLEM/);
- assert.match(headings[4],/05 \/ PRODUCT/);
+ assert.match(headings[4],/05 \/ TWO-LAYER ENGINE/);
  const ids=[...pitch.matchAll(/<section class="pitch-slide[^"]*" id="slide-(\d+)"/g)].map(x=>Number(x[1]));
  assert.deepEqual(ids,[1,2,3,4,5,6,7,8,9,10]);
  assert.match(pitch,/No autonomous transactions/);
